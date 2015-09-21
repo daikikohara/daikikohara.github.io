@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tbd</title>
-    <link>https://daikikohara.github.io/</link>
-    <description>Recent content on tbd</description>
+    <title>Android on tbd</title>
+    <link>https://daikikohara.github.io/categories/android/</link>
+    <description>Recent content in Android on tbd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 20 Sep 2015 12:17:31 -0700</lastBuildDate>
-    <atom:link href="https://daikikohara.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://daikikohara.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>[日本語]SimpleSwipeFlashcard - Android用単語帳アプリ</title>
@@ -384,19 +384,6 @@ You can set the number of the times in the settings.&lt;/li&gt;
 ダウンロード可能な単語帳は、今まで手元にメモってた単語帳等を編集してカテゴリ別に配信してたりします。今後も追加していく予定です。&lt;/p&gt;
 
 &lt;p&gt;無料かつ広告もちょこっとなので良かったら使ってみてくださいm(_ _)m&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://daikikohara.github.io/about/</link>
-      <pubDate>Sat, 19 Sep 2015 20:40:46 -0700</pubDate>
-      
-      <guid>https://daikikohara.github.io/about/</guid>
-      <description>&lt;p&gt;This is a personal website by Daiki Kohara.&lt;br&gt;
-Daiki Kohara is a software engineer living in San Jose CA USA, originally from Tokyo Japan.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/daikikohara&#34;&gt;Github&lt;/a&gt; &lt;a href=&#34;https://twitter.com/daikikohara&#34;&gt;Twitter&lt;/a&gt; &lt;a href=&#34;https://facebook.com/daiki.kohara.5&#34;&gt;Facebook&lt;/a&gt; &lt;a href=&#34;https://www.linkedin.com/in/daikikohara&#34;&gt;Linkedin&lt;/a&gt; &lt;a href=&#34;https://independent.academia.edu/DaikiKohara&#34;&gt;Academia&lt;/a&gt; &lt;a href=&#34;http://qiita.com/kiida&#34;&gt;Qiita(Japanese)&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
