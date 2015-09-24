@@ -30,22 +30,24 @@
 &lt;li&gt;&lt;a href=&#34;#BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;お知らせ:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;お知らせ&lt;/h1&gt;
-
-&lt;p&gt;現在お知らせは特にありません。&lt;br&gt;
-現在確認されている不具合は&lt;a href=&#34;#BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/a&gt;をご確認ください。&lt;/p&gt;
-
 &lt;h1 id=&#34;About:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;アプリについて&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=daikikohara.flashcard&#34;&gt;SimpleSwipeFlashcard&lt;/a&gt;はAndroid上で単語帳の作成・編集および、作成した単語帳のテストを行う機能を提供するアプリです。&lt;br&gt;
 詳細は上記のリンクをクリックしてGooglePlay上のアプリの説明ページをご覧ください。&lt;/p&gt;
 
-&lt;h1 id=&#34;更新履歴:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;更新履歴&lt;/h1&gt;
+&lt;h1 id=&#34;Announcement:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;お知らせ&lt;/h1&gt;
+
+&lt;p&gt;現在お知らせは特にありません。&lt;br&gt;
+現在確認されている不具合は&lt;a href=&#34;#BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/a&gt;をご確認ください。&lt;/p&gt;
+
+&lt;h1 id=&#34;Update:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;更新履歴&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;2015/09/21 - Version1.0.0リリース&lt;/li&gt;
 &lt;li&gt;2015/09/21 - Version1.0.1リリース&lt;br&gt;
-一部の機種で&amp;rdquo;裏面へ&amp;rdquo;ボタンタップ時にアプリがクラッシュする問題を修正&lt;/li&gt;
+一部の機種で&amp;rdquo;裏面へ&amp;rdquo;ボタンタップ時にアプリがクラッシュする問題を修正しました。&lt;/li&gt;
+&lt;li&gt;2015/09/23 - Version1.0.2リリース&lt;br&gt;
+シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう等の不具合を修正しました。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;使い方&lt;/h1&gt;
@@ -187,14 +189,24 @@ A. 現在は容量等の関係で端末変更時には設定のみ引き継げ�
 
 &lt;h1 id=&#34;BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/h1&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&amp;ldquo;裏面へ&amp;rdquo;ボタンをタップするとアプリがクラッシュしてしまう現象が確認されています。Androidのバージョンか機種依存の問題のようですが、詳細は確認中です。詳細が確認出来次第修正を行います。&lt;/p&gt;&lt;/li&gt;
+&lt;h2 id=&#34;未解決:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;未解決&lt;/h2&gt;
 
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;戻るボタンが連発されてしまう不具合が確認されています。
 詳細を確認次第、修正したいと思います。暫定的な回避策としてはアプリの再起動をお願いします。&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;端末の言語設定を変更するとアプリの設定・挙動が一部おかしくなる不具合が確認されています。
 こちらは原因・解決策とも判明しているため、なるべく早く修正します。暫定的な回避策としては設定をし直すことで元に戻ります。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;解決済み:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;解決済み&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Version1.0.1で解消&lt;br&gt;
+一部の機種で&amp;rdquo;裏面へ&amp;rdquo;ボタンをタップするとアプリがクラッシュしてしまう現象が確認されています。詳細が確認出来次第修正を行います。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Version1.0.2で解消&lt;br&gt;
+シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう、またその分いくつかの単語が表示されないという不具合が確認されています。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -217,6 +229,7 @@ A. 現在は容量等の関係で端末変更時には設定のみ引き継げ�
 &lt;li&gt;&lt;a href=&#34;#Update:7af77ca426a371e668acd4bc69b47f95&#34;&gt;Update Info&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#FAQ:7af77ca426a371e668acd4bc69b47f95&#34;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#BUG:7af77ca426a371e668acd4bc69b47f95&#34;&gt;Known Issues&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;About:7af77ca426a371e668acd4bc69b47f95&#34;&gt;About&lt;/h1&gt;
@@ -234,6 +247,8 @@ Click the link above to open GooglePlay for more detail.&lt;/p&gt;
 &lt;li&gt;Sep 21 2015 - Version1.0.0 released.&lt;/li&gt;
 &lt;li&gt;Sep 21 2015 - Version1.0.1 released.&lt;br&gt;
 Fixed problem with some devices which crashes the app when the flip button is being tapped.&lt;/li&gt;
+&lt;li&gt;Sep 23 2015 - Version1.0.2 released.&lt;br&gt;
+Fixed issue with the order of flashcard getting reshuffled when the device gets rotated at the shuffle test.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/h1&gt;
@@ -351,6 +366,10 @@ You can set the number of the times in the settings.&lt;/li&gt;
 &lt;p&gt;This page would be self explanatory enough.&lt;/p&gt;
 
 &lt;h1 id=&#34;FAQ:7af77ca426a371e668acd4bc69b47f95&#34;&gt;FAQ&lt;/h1&gt;
+
+&lt;p&gt;Coming soon.&lt;/p&gt;
+
+&lt;h1 id=&#34;BUG:7af77ca426a371e668acd4bc69b47f95&#34;&gt;Known Issues&lt;/h1&gt;
 
 &lt;p&gt;Coming soon.&lt;/p&gt;
 </description>
