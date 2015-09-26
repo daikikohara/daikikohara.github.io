@@ -48,6 +48,8 @@
 一部の機種で&amp;rdquo;裏面へ&amp;rdquo;ボタンタップ時にアプリがクラッシュする問題を修正しました。&lt;/li&gt;
 &lt;li&gt;2015/09/23 - Version1.0.2リリース&lt;br&gt;
 シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう等の不具合を修正しました。&lt;/li&gt;
+&lt;li&gt;2015/09/25 - Version1.1.0リリース&lt;br&gt;
+テスト中に単語を暗記済みにすることができるようになりました。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;使い方&lt;/h1&gt;
@@ -129,6 +131,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;読み上げ&amp;rdquo;ボタンをタップするとAndroidの組み込み機能により合成音声で単語を読み上げます。発音の確認にご利用ください。対応している端末のみで利用可能です。&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;暗記済み&amp;rdquo;ボタンをタップすると単語を暗記済み(詳細は後述)とします。&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;裏面へ&amp;rdquo;ボタンをタップするとカードを裏面(単語の意味)にひっくり返します。&amp;rdquo;裏面へ&amp;rdquo;ボタンをタップした単語は&amp;rdquo;忘れてた&amp;rdquo;単語としてカウントされます。&lt;/li&gt;
 &lt;li&gt;次の単語へ進むときはカードを左にスワイプします。&amp;rdquo;裏面へ&amp;rdquo;ボタンをタップせずに次のカードに進んだ単語は&amp;rdquo;覚えてた&amp;rdquo;単語としてカウントされます。&lt;/li&gt;
 &lt;/ul&gt;
@@ -152,8 +155,14 @@
 &lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/result_remember.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 
 &lt;ul&gt;
-&lt;li&gt;暗記済みとされる単語の一覧画面です。単語は一定回数(回数は設定画面で変更可能)&amp;ldquo;覚えてた&amp;rdquo;単語としてテストを終了することで暗記済みになります。
-この画面でチェックを外すと暗記済みにしないようにできます。&lt;/li&gt;
+&lt;li&gt;暗記済みとされる単語の一覧画面です。単語は以下の場合に暗記済みとなります。
+
+&lt;ul&gt;
+&lt;li&gt;一定回数(回数は設定画面で変更可能)&amp;ldquo;覚えてた&amp;rdquo;単語としてテストを終了した場合&lt;/li&gt;
+&lt;li&gt;テスト中に該当の単語で&amp;rdquo;暗記済み&amp;rdquo;ボタンをタップした場合&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;暗記済みとなった単語は次回以降のテストでは出てきません。(暗記済み単語のテストを選択した場合は除く)&lt;/li&gt;
+&lt;li&gt;チェックを外すと暗記済みにしないようにできます。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;5-設定画面:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;5. 設定画面&lt;/h2&gt;
@@ -249,6 +258,8 @@ Click the link above to open GooglePlay for more detail.&lt;/p&gt;
 Fixed problem with some devices which crashes the app when the flip button is being tapped.&lt;/li&gt;
 &lt;li&gt;Sep 23 2015 - Version1.0.2 released.&lt;br&gt;
 Fixed issue with the order of flashcard getting reshuffled when the device gets rotated at the shuffle test.&lt;/li&gt;
+&lt;li&gt;Sep 25 2015 - Version1.1.0 released.&lt;br&gt;
+You can now mark words as remembered during the test.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/h1&gt;
@@ -328,8 +339,9 @@ You can edit, delete or mark as remembered the word.&lt;/li&gt;
 &lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/test.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 
 &lt;ul&gt;
-&lt;li&gt;Tap &amp;ldquo;Text to Speech&amp;rdquo; to make your device read out the word.&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;Flip to Back&amp;rdquo; to see the back side(answer).
+&lt;li&gt;Tap &amp;ldquo;READ OUT&amp;rdquo; to make your device read out the word.&lt;/li&gt;
+&lt;li&gt;Tap &amp;ldquo;MARK&amp;rdquo; to mark the word as remembered.&lt;/li&gt;
+&lt;li&gt;Tap &amp;ldquo;Flip&amp;rdquo; to see the back side(answer).
 If you see the back side, the word will be marked as failed.&lt;/li&gt;
 &lt;li&gt;Swipe left to go to the next card.
 If you go to the next card without flipping to the back side, the word will be marked as passed.&lt;/li&gt;
@@ -354,8 +366,13 @@ If you go to the next card without flipping to the back side, the word will be m
 
 &lt;ul&gt;
 &lt;li&gt;The list of the marked-as-remembered words are shown in this page.
-A word will be marked as remembered when you pass a certain times of test.
-You can set the number of the times in the settings.&lt;/li&gt;
+A word will be marked as remembered when
+
+&lt;ul&gt;
+&lt;li&gt;you pass a certain times of test.&lt;/li&gt;
+&lt;li&gt;you tap the &amp;ldquo;MARK&amp;rdquo; button on the card during the test.(You can set the number of the times in the settings.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The remembered words will not be shown in the test afterwards.&lt;/li&gt;
 &lt;li&gt;Uncheck to not mark the word as remembered.&lt;/li&gt;
 &lt;/ul&gt;
 
