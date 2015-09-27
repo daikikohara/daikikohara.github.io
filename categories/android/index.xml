@@ -10,7 +10,7 @@
     <atom:link href="https://daikikohara.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>[日本語]SimpleSwipeFlashcard - Android用単語帳アプリ</title>
+      <title>SimpleSwipeFlashcard - Android用単語帳アプリ</title>
       <link>https://daikikohara.github.io/work/simpleswipeflashcard_ja/</link>
       <pubDate>Sun, 20 Sep 2015 12:17:31 -0700</pubDate>
       
@@ -202,6 +202,11 @@ A. 申し訳ありませんが現在のところアプリ内で行うことは�
 &lt;li&gt;&lt;p&gt;Q. 機種変更時に単語帳が消えてしまった&lt;br&gt;
 A. 現在は容量等の関係で端末変更時には設定のみ引き継げるようになっています。
 お手数ですが、単語帳を引き継ぐ場合は古い端末でGoogleDriveにエクスポートし、それを新しい端末でインポートしてください。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Q. 単語帳の意味に同じようなものが並んでいる&lt;br&gt;
+A. 中学英語・高校英語の単語帳はパブリックドメインの辞書とのマッチングを機械的に行ったあとに殆ど整形しておりません。重複があることもありますがご了承ください。
+その他の単語帳では自動詞・他動詞は別の行に分けています。例えば、「と連絡する」と「連絡する」という2行があった場合、その単語は自動詞にも他動詞にもなれるものです。
+なお、同じ行に「と連絡する  接触する」等と並んでいた場合は2つ目以降の単語は他動詞ですが「と、を」等の助詞を省略しています。(2つ目以降にも付いているケースもあり、統一されていませんがご了承ください。)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/h1&gt;
@@ -233,14 +238,14 @@ A. 現在は容量等の関係で端末変更時には設定のみ引き継げ�
     </item>
     
     <item>
-      <title>[English]SimpleSwipeFlashcard - Flashcard app for Android</title>
+      <title>SimpleSwipeFlashcard - Flashcard app for Android</title>
       <link>https://daikikohara.github.io/work/simpleswipeflashcard_en/</link>
       <pubDate>Sun, 20 Sep 2015 12:17:30 -0700</pubDate>
       
       <guid>https://daikikohara.github.io/work/simpleswipeflashcard_en/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;https://daikikohara.github.io/work/simpleswipeflashcard_ja/&#34;&gt;日本語の説明はこちら&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;a href=&#34;https://daikikohara.github.io/work/simpleswipeflashcard_ja/&#34;&gt;日本語の説明はこちら&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;
 
 &lt;p&gt;Menu&lt;/p&gt;
 
