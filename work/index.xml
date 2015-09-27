@@ -50,6 +50,14 @@
 シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう等の不具合を修正しました。&lt;/li&gt;
 &lt;li&gt;2015/09/25 - Version1.1.0リリース&lt;br&gt;
 テスト中に単語を暗記済みにすることができるようになりました。&lt;/li&gt;
+&lt;li&gt;2015/09/26 - Version1.1.1リリース&lt;br&gt;
+以下の不具合を修正しました。
+
+&lt;ul&gt;
+&lt;li&gt;裏面で暗記済みにした際にカウントがずれてしまう&lt;/li&gt;
+&lt;li&gt;端末の言語設定変更時にアプリの設定がおかしくってしまう&lt;/li&gt;
+&lt;li&gt;まれに戻るボタンが連打されてしまう&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;使い方&lt;/h1&gt;
@@ -182,11 +190,11 @@ A. 読み上げはAndroidに組み込まれているText to Speech(テキスト�
 併せて、端末の音量設定もご確認ください。&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Q. 単語帳のダウンロードができない&lt;br&gt;
-A. 設定画面で&amp;rdquo;フィードバックを送信&amp;rdquo;がオンになっていることを確認してください。
+A. 端末がオンラインであるかご確認ください。また、設定画面で&amp;rdquo;フィードバックを送信&amp;rdquo;がオンになっていることを確認してください。
 詳細はアプリ内のヘルプをご確認ください。&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Q. インポート/エクスポート/ダウンロードでエラーが出てしまう&lt;br&gt;
-A. 表示されるメッセージの通りになりますが、しばらくしてからやり直してください。可能であればデータサイズ(単語帳の数や単語帳内の単語数)を減らして試してみて貰えればと思います。&lt;/p&gt;&lt;/li&gt;
+A. 表示されるメッセージの通りになりますが、しばらくしてからやり直してください。インポート/エクスポートの場合は可能であればデータサイズ(単語帳の数や単語帳内の単語数)を減らして試してみて貰えればと思います。&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Q. 自分が作った単語帳を友達にシェアしたい&lt;br&gt;
 A. 申し訳ありませんが現在のところアプリ内で行うことはできません。お手数ですがGoogleDriveを経由してのファイル共有をお願いします。&lt;/p&gt;&lt;/li&gt;
@@ -200,13 +208,7 @@ A. 現在は容量等の関係で端末変更時には設定のみ引き継げ�
 
 &lt;h2 id=&#34;未解決:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;未解決&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;戻るボタンが連発されてしまう不具合が確認されています。
-詳細を確認次第、修正したいと思います。暫定的な回避策としてはアプリの再起動をお願いします。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;端末の言語設定を変更するとアプリの設定・挙動が一部おかしくなる不具合が確認されています。
-こちらは原因・解決策とも判明しているため、なるべく早く修正します。暫定的な回避策としては設定をし直すことで元に戻ります。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;現在未解決の不具合は報告されておりません。&lt;/p&gt;
 
 &lt;h2 id=&#34;解決済み:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;解決済み&lt;/h2&gt;
 
@@ -216,6 +218,16 @@ A. 現在は容量等の関係で端末変更時には設定のみ引き継げ�
 
 &lt;li&gt;&lt;p&gt;Version1.0.2で解消&lt;br&gt;
 シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう、またその分いくつかの単語が表示されないという不具合が確認されています。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Version1.1.1で解消&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;テスト中に裏面で&amp;rdquo;暗記済み&amp;rdquo;ボタンをタップした際に&amp;rdquo;覚えてた&amp;rdquo;単語と&amp;rdquo;忘れてた&amp;rdquo;単語のカウントがずれる不具合が確認されています。&lt;/li&gt;
+&lt;li&gt;戻るボタンが連発されてしまう不具合が確認されています。
+詳細を確認次第、修正したいと思います。暫定的な回避策としてはアプリの再起動をお願いします。&lt;/li&gt;
+&lt;li&gt;端末の言語設定を変更するとアプリの設定・挙動が一部おかしくなる不具合が確認されています。
+暫定的な回避策としては設定をし直すことで元に戻ります。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -260,6 +272,13 @@ Fixed problem with some devices which crashes the app when the flip button is be
 Fixed issue with the order of flashcard getting reshuffled when the device gets rotated at the shuffle test.&lt;/li&gt;
 &lt;li&gt;Sep 25 2015 - Version1.1.0 released.&lt;br&gt;
 You can now mark words as remembered during the test.&lt;/li&gt;
+&lt;li&gt;Sep 26 2015 - Version1.1.1 released.&lt;br&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed issue with Failed/Passed count getting wrong when marking as remembered on the back side of the card.&lt;/li&gt;
+&lt;li&gt;Fixed issue with back button getting pressed repeatedly in a certain situation.&lt;/li&gt;
+&lt;li&gt;Fixed issue with the app settings getting wrong when the device language setting gets changed.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/h1&gt;
