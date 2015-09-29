@@ -56,6 +56,8 @@ You can now mark words as remembered during the test.&lt;/li&gt;
 &lt;li&gt;Fixed issue with back button getting pressed repeatedly in a certain situation.&lt;/li&gt;
 &lt;li&gt;Fixed issue with the app settings getting wrong when the device language setting gets changed.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Sep 29 2015 - Version1.1.2 released.&lt;br&gt;
+Fixed issue with some layouts getting broken depending on the font size of the device.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/h1&gt;
