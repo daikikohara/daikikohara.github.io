@@ -1,0 +1,477 @@
++++
+
+Categories = ["conference"]
+Description = ""
+date = "2015-10-01T17:27:02-07:00"
+title = "GitHub Universe視聴まとめ"
+
++++
+
+2015年10月1日、2日にSFで行われた[GitHub Universe](http://githubuniverse.com/)の視聴レポートです。
+お金とか時間の問題で参加はしてません。
+[ライブ](http://www.ustream.tv/githubuniverse)で見てたんですが結構途切れたりしたのと、自分の英語力の問題でいい加減なところがありますm(_ _)m
+多分録画は[ここ](https://www.youtube.com/user/github/videos)に上がるんじゃないかと思います。
+各セッションのところにも貼っていきます。
+
+# 1日目
+
+## Keynote
+* Speaker: Chris Wanstrath, GitHub(CEO)
+* ひとつ目ですが、最初30分くらい逃したので  [StarCraft](http://gloomyson.github.io/StarCraft/)の話をしているところしか聞けなかったｗ<br>
+  GitHub Pagesで動いてるんだぜ、みたいなお話。
+
+## Githubのコマーシャルが流れる
+
+* 多分あとで[ここ](https://www.youtube.com/user/github/videos)に上がるはず？
+
+## Exploring the Solar System from wherever you are!
+
+* Speaker: Joseph Minafra, NASA
+* 全然github出てこなかったような？
+* [SERVI](http://sservi.nasa.gov/)の紹介
+* 月の形成に関するビデオ紹介
+* Virtual Communicationを毎年開いている。誰でも参加できる。
+* [Lunar Mapping and Modeling Portal(LMMP)](http://pub.lmmp.nasa.gov/LMMPUI/LMMP_CLIENT/LMMP.html)で月を探索できる。
+  * WebRestAPIもある。(NASAは色々APIあるっぽい)
+* 月だけじゃなくて[Vesta](http://vestatrek.jpl.nasa.gov/)(小惑星用？)もある。
+* リーダーのBrian Dayの動画紹介。中身よく分からずｗ
+* [火星用](http://marstrek.jpl.nasa.gov/)もあるよ。
+* pluto
+* sservi.nasa.gov
+
+## Five years, building a culture, and handing it off
+
+* Speaker: Kellan Elliott-McCrea, former CTO of Etsy
+* なぜソフトを作るのか
+  * ソフトを作るのが下手だから
+  * Software is hard.
+  * お前の答えは間違っている。もしくはすぐに間違いになる。
+* some behaviours that undermining learning
+12 things
+* 4つの
+  * Confidently take risks
+  デプロイするときに自信があるか
+  テストとかモニタリングとかして自信を上げる
+  5graphs。
+  大きいriskだと自信は小さい？
+  * Honestly reflect
+  cssのデプロイだけでシステムを壊した奴がいる
+  どれだけ長い間バグがいるか
+  * Invest
+  * Teach
+  * practiceは同じでもゴールは違う
+  * 失敗は避けられない
+
+## Using Git LFS
+
+* Speaker(それぞれが順番に話していくスタイル)
+  * Traci Coffman, GitHub
+  * Saeed Noursalehi, Microsoft
+  * Rick Olson, GitHub
+  * Allen Smith, GitHub
+  * Steve Streeting, Atlassian
+* Rick from GitHub
+  * Git LFS(Large File Storage)の概要紹介
+  * LFS用のいくつかのサブコマンドを追加した
+  * Git hookとintegrateされている
+  * デカいファイルを追加したときに実態を別のところに保存してレポジトリの見えるところにはポインタを保存する(イマイチよく分からず)
+  * なんでOSS?
+    * 他の人にも使ってもらって新しいuse caseを知りたい
+  * LFS1.0リリース
+    * APIを書き換えた
+    * Local Storage Management
+    * インストーラの改善。特にWindows用。aptもある。
+    * LFS拡張という仕組みがある
+* [LFSのコマーシャル](https://www.youtube.com/watch?v=_11d1ZsEZ8g)が流れた。
+* Steve from Atlassian
+  * 今までいろんなOSS作ってきたけど、Largeファイルの扱いには苦戦してきた
+  * githubも同じことを考えて同じ結論に辿り着いた
+    * それぞれgit-lfsとgit-lobというものを作ろうと考えた。同じようなコンセプトでいずれもGoで書こうとした。
+    * 2015年のはじめにmergeすることを決めてアナウンスした。
+    * https://github.com/github/git-lfs
+    * https://git-lfs.github.com/
+TODO
+branchでデカイファイルをダウンロードしないといけないときに待たないといけない。
+バックグラウンドで走らせておけば安全
+こんな感じでfetchすることもできる
+git lfs fetch --include=models --exclude-models/vehicles
+git lfs prune
+nativeなssh apiなどロックといった機能もある
+* Saeed Noursalehi, Microsoft
+  * 大きなチームのためにgitをスケールさせることを目標にしている
+  * MicrosoftもLFSにcontributeしている。
+    * NTLMauth to LFS clientとかいろいろ(色々書いてあったけどメモ忘れ)
+  * [VSO](https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs.aspx)使ってzipファイルをLFSのgitレポジトリにpushするデモ
+* Allen Smith, GitHub
+  * デモ
+  エディアはatom
+    * git lfsをインストールする
+    * .gitconfigをいじる
+      * [filter "lfs"]の下にsmudgeとかcleanとか書いてあったけどよく見えず。。。
+`git lfs track '*.png'`とやると対象のファイルをlfsの管理対象にできる
+ローカルのファイルはlfsフォルダ以下に保存される
+lfs用のpre push hookが追加される
+
+ファイルの実態はテキストのポインタ。
+github上でファイルは見える。テキストポインタじゃなくて
+
+git-lfs pullの紹介
+
+
+
+みんなリモートで働いているっぽい？
+ノースキャロライナ
+
+## Pull requests, code review, and the GitHub flow
+Brent Beer, GitHub
+
+見てない
+
+## Democratic Deploys at Airbnb
+Topher Lin, Airbnb
+Igor Serebryany, Airbnb
+
+見てない
+
+
+##
+
+最初はJenkinsのマスター一つだった
+400ジョブ、18,000ビルド/week
+
+チームをスケールさせずにCIをスケールさせる
+CIがダメで辞めた人もいた
+CIがダメだとbad tool、bad cultureを引き起こす
+
+1.ボタンを押したらジョブを設定してsshキーを発行して
+2.それぞれのビルドが新しいマシンで走ることがゴール
+3.ジョブを作ったら
+ジョブのパーミッションに応じて
+pushする
+
+CIはキレイで直感的なUIを持つべき
+JenkinsのUIは古臭い
+
+metrics
+ビルド、デプロイに使う
+どれくらいデプロイに時間がかかるか等を測って最適化する
+
+Extensible
+CIはextensibleであるべき
+JenkinsはExtensibleという意味では良い
+
+Scale up
+scale out
+猫(pet)と牛
+牛はreplaceable
+
+socksコンプライアンス
+CIはセキュアであるべき
+誰がアクセスできるか
+誰がpushできるか
+privateレポジトリ。
+
+[DotCi]というCIツールを
+OSS
+一言で言うとJenkinsからTraviceCIにつなぐもの？
+JenkinsとGithubとDockerをつなぐもの
+ボタンを押すとジョブを作る
+ジョブではgithubのkeyを作って内部DBに保存する
+DockerとDocker Composeを使っている
+
+Clean Environment On Demand
+Dockerプラグイン
+  ビルドしたらDockerコンテナを作ってつなぐ
+他にもk8s使ったりとかもいいんじゃないか
+
+Version Controlled Job Configs
+DotCiもymlで設定できるから
+
+Easy Parallelization
+並列化できるべき
+DotCiでもymlで簡単に定義できる
+
+all together
+実際の例
+docker composeファイル
+run:
+  ruby19:
+  ruby20:
+  ruby21:
+
+スライドが壊れてる
+
+commit status
+
+metricsの例
+ビルド時間の遷移グラフ
+
+GithubAuthorization
+Githubのレポジトリのアクセス権とのマッピングをする
+
+DotCiもExtensible
+DotCiはJenkinsのプラグインだけどDotCiのプラグインも書ける
+
+プラグインの作り方紹介
+Metricsとかも作れる
+
+Docker for CI
+Take Advantage of Github Apis
+Githubhookはパワフル
+
+Jenkins Cloud API
+外部サービスに向けて
+
+デモ
+ボタンを押す
+githookをセットアップしてkeyを作る
+Jenkinsをローカルに立てる
+
+## Building Communities Around Open Source Security Software
+
+Christine Abernathy, Facebook
+
+Teddy Reed, Facebook
+
+## GitHub Enterprise Primer and Deployment
+
+Matt Colyer, GitHub
+
+
+
+## Every Company is a Software Company
+
+Kakul Srivastava, GitHub
+Michael Davis, John Deere
+Dragos Maciuca, Ford
+Hima Mukkamala, GE
+Samir Shah, Target
+
+パネルディスカッション
+
+GEとソフトを同じ場所に置くか
+
+自己紹介が終わったタイミングでストリーミング停止
+
+Targetではオンラインで買う人が3倍くらいいる
+
+ソフト会社になるには何が一番の驚きか
+Target:特になし。サプライんチェーンの最適化。今はゲストフォーカス。店とオンライン両方
+John Deere: マネジメントコントロール、ソフトウェアをサポートする
+いつこのコンポーネントを完了するか
+サポートする場合は終わりがない
+FORD:ソフトが1時間止まったら。車が止まったら。謎。
+GE:ファクトリーオートメーションのソフトを作る必要があった。
+
+何が違う人間とコラボレイトするのに役立つか
+GE:いろんなツールを
+Ford:別の大陸の人とかとコラボレートするための
+ウォーターフォールとアジャイル
+アジャイルにするための教育が
+Target:
+:別々のバックグラウンド
+github enterprise使っている
+trello？
+campfire
+subversionをメインで使っている
+買うためのpermissionをくれた
+何かを試すためのpermissionを与えるのが大事
+
+
+エンジニアがあたらしい事を試したいと言ったらやらせてあげる
+
+## 10 ways people are (mis)using GitHub Pages for fun and profit
+
+他のセッションも聞きたかったけどちょうどGitHub Pages使ったばかりだったのでこれを聞くことに。
+
+* 発表者
+  * Ben Balter, GitHub
+* [GitHubPages](https://pages.github.com/)は主に以下の3つのことに使える
+  * project page
+  * personal page
+  * organization page
+* staticページはHTML,JavaScript,CSSだけで作れる。昔はPHPでやってたようなことがこの3つでできる。
+WordpressとかDrupalみたいなCMSも流行ったけど、bespoke pageを生成するし、スケールさせようとすると複雑になる。
+GitHubPagesならGitHubにデプロイするだけ。
+* `gh-pages`ブランチ切ったり等の作り方の説明
+* 10個の使い方
+  * 例は全部jekyllだった。
+  1. Collaboration
+    editボタン設置してtypo直してもらったりおかしなところを直してもらうとか
+  2. CI
+[html proofer](https://github.com/gjtorikian/html-proofer)みたいなツール使ってツールでバリデーションもできる。
+  3. Collections
+  [choosealicense.com](http://choosealicense.com/)みたいなサイトを作れる。
+  4. Data
+アプリで使うjsonファイルとかの置き場にも使える。pushするだけでビルドしなくて良いしお金もかからない
+例は[U.S. Department of Veterans Affairs](http://usdeptveteransaffairs.github.io/)
+  5. Collaborative Policy Making
+  [Project Open Data](https://project-open-data.cio.gov/)とか政府のプロジェクトでも使っている。
+  ポリシーを決める際にgithubを使うことで誰でもissueを上げたり、pull request送ったりできる。
+  (これ素晴らしいので日本でもやって欲しい。)
+  6. Branded Profiles
+  技術系の会社は[twitter](https://twitter.github.io/)とかsap(https://sap.github.io/)とか[ibm](http://ibm.github.io/)とか[microsoft](https://microsoft.github.io/)とか[yelp](https://yelp.github.io/)とかいろんな会社が作ってるよって紹介。
+[cfpb](https://cfpb.github.io/)とかも作ってる。
+  7. private sites
+  まだパブリックにしたくない場合はprivateにもできる。
+  jekyll-authを使うと簡単にできる。
+  8. Documentation
+  github helpはGitHub Pagesで作られているらしい。
+  [lunr.js](http://lunrjs.com/)使ってクライアントサイドサーチを使っているらしい。
+  9.Automated Publishing
+  小さいお店とかでもメールを受信してそれをベースにパブリッシュするような仕組みを作ってたりする。
+  やりかたはいくつかある。
+  普通にaddしてcommitしてpullしてやったり、GitHubのCRUD API使ったり([これ？](https://developer.github.com/v3/repos/contents/))。
+  10. Client-side Applications
+  StarCraftの話をしたかったけど最初にされちゃったので、[prose](http://prose.io/)の紹介。GitHub Pages上でファイルの作成・削除・編集とかができるみたい。
+
+
+
+## Collaboration, Innovation, and Modernization in the Enterprise
+David Mittman, NASA Jet Propulsion Laboratory
+
+
+# 2日目
+
+## Keynote
+
+* Speaker
+  * Nicole Sanchez, GitHub
+  * Tiffani Ashley Bell, Detroit Water Project
+* Nicole
+* 会社や社会にとって一番難しい問題は何か
+Maslow's Hierarchy of Needs
+* Tiffani
+14年ケアテイカーしてる女性の話
+paid メディカルリーブ取ろうとした
+35,000,000世帯が基本料金払うのに苦戦してる
+家族を失う
+誰かのためにお金を払えたらどうか、ってtwittrで
+bootstrapとかherokuとか使ってdonarとつなぐシステムを作った
+watercompaniからスクレイプしたデータを使っている。インタビューだけじゃなくて
+合ったこともない人同士で助けを必要としている人のために動けるのは素晴らしい。
+Give. Volunteer. Hack.
+
+会ったことがない人同士が作ったものでもそれが劣っているわけではに
+
+refugee restroom
+
+Where Open Source Happensのマップ
+西海岸と東海岸
+
+connecthome.hud.gov
+貧困層にブロードバンドをもたらす
+インターネットにアクセスしなきゃいけないホームワークがあるのにアクセスできない層がいる
+
+まだ自分がdevelperじゃないと思ってる層を発見していく。次の数年で
+
+
+evetyoneon
+by chike aguh
+
+digital devide
+500,000の層を
+深夜や早朝にマクドナルドの周辺で宿題をやってる子供がいる
+我々の責任。皆に参加して欲しい。connecthomeに
+
+次の天才、革命者を発見したい
+見落とされてる才能を発見するのは我々の責任。
+
+## Anil Dash, Founder, makerba.se
+
+flooz、bitcoin
+vrml、oculus
+repcheck、peeple
+
+blogosphere
+
+誰がインターネットを作ったかしらないしだれがアプリを作ったかもしらない
+伝えたストーリーしかしらない
+tell our stories
+誰が作ったのか
+キミは何を作ったの？
+makerba.se/universe
+
+## Marianna Tessel, SVP of Engineering, Docker
+
+Dockerイメージのダウンロード数グラフ
+800,000,000/月
+コミュニティはmonolithじゃない
+コミュニティはhappyとか人のように言うことがあるけど人それぞれ違う
+コミュニティは人に関するものでユーザ、プロジェクト、コントリビューターがいる。一人はどれか一つのカテゴリというわけではない。
+Dockerのファウンダーだって同じようにPRを受け取るし送る
+社内の内部プロジェクトの人とOSSの人の紹介
+  どっちもお互いにPRをやりとりする
+77%が外からのコントリビュート
+DockerCon15Hackathonの話
+Meetupは60の国で210グループある
+AwesomeだしHard
+  ネガティブな部分もある
+  リジェクトされることもあるし
+コミュニティの中では肩書は関係ない
+Make it part of your DNA
+どんなコミュニティでも良いから関われ
+
+## Rethinking Production Monitoring
+
+James Smith, Bugsnag
+
+hard to recover from technical debt
+40%の時間はバグの原因究明に時間をかけてるという調査がある
+出荷が最後のプロセスだと思ってる
+ユーザが文句を言うまで待ってしまう
+誰も文句を言ってないからOKだと思ってしまう
+誰の責任かという問題の欠如
+
+どうやれば良くなるか
+7つの原理
+ACCEPT
+  ソフトウェアが出荷後に壊れることを認める
+AUTOMATE
+  エラー・不具合を検知できる仕組みを導入しておく
+AGGREGATE
+  ただstreamとして持つだけじゃなくてグループしたりしよう
+NOTIFY
+  エラーで逐一メール通知とかじゃなくてアグリゲートしたグループとかでこのグループのエラーだけ送るみたいなことをしておく
+  ノイズを減らす
+PRIORITIZE
+  全てのバグを直すことは直せない
+DIAGNOSE
+  何が問題かというだけじゃなくて、こうすれば直ると行ったActionableにする。
+TEND
+  誰も見ないという状態をなくして、誰かが皆がエラーをケアすることを考える
+
+実際の例
+
+failure hooksを使う。言語に組み込まれているようなものがあればそれを使う。コードが何分以上かかったら何かをするというような
+
+影響を測定する。それぞれの問題で何人に影響があるか等
+
+深刻さを測定する。管理画面から気にしないとか、paymentのページで出てるか等。セグメントで優先度を付ける。
+
+Capture Diagnostic Data。再現可能なデータを取る？いくら使った時に出るか等。どのデバイスで出ているか等。クラッシュ時にそれらのデータを取得できるようにしておく。
+
+
+問題を既知の問題にしたい
+チャットを使う。コラボレートする。いろんなツールをつなげる。
+embrace collaoration。
+Track Progress of Fixes。JIRAとかを使って人をアサインして
+Team Structures。もし誰もケアしなかったら。エンジニアのストラクチャを考えなおす。バグはエンジニアがケアする。カスタマーサービスとかじゃない
+Creat a bug team。バグをケアするチームを作る。一人では無理。
+もしくはローテーションを組むのも良い。
+誰がそのコードを最後に触ったかを知る。責任を押し付けるためじゃないけど知るのは大事。
+
+まとめ
+罪を避ける。7つの大罪にかけてるっぽい？
+原理を大事に。
+実行しろ。
+
+
+
+
+
+
+# 感想
+
+* 政府系のプロジェクトでもGithub使って誰でもissue上げたりPR送れたりするのは良いと思いました。日本でも是非やって欲しいですね。
+* 貧困層へのアプローチが必要等、日本の技術系カンファレンスでは出てこない

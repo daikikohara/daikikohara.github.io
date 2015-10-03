@@ -6,8 +6,522 @@
     <description>Recent content in Blogs on tbd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 20 Sep 2015 11:37:37 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2015 18:27:02 -0700</lastBuildDate>
     <atom:link href="https://daikikohara.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GitHub Universe視聴まとめ</title>
+      <link>https://daikikohara.github.io/blog/2015/10/02/github-universe-2015/</link>
+      <pubDate>Fri, 02 Oct 2015 18:27:02 -0700</pubDate>
+      
+      <guid>https://daikikohara.github.io/blog/2015/10/02/github-universe-2015/</guid>
+      <description>
+
+&lt;p&gt;2015年10月1日、2日にSFで行われた&lt;a href=&#34;http://githubuniverse.com/&#34;&gt;GitHub Universe&lt;/a&gt;の視聴レポートです。
+近場でしたがお金とか時間の問題で参加はしてません。
+&lt;a href=&#34;http://www.ustream.tv/githubuniverse&#34;&gt;ustreamのライブ&lt;/a&gt;で見てたんですが結構途切れたりしたのと、自分の理解が怪しいところがあるのと、興味がないところはあんまりちゃんと書いてないので、メモ書き程度だと思ってもらえればと思います。
+ちなみにKeynote以外は3セッション並列だったんですが、ライブで見てたので自分が見たものだけです。
+録画もustreamのサイトから見れるのでちゃんと見たい人はそちらへお願いします。&lt;/p&gt;
+
+&lt;h1 id=&#34;1日目:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;1日目&lt;/h1&gt;
+
+&lt;h2 id=&#34;keynote-by-chris-wanstrath-github-ceo:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Keynote by Chris Wanstrath, GitHub(CEO)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;始まってるのに気づかず最後の方しか見れず。&lt;/li&gt;
+&lt;li&gt;最後の方は&lt;a href=&#34;http://gloomyson.github.io/StarCraft/&#34;&gt;StarCraft&lt;/a&gt;の話をしていた。GitHub Pagesで動いてるらしい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;githubのコマーシャルが流れる:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Githubのコマーシャルが流れる&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;多分あとで&lt;a href=&#34;https://www.youtube.com/user/github/videos&#34;&gt;ここ&lt;/a&gt;に上がるはず？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;exploring-the-solar-system-from-wherever-you-are-by-joseph-minafra-nasa:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Exploring the Solar System from wherever you are! by Joseph Minafra, NASA&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://sservi.nasa.gov/&#34;&gt;SERVI&lt;/a&gt;の紹介&lt;/li&gt;
+&lt;li&gt;月の形成に関するビデオ紹介&lt;/li&gt;
+&lt;li&gt;誰でも参加できるような&lt;a href=&#34;http://sservi.nasa.gov/communication-programs/&#34;&gt;イベント&lt;/a&gt;も開いている。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pub.lmmp.nasa.gov/LMMPUI/LMMP_CLIENT/LMMP.html&#34;&gt;Lunar Mapping and Modeling Portal(LMMP)&lt;/a&gt;で月を探索できる。
+
+&lt;ul&gt;
+&lt;li&gt;RestAPIもある。(NASAは他にも色々APIあるっぽい)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;月だけじゃなくて&lt;a href=&#34;http://vestatrek.jpl.nasa.gov/&#34;&gt;Vesta&lt;/a&gt;(小惑星用？)とか&lt;a href=&#34;http://marstrek.jpl.nasa.gov/&#34;&gt;火星用&lt;/a&gt;とかもある。&lt;/li&gt;
+&lt;li&gt;全然githubは出てこなかった。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;five-years-building-a-culture-and-handing-it-off-by-kellan-elliott-mccrea-former-cto-of-etsy:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Five years, building a culture, and handing it off by Kellan Elliott-McCrea, former CTO of Etsy&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;中継あったけど別作業のため殆ど聞けず。&lt;/li&gt;
+&lt;li&gt;ソフトを作るのが下手だから頑張らないといけないみたいな話。&lt;/li&gt;
+&lt;li&gt;デプロイするときに現行システムを壊すリスクと自信の話。
+
+&lt;ul&gt;
+&lt;li&gt;テストとかモニタリングとかして自信を上げていこう。&lt;/li&gt;
+&lt;li&gt;CSSの小さい修正でシステムを破壊したやつがいたりするので、デプロイする修正の規模と比例しないよみたいな。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;using-git-lfs-by-github-microsoft-atlassian:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Using Git LFS by GitHub/Microsoft/Atlassian&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Speaker(それぞれが順番に話していくスタイル)
+
+&lt;ul&gt;
+&lt;li&gt;Traci Coffman, GitHub&lt;/li&gt;
+&lt;li&gt;Saeed Noursalehi, Microsoft&lt;/li&gt;
+&lt;li&gt;Rick Olson, GitHub&lt;/li&gt;
+&lt;li&gt;Allen Smith, GitHub&lt;/li&gt;
+&lt;li&gt;Steve Streeting, Atlassian&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;rick-from-github:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Rick from GitHub&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git LFS(Large File Storage)の概要紹介
+
+&lt;ul&gt;
+&lt;li&gt;デカいファイルを追加したときにGitレポジトリにはテキストポインタを保存してファイルの実態はLFSに保存するといったことができる。&lt;/li&gt;
+&lt;li&gt;LFS用にいくつかのサブコマンドを追加した&lt;/li&gt;
+&lt;li&gt;Git hookとintegrateされている&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;なんでOSS?
+
+&lt;ul&gt;
+&lt;li&gt;他の人にも使ってもらって新しいuse caseを知りたいから。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;LFS1.0リリース
+
+&lt;ul&gt;
+&lt;li&gt;APIを書き換えた&lt;/li&gt;
+&lt;li&gt;インストーラの改善。特にWindows用。aptもある。&lt;/li&gt;
+&lt;li&gt;LFS拡張という仕組みを作った。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;lfsのコマーシャル-https-www-youtube-com-watch-v-11d1zsez8g-が流れた:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_11d1ZsEZ8g&#34;&gt;LFSのコマーシャル&lt;/a&gt;が流れた。&lt;/h3&gt;
+
+&lt;h3 id=&#34;steve-from-atlassian:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Steve from Atlassian&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今までいろんなOSS作ってきたけど、Largeファイルの扱いにはいつも苦戦してきた&lt;/li&gt;
+&lt;li&gt;自分たち(Atlassian)もGithubも同じことを考えて同じ結論に辿り着いた
+
+&lt;ul&gt;
+&lt;li&gt;それぞれgit-lfsとgit-lobというものを作ろうと考えた。同じようなコンセプトでいずれもGoで書こうとした。&lt;/li&gt;
+&lt;li&gt;2015年のはじめにmergeすることを決めてアナウンスした。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/git-lfs&#34;&gt;https://github.com/github/git-lfs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-lfs.github.com/&#34;&gt;https://git-lfs.github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;コマンドの実行例とか機能紹介
+
+&lt;ul&gt;
+&lt;li&gt;こんな感じでfetchすることもできる&lt;code&gt;git lfs fetch --include=models --exclude-models/vehicles&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ssh apiとかロックといった機能もある&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;saeed-noursalehi-microsoft:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Saeed Noursalehi, Microsoft&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;大きなチームのためにgitをスケールさせることを目標にしている&lt;/li&gt;
+&lt;li&gt;MicrosoftもLFSにcontributeしている。
+
+&lt;ul&gt;
+&lt;li&gt;NTLMauth to LFS clientとかいろいろ(色々書いてあったけどメモ忘れ)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs.aspx&#34;&gt;VSO&lt;/a&gt;使ってzipファイルをLFSのgitレポジトリにpushするデモ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;allen-smith-github:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Allen Smith, GitHub&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;デモ(ちなみにエディタはatom)
+
+&lt;ul&gt;
+&lt;li&gt;git lfsをインストールする&lt;/li&gt;
+&lt;li&gt;.gitconfigをいじる([filter &amp;ldquo;lfs&amp;rdquo;]の下にsmudgeとかcleanとか書いてあったけどよく見えず。。。)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git lfs track &#39;*.png&#39;&lt;/code&gt;とやると対象のファイルをlfsの管理対象にできる&lt;/li&gt;
+&lt;li&gt;ローカルのファイルはlfsフォルダ以下に保存される&lt;/li&gt;
+&lt;li&gt;lfs用のpre push hookが追加される&lt;/li&gt;
+&lt;li&gt;git-lfs pull&lt;/li&gt;
+&lt;li&gt;github上ではテキストポインタじゃなくてちゃんとファイルが見える。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ci-in-world-of-microservices-by-surya-gaddipati-groupon:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;CI in world of MicroServices by Surya Gaddipati, Groupon&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;最初はJenkinsのマスター一つだった&lt;/li&gt;
+&lt;li&gt;今は400ジョブ、18,000ビルド/week&lt;/li&gt;
+&lt;li&gt;今までCIがダメで辞めた人もいた
+
+&lt;ul&gt;
+&lt;li&gt;CIがダメだとbad cultureを引き起こす&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;今の仕組みではビルド(デプロイ)ボタンを押したらジョブを設定してパーミッションに応じたsshキーの作成やコードのpush、独立した環境用のマシンの作成などを行い独立した環境でビルドが走る(のを目指している？)&lt;/li&gt;
+&lt;li&gt;UI - CIはキレイで直感的なUIを持つべき。JenkinsのUIは古臭い。&lt;/li&gt;
+&lt;li&gt;Metrics - ビルド、デプロイではどれくらい時間がかかるか等を測って最適化するべき。&lt;/li&gt;
+&lt;li&gt;Extensible - CIはextensibleであるべき。JenkinsはExtensibleという意味では非常に良い。&lt;/li&gt;
+&lt;li&gt;Secure - CIはセキュアであるべき。誰がアクセスできるか、誰がpushできるか、等。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/groupon/DotCi&#34;&gt;DotCi&lt;/a&gt;というOSSのCIツールを作った。
+
+&lt;ul&gt;
+&lt;li&gt;一言で言うとJenkinsをTraviceCIのようにするもの？&lt;/li&gt;
+&lt;li&gt;JenkinsとGithubとDockerをつなぐ&lt;/li&gt;
+&lt;li&gt;ジョブの設定はバージョン管理できるべき。DotCiもymlで設定できるからバージョン管理できる。&lt;/li&gt;
+&lt;li&gt;ジョブは簡単に並列化できるべき。DotCiでもymlに書くだけで並列化できる。&lt;/li&gt;
+&lt;li&gt;metricsの例としてビルド時間の遷移グラフの紹介。&lt;/li&gt;
+&lt;li&gt;DotCiもExtensible。DotCiのプラグインが書ける。&lt;/li&gt;
+&lt;li&gt;GithubAuthorization。Githubのレポジトリのアクセス権とのマッピングができる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;スライドが大分崩れてた。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;every-company-is-a-software-company-パネルディスカッション:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Every Company is a Software Company(パネルディスカッション)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Speaker
+
+&lt;ul&gt;
+&lt;li&gt;Kakul Srivastava, GitHub&lt;/li&gt;
+&lt;li&gt;Michael Davis, John Deere&lt;/li&gt;
+&lt;li&gt;Dragos Maciuca, Ford&lt;/li&gt;
+&lt;li&gt;Hima Mukkamala, GE&lt;/li&gt;
+&lt;li&gt;Samir Shah, Target&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;自己紹介が終わったタイミングでストリーミング一時停止&lt;/li&gt;
+&lt;li&gt;まとめると
+
+&lt;ul&gt;
+&lt;li&gt;ソフトウェアはリリースしても終わりじゃないってことを理解しよう&lt;/li&gt;
+&lt;li&gt;いろんなバックグランドの人とコラボすることになるからお互いを理解しよう&lt;/li&gt;
+&lt;li&gt;ツールを使うことになったりしたら教育しよう&lt;/li&gt;
+&lt;li&gt;エンジニアが何かを試したいって言ってきたときに試させてあげるのが大事&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;みたいな感じ？&lt;/p&gt;
+
+&lt;h2 id=&#34;10-ways-people-are-mis-using-github-pages-for-fun-and-profit-by-ben-balter-github:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;10 ways people are (mis)using GitHub Pages for fun and profit by Ben Balter, GitHub&lt;/h2&gt;
+
+&lt;p&gt;同じ時間の他のセッションも聞きたかったけどちょうどGitHub Pages使ったばかりだったのでこれを聞くことに。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHubPages&lt;/a&gt;は主に以下の3つのことに使える
+
+&lt;ul&gt;
+&lt;li&gt;project page&lt;/li&gt;
+&lt;li&gt;personal page&lt;/li&gt;
+&lt;li&gt;organization page&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;staticページはHTML,JavaScript,CSSだけで作れる。昔はPHPでやってたようなことがこの3つでできる。&lt;/li&gt;
+&lt;li&gt;WordpressとかDrupalみたいなCMSも流行ったけど、bespoke pageを生成するし、スケールさせようとすると複雑になる。GitHubPagesならGitHubにpushするだけ。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gh-pages&lt;/code&gt;ブランチ切ったり等の作り方の説明&lt;/li&gt;
+&lt;li&gt;GitHugPagesの10の使い方(例は全部jekyllだった)
+
+&lt;ol&gt;
+&lt;li&gt;Collaboration - editボタン設置してtypo直してもらったりおかしなところを直してもらうとか&lt;/li&gt;
+&lt;li&gt;CI - &lt;a href=&#34;https://github.com/gjtorikian/html-proofer&#34;&gt;html proofer&lt;/a&gt;みたいなツール使ってツールでバリデーションもできる。&lt;/li&gt;
+&lt;li&gt;Collections - &lt;a href=&#34;http://choosealicense.com/&#34;&gt;choosealicense.com&lt;/a&gt;みたいなサイトを作れる。&lt;/li&gt;
+&lt;li&gt;Data - アプリで使うjsonファイルとかの置き場にも使える。pushするだけでビルドしなくて良いしお金もかからない。例は&lt;a href=&#34;http://usdeptveteransaffairs.github.io/&#34;&gt;U.S. Department of Veterans Affairs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Collaborative Policy Making - &lt;a href=&#34;https://project-open-data.cio.gov/&#34;&gt;Project Open Data&lt;/a&gt;とか政府のプロジェクトでも使っている。ポリシーを決める際にgithubを使うことで誰でもissueを上げたり、pull request送ったりできる。(素晴らしいので日本でもやって欲しい。)&lt;/li&gt;
+&lt;li&gt;Branded Profiles - 技術系の会社は&lt;a href=&#34;https://twitter.github.io/&#34;&gt;twitter&lt;/a&gt;とか&lt;a href=&#34;https://sap.github.io/&#34;&gt;sap&lt;/a&gt;とか&lt;a href=&#34;http://ibm.github.io/&#34;&gt;ibm&lt;/a&gt;とか&lt;a href=&#34;https://microsoft.github.io/&#34;&gt;microsoft&lt;/a&gt;とか&lt;a href=&#34;https://yelp.github.io/&#34;&gt;yelp&lt;/a&gt;とかいろんな会社が作ってるよって紹介。技術系じゃなくても&lt;a href=&#34;https://cfpb.github.io/&#34;&gt;cfpb&lt;/a&gt;とかも作ってる。&lt;/li&gt;
+&lt;li&gt;private sites - まだパブリックにしたくない場合はprivateにもできる。jekyll-authを使うと簡単にできる。&lt;/li&gt;
+&lt;li&gt;Documentation - github helpはGitHub Pagesで作られているらしい。&lt;a href=&#34;http://lunrjs.com/&#34;&gt;lunr.js&lt;/a&gt;使ってクライアントサイドサーチを使っているらしい。&lt;/li&gt;
+&lt;li&gt;Automated Publishing - 小さいお店とかでもメールを受信してそれをベースにパブリッシュするような仕組みを作ってたりする。やりかたはいくつかある。普通にaddしてcommitしてpullしてやったり、GitHubのCRUD API使ったり(&lt;a href=&#34;https://developer.github.com/v3/repos/contents/&#34;&gt;これ？&lt;/a&gt;)。&lt;/li&gt;
+&lt;li&gt;Client-side Applications - StarCraftの話をしたかったけど最初にされちゃったので、&lt;a href=&#34;http://prose.io/&#34;&gt;prose&lt;/a&gt;の紹介。GitHub Pages上でファイルの作成・削除・編集とかができるみたい。&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;1日目最後のkeynoteはライブ無し:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;1日目最後のKeynoteはライブ無し&lt;/h2&gt;
+
+&lt;h1 id=&#34;2日目:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;2日目&lt;/h1&gt;
+
+&lt;h2 id=&#34;keynote-by-nicole-sanchez-github-and-tiffani-ashley-bell-detroit-water-project:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Keynote by Nicole Sanchez, GitHub and Tiffani Ashley Bell, Detroit Water Project&lt;/h2&gt;
+
+&lt;h3 id=&#34;tiffani:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Tiffani&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.detroitwaterproject.org/&#34;&gt;Detroit Water Project&lt;/a&gt;の人&lt;/li&gt;
+&lt;li&gt;アメリカでは35,000,000世帯が水道料金等の基本料金を払うことも難しいくらい貧しい。&lt;/li&gt;
+&lt;li&gt;そういった人たちのためにお金を払えたらどうかということを考えた。&lt;/li&gt;
+&lt;li&gt;Twitterで呟いて反応した人たちとGitHub上でプロジェクトを作って、困っている人とドナーをつなぐシステムを作った。自分はエンジニアじゃないけど会ったこともない人とコラボできたのは素晴らしいと感じた。&lt;/li&gt;
+&lt;li&gt;払えない人はインタビューだけじゃなくて水道会社からスクレイプしたデータを使って本当に困っているか確認しているらしい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;nicole:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Nicole&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.refugerestrooms.org/&#34;&gt;refuge restroom&lt;/a&gt;という主にtrans gender向けにrest roomを検索できるプロジェクトも同じようなコンセプトでGitHub上で開発されている。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://connecthome.hud.gov/&#34;&gt;connecthome.hud.gov&lt;/a&gt;という貧困層にブロードバンドをもたらすプロジェクトも同様。
+
+&lt;ul&gt;
+&lt;li&gt;インターネットにアクセスしないとできないホームワークがあるのにアクセスできない子どもたちがいるのはおかしい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;まだ自分がdevelperじゃないと思ってる層を発見していきたい。次の天才、革命者を発見したい。埋もれた才能を発見するのは我々の責任。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;chike-aguh:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;chike aguh&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;スピーカーに名前がなかったけど&lt;a href=&#34;http://everyoneon.org/&#34;&gt;everyoneon&lt;/a&gt;の人みたい&lt;/li&gt;
+&lt;li&gt;everyoneonは情報格差をなくすためのプロジェクトでconnecthomeはeveryoneonの一部みたい。&lt;/li&gt;
+&lt;li&gt;インターネットアクセスが無い子どもたちの中には深夜や早朝にマクドナルドの周辺で宿題をやる子供もいる。&lt;/li&gt;
+&lt;li&gt;こういった層をなんとかするのは我々の責任。皆に参加して欲しい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;anil-dash-founder-makerba-se:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Anil Dash, Founder, makerba.se&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;多くの人は誰がインターネットを作ったのか知らないし、自分が使ってるアプリを誰が作ったのかも知らない。伝えられたストーリーしか知らないから我々は伝えなければならない。
+同時に相手にキミは何を作ったのかを聞かなきゃいけない。みたいな抽象的な話。よく分からんかった。。。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;makerba.se/universe&#34;&gt;ここ&lt;/a&gt;でやってねみたいな。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;marianna-tessel-svp-of-engineering-docker:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Marianna Tessel, SVP of Engineering, Docker&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コミュニティの話。結論的にはどんなコミュニティでも良いから関わろうみたいな感じ？&lt;/li&gt;
+&lt;li&gt;途中で出てきた色々な数字
+
+&lt;ul&gt;
+&lt;li&gt;Dockerイメージのダウンロード数は800,000,000/月&lt;/li&gt;
+&lt;li&gt;Dockerの公開レポジトリは77%が外からのコントリビュート&lt;/li&gt;
+&lt;li&gt;Meetupは60の国で210グループある&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;rethinking-production-monitoring-by-james-smith-bugsnag:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Rethinking Production Monitoring by James Smith, Bugsnag&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;映像切れきれ&lt;/li&gt;
+&lt;li&gt;技術的負債は返済するのが大変&lt;/li&gt;
+&lt;li&gt;開発者は40%の時間をバグの原因究明にかけてるという調査がある&lt;/li&gt;
+&lt;li&gt;以下は良くない
+
+&lt;ul&gt;
+&lt;li&gt;リリースが最後のプロセスだと思ってしまう&lt;/li&gt;
+&lt;li&gt;ユーザが文句を言うまで待ってしまう&lt;/li&gt;
+&lt;li&gt;誰も文句を言ってないからOKだと思ってしまう&lt;/li&gt;
+&lt;li&gt;誰の責任かという問題が欠如してしまっている&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;7つの原理
+
+&lt;ul&gt;
+&lt;li&gt;ACCEPT - ソフトウェアが出荷後に壊れることを認める&lt;/li&gt;
+&lt;li&gt;AUTOMATE - エラー・不具合を検知できる仕組みを導入しておく&lt;/li&gt;
+&lt;li&gt;AGGREGATE - エラーをただ流れてくるまま見るのではなく、グルーピングしたりする&lt;/li&gt;
+&lt;li&gt;NOTIFY - エラーで逐一メール通知とかじゃなくてグルーピングした単位とかでこのエラーだけ送るみたいなことをしてノイズを減らす&lt;/li&gt;
+&lt;li&gt;PRIORITIZE - 全てのバグを直すことはできない&lt;/li&gt;
+&lt;li&gt;DIAGNOSE - 何が問題かというだけじゃなくて、こうすれば直るみたいなActionableなものにする&lt;/li&gt;
+&lt;li&gt;TEND - 誰も見ないという状態をなくして、誰かがエラーをケアするという状態を当たり前にする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;実際の例
+
+&lt;ul&gt;
+&lt;li&gt;failure hooksを使う。言語に組み込まれているようなものがあればそれを使う(JavaのUncaughtExceptionHandlerとか)。なければコードが何分以上かかったら何かをするというような処理で代替するとか。&lt;/li&gt;
+&lt;li&gt;影響を測定する。それぞれの問題で何人に影響があるか等。&lt;/li&gt;
+&lt;li&gt;深刻さを測定する。上記と似ているが違うもの。管理画面のエラーなら気にしないとか、paymentのページで出ているなら重要等、セグメントで優先度を付ける。&lt;/li&gt;
+&lt;li&gt;Capture Diagnostic Data。再現可能なデータを取れるようにしておく。いくら使った時に出るかや、どのデバイスで出ているか等。クラッシュ時にそれらのデータを取得できるようにしておく。&lt;/li&gt;
+&lt;li&gt;コラボレーションしやすくしておく。チャット使うとか。チャットに不具合を送る仕組みを入れるとか。&lt;/li&gt;
+&lt;li&gt;不具合対応の進捗を追跡できるようにしておく。JIRAとかを使って人をアサインしたり。&lt;/li&gt;
+&lt;li&gt;Team Structures。誰もケアしないという状態を作らない。エンジニアのストラクチャを考えなおす。バグはサポートじゃなくてエンジニアがケアする。&lt;/li&gt;
+&lt;li&gt;Create a bug team。バグをケアするチームを作る。一人では無理。もしくはローテーションを組むのも良い。プロダクトの知識が深まる。&lt;/li&gt;
+&lt;li&gt;誰がそのコードを最後に触ったかを知る。責任を押し付けるためじゃないけど知るのは大事。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;changing-lives-with-open-data-by-hidenori-fujimura-geospatial-information-authority-of-japan-abhi-nemani-danny-whalen-remix:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Changing Lives with Open Data by Hidenori Fujimura, Geospatial Information Authority of Japan, Abhi Nemani, Danny Whalen, Remix&lt;/h2&gt;
+
+&lt;h3 id=&#34;hidenori-fujimura:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Hidenori Fujimura&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日本人登場。めっちゃ日本人英語で和むｗ&lt;/li&gt;
+&lt;li&gt;GeoデータをBSDとかCC0のライセンスで提供している&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://maps.gsi.go.jp/&#34;&gt;これ&lt;/a&gt;かな？&lt;/li&gt;
+&lt;li&gt;disaster情報の提供
+
+&lt;ul&gt;
+&lt;li&gt;御嶽山の噴火時の例&lt;/li&gt;
+&lt;li&gt;洪水の例&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;droneで撮った映像とかも&lt;/li&gt;
+&lt;li&gt;iOS9で動かないのでコントリビューション待ってます的な。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;danny-from-remix:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Danny from remix&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://getremix.com/&#34;&gt;remix&lt;/a&gt;の会社紹介
+
+&lt;ul&gt;
+&lt;li&gt;transitシステム&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMapData&lt;/a&gt;とか&lt;a href=&#34;https://developers.google.com/transit/gtfs/&#34;&gt;GTFS&lt;/a&gt;とかのOpen Dataを使っている。&lt;/li&gt;
+&lt;li&gt;データとかAPIの観点で考えると乗り物と場所のデータになるけど、15分以上待ちたくないとかユーザ視点で考えるべき。Human Experienceが大事みたいな。&lt;/li&gt;
+&lt;li&gt;理解が怪しい。。。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;abhi:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;abhi&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;肩書が書かれてなかった。LAの何かの人&lt;/li&gt;
+&lt;li&gt;LAのウェブサイト
+
+&lt;ul&gt;
+&lt;li&gt;400くらいのデータセットを提供しているけど誰も使わなかった。&lt;/li&gt;
+&lt;li&gt;Open Dataにしてusefulだと思わせてからは使うようになった。&lt;/li&gt;
+&lt;li&gt;バウンスレートも50%から5%になった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;何かのダッシュボード
+
+&lt;ul&gt;
+&lt;li&gt;GoogleDocsのデータを表示するだけだけど技術を知らない人からしたらこれだけでも有用性が変わるみたいな話&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;犯罪情報は利用できるまで18ヶ月かかるけどこれをもっと早くしたい&lt;/li&gt;
+&lt;li&gt;理解が怪しい。。。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;electron-desktop-apps-with-web-languages-by-jessica-lord-github:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Electron: Desktop Apps with Web Languages by Jessica Lord, GitHub&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Electronの概要
+
+&lt;ul&gt;
+&lt;li&gt;atomを開発する際に生まれたもの&lt;/li&gt;
+&lt;li&gt;CEF(Chromium Embedded Framework)や&lt;a href=&#34;http://nwjs.io/&#34;&gt;NW.js&lt;/a&gt;使ったけど合わなかったのでElectronが始まった。&lt;/li&gt;
+&lt;li&gt;ChromiumベースでHTML、CSSの、JavaScriptだけでクロスプラットフォームデスクトップアプリが作れる。&lt;/li&gt;
+&lt;li&gt;node.js使えるからnpmをそのまま使える。ファイルシステムにもアクセスできる。&lt;/li&gt;
+&lt;li&gt;OSのファイルダイアログとかnotificationとかも使える&lt;/li&gt;
+&lt;li&gt;OSの自動更新とかwinインストーラとかにも対応できる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Electronの中身の紹介
+
+&lt;ul&gt;
+&lt;li&gt;メインプロセスとサブプロセスでどんな感じで動いてるかのお話。&lt;/li&gt;
+&lt;li&gt;図無しのテキストだと意味分からないと思うので省略&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;軽いデモ
+
+&lt;ul&gt;
+&lt;li&gt;npm install -g electron-prebuild&lt;/li&gt;
+&lt;li&gt;electron .&lt;/li&gt;
+&lt;li&gt;以上、HelloWorldが動いた的な。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Electron使ってる企業紹介。MSとかSlackもElectronでプロダクトを作っているらしい。&lt;/li&gt;
+&lt;li&gt;Electron使ってるOSSの紹介
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/muan/mojibar&#34;&gt;mojibar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mafintosh/playback&#34;&gt;playback&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;API1.0を1月に出す予定
+
+&lt;ul&gt;
+&lt;li&gt;AppStore compatibleにする&lt;/li&gt;
+&lt;li&gt;Windowsサポートの充実&lt;/li&gt;
+&lt;li&gt;ドキュメントの充実&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://electron.atom.io/&#34;&gt;electron.atom.io&lt;/a&gt;見てね。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ここでバトンタッチしてjiboの話:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;ここでバトンタッチしてJiboの話&lt;/h3&gt;
+
+&lt;p&gt;スピーカーの名前無いけど&lt;a href=&#34;http://blog.jibo.com/2015/07/29/jibo-making-development-readily-accessible-to-all-developers/&#34;&gt;このブログ&lt;/a&gt;の右の人&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jibo.com/&#34;&gt;Jibo&lt;/a&gt;は世界初のファミリーロボットでありプラットフォームである。&lt;/li&gt;
+&lt;li&gt;Jiboが挨拶するデモ&lt;/li&gt;
+&lt;li&gt;SDKはElectronで作られている&lt;/li&gt;
+&lt;li&gt;JIBOでできること
+
+&lt;ul&gt;
+&lt;li&gt;スピーチ recognitionとかできる&lt;/li&gt;
+&lt;li&gt;音がどこから来るか、誰が話しているか分かる&lt;/li&gt;
+&lt;li&gt;Text to Speechもできる&lt;/li&gt;
+&lt;li&gt;エレクトロンでできることは全てできる&lt;/li&gt;
+&lt;li&gt;自然言語を理解できる&lt;/li&gt;
+&lt;li&gt;タッチセンサーもある&lt;/li&gt;
+&lt;li&gt;顔の部分にアニメーション表示できる。ウィンクとかもできる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;開発のデモ
+
+&lt;ul&gt;
+&lt;li&gt;3DのデザインツールみたいなのでGUIで弄ってる
+＊jibo runって打つと実機の顔にアニメーションが流れる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;価格は750ドル&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;offline-web-apps-on-github-pages-by-myk-melez-mozilla:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Offline Web Apps on GitHub Pages by Myk Melez, Mozilla&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;オフラインアプリとはネットワーク接続して無くても動くアプリ&lt;/li&gt;
+&lt;li&gt;ApplicationCacheがあったけど実装によっては長い間更新されない問題とかが多発してるので廃止することになった&lt;/li&gt;
+&lt;li&gt;ServiceWorkers使ってね
+
+&lt;ul&gt;
+&lt;li&gt;別のコンテキスト、別のスレッドで動く&lt;/li&gt;
+&lt;li&gt;ブラウザがサポートしてなければ普通にオンラインで動く&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mozilla.github.io/oghliner/&#34;&gt;OGHLINER&lt;/a&gt;(オフライナーと読む)を使うとGitHub Pagesでオフラインアプリを簡単に作れる
+
+&lt;ul&gt;
+&lt;li&gt;オフラインアプリ用にServiceWorkerを作ってくれる&lt;/li&gt;
+&lt;li&gt;デプロイメント - GitHub Pages用にデプロイしてくれる&lt;/li&gt;
+&lt;li&gt;auto deploy via travis - masterにpushしたらデプロイしてくれる(まだ問題があるらしい)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;デモ
+
+&lt;ul&gt;
+&lt;li&gt;オフライナー自体でgulpを使ってるらしい。&lt;/li&gt;
+&lt;li&gt;oghliner offline distでキャッシュをするファイルを指定する？&lt;/li&gt;
+&lt;li&gt;oghliner deploy distでデプロイする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;カウントダウンするだけのアプリのデモ
+
+&lt;ul&gt;
+&lt;li&gt;ネットワークをオフにしてタブ閉じたりブラウザ閉じて開いたりしてもカウントダウンを続けてる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ServiceWorkersの注意
+
+&lt;ul&gt;
+&lt;li&gt;HTTPSが必要。ローカルにはいらない。&lt;/li&gt;
+&lt;li&gt;backgroundsync、webpushとかにも使える&lt;/li&gt;
+&lt;li&gt;CORS。(の何が注意かよく分からなかった)&lt;/li&gt;
+&lt;li&gt;ServiceWorkerは全てin progress(Firefox)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;mobileでも動くか？
+
+&lt;ul&gt;
+&lt;li&gt;chromeは動く。FFも動くようになる。safariは知らん。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;keynote-by-marco-annunziata-chief-economist-ge:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;Keynote by Marco Annunziata, Chief Economist, GE&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;殆ど聞かず。&lt;/li&gt;
+&lt;li&gt;とりあえずGEデジタルというソフトウェア会社を2011年に始めて250人から2015年には14000人の開発者と30000人のスタッフに成長したって話だけ聞いた。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;感想:db5f55ac7c63c0f449d84a630e3141c6&#34;&gt;感想&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;LFSは専用のコマーシャルが流れたくらいなので今回の一番の売りはLFS1.0のリリースだったみたい？&lt;/li&gt;
+&lt;li&gt;Open Dataのポリシーとか政府系のプロジェクトでもGitHub使って誰でもissue上げたりPR送れたりするのは良さそう。日本でもやって欲しい。&lt;/li&gt;
+&lt;li&gt;貧困層へのアプローチが必要等、日本の技術系カンファレンスでは出てこない話題があって面白かった。(日本には貧困層が少ないからとか言われそうだけど)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;かなり適当ですが以上です。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Android用の単語帳アプリをリリースしました</title>
