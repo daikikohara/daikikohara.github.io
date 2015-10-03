@@ -121,7 +121,7 @@
 &lt;li&gt;コマンドの実行例とか機能紹介
 
 &lt;ul&gt;
-&lt;li&gt;こんな感じでfetchすることもできる&lt;code&gt;git lfs fetch --include=models --exclude-models/vehicles&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;こんな感じでfetchすることもできる&lt;code&gt;git lfs fetch --include=models --exclude=models/vehicles&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;ssh apiとかロックといった機能もある&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
