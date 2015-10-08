@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meetup on tbd</title>
+    <link>https://daikikohara.github.io/categories/meetup/</link>
+    <description>Recent content in Meetup on tbd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 07 Oct 2015 14:53:26 -0700</lastBuildDate>
+    <atom:link href="https://daikikohara.github.io/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Full Stack Robotics/IoT Using Go参加レポート</title>
+      <link>https://daikikohara.github.io/blog/2015/10/07/iot_using_go_meetup/</link>
+      <pubDate>Wed, 07 Oct 2015 14:53:26 -0700</pubDate>
+      
+      <guid>https://daikikohara.github.io/blog/2015/10/07/iot_using_go_meetup/</guid>
+      <description>
+
+&lt;p&gt;マウンテンビューのGoogle本社で行われたGoでIoTデバイスを操作するGobotのイベントの参加メモです。
+資料はまだ上がってないので上がった段階で追記します。&lt;/p&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/iot_using_go_meetup/sticker.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;h1 id=&#34;概要:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;概要&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2015年10月7日 19:00 - 20:30&lt;/li&gt;
+&lt;li&gt;場所: Google Building CL2&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.meetup.com/gdg-silicon-valley/events/225643683/&#34;&gt;イベントページ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;内容:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;内容&lt;/h1&gt;
+
+&lt;h2 id=&#34;lt-by-kevin:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;LT by Kevin&lt;/h2&gt;
+
+&lt;p&gt;イベントページの発表者のlast nameは間違っているらしい(ググったけど映画監督しか出てこなったのはそのせいかｗ)。
+正しい苗字はメモれなかった。&lt;/p&gt;
+
+&lt;p&gt;内容はイベントの紹介程度。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GDG DevFest - まもなくポストするとのこと&lt;/li&gt;
+&lt;li&gt;なぜか&lt;a href=&#34;https://blogs.oracle.com/javaone/entry/geek_bike_ride_before_javaone1&#34;&gt;Geek Bike Ride&lt;/a&gt;とかいうチャリンカー向けイベントの紹介&lt;/li&gt;
+&lt;li&gt;子供向けイベントの紹介。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.devoxx4kids.org/&#34;&gt;devoxx4kids&lt;/a&gt;という&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gitbook.com/book/kevinnilson/webcomponents4kids/details&#34;&gt;webcomponents4kids&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;子供向けのイベントの紹介では発表者のお子さんの口から、こんなことをした、みたいな紹介が入った。&lt;/p&gt;
+
+&lt;h2 id=&#34;メインセッション:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;メインセッション&lt;/h2&gt;
+
+&lt;h3 id=&#34;発表者:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;発表者&lt;/h3&gt;
+
+&lt;p&gt;Ron Evans(&lt;a href=&#34;https://twitter.com/deadprogram&#34;&gt;twitterアカウント&lt;/a&gt;)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://hybridgroup.com/&#34;&gt;hybridgroup&lt;/a&gt;の人。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gobot.io/&#34;&gt;Gobot&lt;/a&gt;に限らず、&lt;a href=&#34;http://cylonjs.com/&#34;&gt;Cylon.js&lt;/a&gt;,&lt;a href=&#34;http://artoo.io/&#34;&gt;Artoo&lt;/a&gt;といったIoT系のフレームワークを作っている。&lt;/li&gt;
+&lt;li&gt;子供向けのRubyのプロジェクトである&lt;a href=&#34;http://kidsruby.com/&#34;&gt;kidsruby&lt;/a&gt;も作っている。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;gobotとは-サイトに書いてあるレベルのまとめ:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;Gobotとは(サイトに書いてあるレベルのまとめ)&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://gobot.io/&#34;&gt;Gobot&lt;/a&gt;はGolangで様々なIoTプラットフォーム向けのプログラムが書くためのもの。&lt;/p&gt;
+
+&lt;p&gt;公式ページのトップにはArduinoでLチカするコードが載っているが、Arduinoに限らず15のプラットフォームに対応している(発表後の質疑応答で18と言っていたのでサイトの情報は若干古い模様。またcylon.jsの方が対応プラットフォームが多いとのこと)。
+この中にはArduinoのほか、ARDroneやラズパイ、EdisonといったデバイスだけでなくMQTTやOpenCVといったものまで含まれる。
+また、GPIOドライバにより7つ、I2Cドライバにより6つの機器をサポートしている。&lt;/p&gt;
+
+&lt;p&gt;APIも用意されており、デバイスの状態を確認することなどが可能。
+&lt;a href=&#34;https://github.com/hybridgroup/robeaux&#34;&gt;robeaux&lt;/a&gt;というReact.jsベースのダッシュボードで確認することもできる。&lt;/p&gt;
+
+&lt;p&gt;CLIの場合は&lt;a href=&#34;http://gort.io/&#34;&gt;Gort&lt;/a&gt;を使って操作するようデザインされてるけど&lt;a href=&#34;http://gobot.io/documentation/guides/cli/&#34;&gt;gobot独自のCLI&lt;/a&gt;もある。&lt;/p&gt;
+
+&lt;h3 id=&#34;発表内容:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;発表内容&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アーキテクチャの図(スライド参照)&lt;/li&gt;
+&lt;li&gt;ArduinoでLチカ(ちなみに英語ではblinking LED)をするデモ
+
+&lt;ul&gt;
+&lt;li&gt;コードはGobotのサイトトップに書いてあるものと全く同じだった。&lt;/li&gt;
+&lt;li&gt;Arduino上ではGoは動かないけどコンパイルしたコマンドを送ることができる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Edisonで同じくLチカをするデモ
+
+&lt;ul&gt;
+&lt;li&gt;Arduino版とのコードの差分はimort文1行とAdaptor生成部分のみ(&lt;code&gt;firmata.NewFirmataAdaptor(&amp;quot;arduino&amp;quot;, &amp;quot;/dev/ttyACM0&amp;quot;)&lt;/code&gt;が&lt;code&gt;edison.NewEdisonAdaptor(&amp;quot;edison&amp;quot;)&lt;/code&gt;になるだけ)&lt;/li&gt;
+&lt;li&gt;edisonの場合は中身がLinuxなのでsshで接続してGoのプログラムを普通に走らせることができる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;続いてEdisonでボタンを押してる間だけ光るデモ&lt;/li&gt;
+&lt;li&gt;GobotでAPIを立ち上げるプログラムを動かして、そこにcurlを送るデモ
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;host:port/api/robots&lt;/code&gt;が起点になる模様。&lt;/li&gt;
+&lt;li&gt;デモでは操作じゃなくて参照しかしなかった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gort.io&#34;&gt;Gort&lt;/a&gt;のデモ
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gort scan bluetooth&lt;/code&gt;でbluetooth接続されている機器を一覧表示してそこから&lt;code&gt;rfcomm connect&lt;/code&gt;で接続(rfcommは普通のLinuxコマンドらしい。知らんかった。)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sphero.com/&#34;&gt;Sphero&lt;/a&gt;のデモ
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hybridgroup/robeaux&#34;&gt;robeaux&lt;/a&gt;を使ったデモ&lt;/li&gt;
+&lt;li&gt;WebのUIからコマンド実行してSpheroを動かすデモ。あんまり思った通りの方向に進んでなかったｗ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Twitterで指定のハッシュタグで呟いてSpheroまたはEdisonを抽選で1名にプレゼント！
+
+&lt;ul&gt;
+&lt;li&gt;めっちゃ欲しかったけど当たりませんでした。。。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://commander.io/&#34;&gt;commander.io&lt;/a&gt;の紹介
+
+&lt;ul&gt;
+&lt;li&gt;phonegapとかionic使って作ってるとのこと。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.parrot.com/products/bebop-drone/&#34;&gt;parrot bebop&lt;/a&gt;という新しいDroneのデモ
+
+&lt;ul&gt;
+&lt;li&gt;DroneをPS3のコントローラのジョイスティックで操作して、Droneで撮影している映像をリアルタイムに画面に表示するというデモ&lt;/li&gt;
+&lt;li&gt;ジョイスティックは色々な種類があるので、jsonの設定ファイルを指定できるようになっているらしい&lt;/li&gt;
+&lt;li&gt;コードは今までのものと比べると長いが、Goルーチンのおかげで、ビデオに撮って表示する部分とコントロールする部分が一つのコードの中でキレイに分離できるとのこと(この方、めっちゃGo推しでしたｗ)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;分かりにくいけど写真貼っておきます。むしろどこにDroneいるか分かるかな、ってクイズにできるレベルですねｗ&lt;/p&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/iot_using_go_meetup/drone.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;p&gt;簡単ですが以上です。&lt;br&gt;
+最初に貼ったGobotのスティッカーは最後に余ったのを貰って2枚あるのでほしい方がいたらお譲りします。(会うまで覚えてたら)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
