@@ -58,6 +58,13 @@ You can now mark words as remembered during the test.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Sep 29 2015 - Version1.1.2 released.&lt;br&gt;
 Fixed issue with some layouts getting broken depending on the font size of the device.&lt;/li&gt;
+&lt;li&gt;Sep 9 2015 - Version1.1.3 released.&lt;br&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added support for Android 6.0(Marshmallow).&lt;/li&gt;
+&lt;li&gt;Word can be registered with multi-line text.&lt;/li&gt;
+&lt;li&gt;Expanded Max length for each word to 1000.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/h1&gt;
