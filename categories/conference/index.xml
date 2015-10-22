@@ -6,8 +6,177 @@
     <description>Recent content in Conference on tbd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Oct 2015 18:27:02 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2015 00:27:02 -0700</lastBuildDate>
     <atom:link href="https://daikikohara.github.io/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitter Flight視聴メモ</title>
+      <link>https://daikikohara.github.io/blog/2015/10/22/twitter-flight-2015/</link>
+      <pubDate>Thu, 22 Oct 2015 00:27:02 -0700</pubDate>
+      
+      <guid>https://daikikohara.github.io/blog/2015/10/22/twitter-flight-2015/</guid>
+      <description>
+
+&lt;p&gt;2015年10月21日にサンフランシスコで行われた&lt;a href=&#34;https://twitterflight.com/&#34;&gt;Flight&lt;/a&gt;の視聴メモです。
+ライブストリーミングが流れてたメインホールのみです。例によってかなりいい加減です。そして最初の方はどこでライブストリーミングが見れるのか分からず逃しました。
+てかTechCrunchのページでしか流してなくてオフィシャルサイトにリンクが無いという、情弱には厳しい配信でした。。。
+ちなみにキーノートセッションの話はオフィシャルの&lt;a href=&#34;https://blog.twitter.com/2015/welcome-to-flight-2015&#34;&gt;このページ&lt;/a&gt;が網羅的にまとまっています。
+動画やスライドはまだ公開されてないみたいですが、公式サイトのトップにすぐ上げるみたいなことが書かれてるのですぐにどこかに上がるんじゃないかと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;キーノート-途中から:13b100812254a41a415038807a1df3b8&#34;&gt;キーノート(途中から)&lt;/h2&gt;
+
+&lt;p&gt;多分メインの話は&lt;a href=&#34;https://get.fabric.io/&#34;&gt;Fabric&lt;/a&gt;のアップデート。&lt;br&gt;
+ちなみにFabricとはiOS/Android向けにクラッシュレポートや広告等の様々な機能を提供するモバイルプラットフォーム。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Twitterの特徴とかの紹介&lt;/li&gt;
+&lt;li&gt;一部で騒がれていた&lt;a href=&#34;https://blog.twitter.com/2015/introducing-twitter-polls&#34;&gt;投票機能&lt;/a&gt;を誰でも使えるようになった&lt;/li&gt;
+&lt;li&gt;Fabricとそのエコシステムの新機能の話
+
+&lt;ul&gt;
+&lt;li&gt;Fabricはリリースから1年で225,000のdeveloperを獲得&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://try.crashlytics.com/&#34;&gt;Crashlytics&lt;/a&gt;は1.4BillionのAndroidデバイス上にインストールされているらしい。Unityをサポートするようなことを言っていた。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://answers.io/&#34;&gt;Answers&lt;/a&gt;では&lt;a href=&#34;http://venturebeat.com/2015/10/21/twitter-answers-adds-audience-insights-a-deeper-look-at-app-users/&#34;&gt;Audience Insights&lt;/a&gt;で誰が使っているかの追跡がしやすくなった。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mopub.com/&#34;&gt;MoPub&lt;/a&gt;の紹介&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://venturebeat.com/2015/10/21/twitter-launches-a-tweet-composer-to-show-tweet-previews-inside-other-apps/&#34;&gt;Tweet Composer&lt;/a&gt;の紹介&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fabric.io/kits/android/stripe&#34;&gt;Stripe&lt;/a&gt;やaws等、新規に追加された&lt;a href=&#34;https://fabric.io/blog/introducing-eight-new-sdks-on-fabric&#34;&gt;8つのSDK&lt;/a&gt;の紹介。&lt;br&gt;
+Stripeと&lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt;は代表者がそれぞれを話をしていた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Embeded Tweetの話(あとのセッションで詳しい話があったので省略)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gnip.com/&#34;&gt;GNIP&lt;/a&gt;を使ってカスタマーサポートを行う例。これもあとで出てきたので省略するが、ここではTargetの事例ビデオやHiltonの事例ビデオが流れた。
+
+&lt;ul&gt;
+&lt;li&gt;こんな&lt;a href=&#34;https://twitter.app.box.com/customer-service-on-twitter&#34;&gt;カスタマーサービスのドキュメント&lt;/a&gt;のリンクも貼ってた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://furni.xyz/&#34;&gt;Furni&lt;/a&gt;というFabricを使った模範的なアプリの紹介。githubにソースもある。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;a-week-in-the-life-of-a-fabric-developer-by-brian-swift-and-hemal-shah:13b100812254a41a415038807a1df3b8&#34;&gt;A Week in the Life of a Fabric Developer by Brian Swift and Hemal Shah&lt;/h2&gt;
+
+&lt;p&gt;Fabricチームの二人が&lt;a href=&#34;https://github.com/twitterdev/cannonball-android&#34;&gt;Cannonball&lt;/a&gt;というFabricを使って作られたデモアプリのリリースを通してFabricを使った開発の1週間がどのようなものかを紹介する内容。
+(ちなみにCannonballとはEmojiでPoemを書くサイトらしいが、poemは詩じゃなくて素敵な出来事とかそーゆー意味だと思われる。)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;月曜はFeature vs Fix、火曜はFeedback等、テーマに基づいて進めていく。&lt;/li&gt;
+&lt;li&gt;例えば月曜は、新しいことに取り掛かる前に現状のものがstableかを確認する。FabricのコンポーネントであるCrashlyticsやAnswersを使うと全体のステータスがダッシュボードで一望できるしフォーカスすべきクラッシュも分かる。&lt;/li&gt;
+&lt;li&gt;同様に火曜・水曜とFabricのコンポーネントを使ってどう進めていくかの紹介。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;growing-and-monetizing-your-app-using-twitter-by-john-egan:13b100812254a41a415038807a1df3b8&#34;&gt;Growing and Monetizing Your App Using Twitter by John Egan&lt;/h2&gt;
+
+&lt;p&gt;MoPubのディレクタであるJohnがパネリストと広告・マネタイズに関する話をする。
+パネリストは&lt;a href=&#34;http://asherv.com/threes&#34;&gt;Threes&lt;/a&gt;の人とRedditの人と&lt;a href=&#34;http://www.glu.com&#34;&gt;glu&lt;/a&gt;の人。
+広告のターゲティングとかを考えた最適化の話。あんまり興味なかったので省略。&lt;del&gt;Redditの人が美人だった。&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;twitter上でカスタマーサービスを行うための話-公式サイト上の表記はsecret-session:13b100812254a41a415038807a1df3b8&#34;&gt;Twitter上でカスタマーサービスを行うための話(公式サイト上の表記はSecret Session)&lt;/h2&gt;
+
+&lt;p&gt;Twitter上でカスタマーサービスを行うための話。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;満足度の向上が見込めることやコールセンター等と比べて低コストで実現できること、利益にも影響があること等を数字を交えて紹介。&lt;/li&gt;
+&lt;li&gt;全世界で使われていることやリーチのしやすさなど、Twitterのメリットを紹介。&lt;/li&gt;
+&lt;li&gt;Spotifyの事例紹介
+
+&lt;ul&gt;
+&lt;li&gt;メンションも無しに不満をツイートした人を発見してやり取りをした例&lt;/li&gt;
+&lt;li&gt;SpotifyからSoundcloudを使い始めたという人を見つけてやり取りした例&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;カスタマーサービスのためにDMを改善した話
+
+&lt;ul&gt;
+&lt;li&gt;140文字以上送れるようにした&lt;/li&gt;
+&lt;li&gt;設定によってはフォローの状態に関わらず送れるようにした(知らんかった)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;対応のステップ
+
+&lt;ul&gt;
+&lt;li&gt;Get Tweets - メンションされたツイートや関連ツイートを検索して探す。&lt;/li&gt;
+&lt;li&gt;Triage/Prioritize - 対応すべきツイートを決める。&lt;/li&gt;
+&lt;li&gt;Respond - リプライする。ダイレクトメッセージを送る。参考になるメディアファイルを送る等。&lt;/li&gt;
+&lt;li&gt;Measure - 効果を測る。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;キーノートでも出てきた&lt;a href=&#34;https://gnip.com/&#34;&gt;GNIP&lt;/a&gt;の話。(キーノートの話と混ざってます)
+
+&lt;ul&gt;
+&lt;li&gt;従来のRealTimeとHistoryAPIの他に&lt;a href=&#34;https://blog.twitter.com/2015/gnip-insights-apis&#34;&gt;InsightAPI&lt;/a&gt;が追加された。&lt;/li&gt;
+&lt;li&gt;InsightAPIはハッシュタグのクリックやリツイート等の挙動を追跡するためのEngagementAPIとオーディエンスのより詳細な情報を収集するためのAudienceAPIからなる。&lt;/li&gt;
+&lt;li&gt;例えば、自社製品のツイートを発見しても発言者が客か分からないけど、自社のサービスにツイッターでログインして貰う等して紐付ければ分かるようになるみたいな話。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;embeddedツイートの話-公式サイトの表記はsecret-session:13b100812254a41a415038807a1df3b8&#34;&gt;Embeddedツイートの話(公式サイトの表記はSecret Session)&lt;/h2&gt;
+
+&lt;p&gt;サイトやアプリにツイートをEmbedするのが簡単・便利になったみたいな話。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Twitterでいろんなストーリーが共有されている。ストーリーはTwitterから始まる、みたいな導入話。&lt;/li&gt;
+&lt;li&gt;ツイートをembedするためにツイートのURLをコピーする必要があるので面倒だったけどもっと賢くできるようになった。&lt;/li&gt;
+&lt;li&gt;コレクションというものが導入されて、ツイートされるとその関連ツイートがOrganizeされて一つのCollectionIDが振られてそれを使ってPublish(サイトやアプリにembedすることだと思われる)できるみたいな概念の話。&lt;/li&gt;
+&lt;li&gt;具体的には以下3つ紹介されてたけど違いがイマイチ分からなかったｗ
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tweetdeck.twitter.com/&#34;&gt;TweetDeck&lt;/a&gt;で既存のビューにカラムを追加してそこにツイートをドラッグして追加していき、そのカラム単位でembedできる。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://curator.twitter.com/&#34;&gt;Curator&lt;/a&gt;を使うと関連ツイートのまとめができ、そこからクリックやドラッグアンドドロップで必要なツイートのみ選択してwebサイトやアプリにembedできる。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://publish.twitter.com/&#34;&gt;Publish&lt;/a&gt;を使うとembeddedツイートの管理とかができる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;発表者が変わってembedするためのコードはこれだけ的なデモ。embed後にWebのUIみたいなので紐付いている情報を更新してもちゃんとembedした側に反映されるみたい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;電話番号でサインアップするためのdigitsの話-公式サイトの表記はsecret-session:13b100812254a41a415038807a1df3b8&#34;&gt;電話番号でサインアップするためのDigitsの話(公式サイトの表記はSecret Session)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://digits.com/&#34;&gt;Digits&lt;/a&gt;というemailやFacebookConnect等の代わりに電話番号で認証する仕組みとSDKの話。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;電話番号を持ってる人の数の紹介して電話番号は誰でも持っているみたいな導入から始まる。&lt;/li&gt;
+&lt;li&gt;Digitsを使う理由
+
+&lt;ul&gt;
+&lt;li&gt;電話番号は誰でも持っている。&lt;/li&gt;
+&lt;li&gt;コンバージョンレート(が何を指してるのかちゃんと理解できなかったけどサインアップ画面が出てサインアップした人の割合だったと思う)が85%。Facebookコネクトは75%、Emailは65%らしい。&lt;/li&gt;
+&lt;li&gt;使いやすい。&lt;br&gt;
+スマホ版のPeriscopeにDigitsを使ってサインアップ、ログインするデモ&lt;br&gt;
+SMSが届いて通知領域に表示されている確認コードをそのまま入力して登録完了。&lt;/li&gt;
+&lt;li&gt;voiceサポート等の新機能の追加等を行っていて追加料金無しで使える&lt;/li&gt;
+&lt;li&gt;コストが安いらしい。普通に電話番号認証しようとすると0.11ドル/Verification(どこから出てきた数字か不明)かかるけどDigitsならタダ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;数行の追加で対応できるというコードの紹介。カスタマイズするのも数行。&lt;/li&gt;
+&lt;li&gt;(次の人の話だったけど)ロシアとアゼルバイジャンと台湾はDigitsのログインが凄く多いらしい。ロシアはemail30%、Digits70%くらいだった。&lt;/li&gt;
+&lt;li&gt;facebookに情報を預けるのが不安でfacebookでログインする人は減っているみたいなことを言っていた。&lt;/li&gt;
+&lt;li&gt;ログイン時間がemailよりも早いみたいなことを言っていた。(登録までのフローの話だったかも？)&lt;/li&gt;
+&lt;li&gt;フレンドファインダーもある。開発者側のメリットだけじゃなく、ユーザも友達で誰が使っているか分かる。&lt;/li&gt;
+&lt;li&gt;2nd factor認証に使ったりみたいな話。&lt;/li&gt;
+&lt;li&gt;その他、planchat(多分&lt;a href=&#34;https://itunes.apple.com/us/app/planchat-painless-planning/id1005882133&#34;&gt;これ&lt;/a&gt;)がemailとfacebookからDigitsベースに変えた話とか&lt;a href=&#34;https://www.calvinapp.com/&#34;&gt;calvin&lt;/a&gt;とか&lt;a href=&#34;https://vine.co/&#34;&gt;vine&lt;/a&gt;とかの例とか。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;up-periscope-by-kayvon-beykpour-and-sara-haider:13b100812254a41a415038807a1df3b8&#34;&gt;Up Periscope by Kayvon Beykpour and Sara Haider&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.periscope.tv/&#34;&gt;Periscope&lt;/a&gt;の話。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Twitterと同様のコンセプトで今起きていることをライブビデオで実現するというところから始まった。&lt;/li&gt;
+&lt;li&gt;去年リリースで今年の3月時点で10Mアカウントを達成。&lt;/li&gt;
+&lt;li&gt;どんなコンテンツが共有されているかの話。時事的なのとかコラボ動画みたいのとか。目新しい感じではなかった。&lt;/li&gt;
+&lt;li&gt;On AirウィジェットというTwitterボタンみたいなのもある。Liveになったら表示がLiveになる。&lt;/li&gt;
+&lt;li&gt;Liveデモで未リリースの機能紹介。3つくらい紹介してたけどよく分からず。。。多分過去動画の人気の位置が分かる、マップでライブだけじゃなくて過去のも出る、テレポートボタン(これは何だかホントに分からず)。&lt;/li&gt;
+&lt;li&gt;技術紹介
+
+&lt;ul&gt;
+&lt;li&gt;エンジニアリングツールとスタックの紹介。バックエンドはGo、ストリーミングは&lt;a href=&#34;http://www.wowza.com/&#34;&gt;WOWZA&lt;/a&gt;、その他&lt;a href=&#34;https://www.pubnub.com/&#34;&gt;PubNub&lt;/a&gt;、CircleCI、TravisCI、AWS、&lt;a href=&#34;http://www.iron.io/&#34;&gt;Iron.IO&lt;/a&gt;、&lt;a href=&#34;https://www.algolia.com/&#34;&gt;Algolia&lt;/a&gt;、そしてもちろんFabricを使っているらしい。コミュニケーションツールはSlack。&lt;/li&gt;
+&lt;li&gt;Fabricはバリバリで使っているので色々なコンポーネントの紹介&lt;/li&gt;
+&lt;li&gt;ちなみに今朝(多分Flightが原因で)負荷が5倍くらいになったせいで落ちたんだけど、Fabric周辺ツールのおかげですぐに原因が分かって対応できた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;所感:13b100812254a41a415038807a1df3b8&#34;&gt;所感&lt;/h2&gt;
+
+&lt;p&gt;多分メインホールだけだったからですが、一番の売りであるFabricに関する話が中心でした。
+他の話も聞きたかったですが、そもそもFabricをあまり知らなかったのでこれはこれで勉強になりました。
+機能によってはGoogleAnalyticsとかで良いじゃんって思ったりもしますが、他に選択肢があるのは良いことですし、ビューも良い感じだったかなと思います。
+とりあえず時間があったら試せる範囲で試そうかなと思います。&lt;/p&gt;
+
+&lt;p&gt;そんな感じで以上です。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>GitHub Universe視聴まとめ</title>
