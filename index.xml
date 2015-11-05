@@ -29,26 +29,6 @@
 
 &lt;h2 id=&#34;2015-11:1b735cbd4117890b113da764670ea978&#34;&gt;2015 / 11&lt;/h2&gt;
 
-&lt;h3 id=&#34;ricon:1b735cbd4117890b113da764670ea978&#34;&gt;Ricon&lt;/h3&gt;
-
-&lt;p&gt;Riak作ってるBasho主催のカンファレンス。分散処理システムに関する話題がメイン。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2015/11/4 - 2015/11/6&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://ricon.io/&#34;&gt;http://ricon.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ad-tech-new-york:1b735cbd4117890b113da764670ea978&#34;&gt;ad:tech(New York)&lt;/h3&gt;
-
-&lt;p&gt;アドテク系のカンファレンス。世界各国で行われる。アメリカだとLAとNY。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2015/11/4 - 2015/11/5&lt;/li&gt;
-&lt;li&gt;場所: New York, NY&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.ad-tech.com/ny/&#34;&gt;http://www.ad-tech.com/ny/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;kubecon:1b735cbd4117890b113da764670ea978&#34;&gt;KubeCon&lt;/h3&gt;
 
 &lt;p&gt;Kubernetesに関するカンファレンス&lt;/p&gt;
@@ -101,6 +81,16 @@
 &lt;li&gt;日時: 2016/3/5 - 2016/3/5&lt;/li&gt;
 &lt;li&gt;場所: Bay Area, CA&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://geekgirltechcon.com/&#34;&gt;http://geekgirltechcon.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;droidcon:1b735cbd4117890b113da764670ea978&#34;&gt;Droidcon&lt;/h3&gt;
+
+&lt;p&gt;Android関連のカンファレンス。他の国・地域でも開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/3/17 - 2016/3/18&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://sf.droidcon.com/&#34;&gt;http://sf.droidcon.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;2016-4:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 4&lt;/h2&gt;
@@ -315,6 +305,16 @@
 &lt;li&gt;URL: &lt;a href=&#34;https://www.oracle.com/openworld/index.html&#34;&gt;https://www.oracle.com/openworld/index.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&#34;ad-tech-new-york:1b735cbd4117890b113da764670ea978&#34;&gt;ad:tech(New York)&lt;/h3&gt;
+
+&lt;p&gt;アドテク系のカンファレンス。世界各国で行われる。アメリカだとLAとNY。2015年は11月に開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 未定&lt;/li&gt;
+&lt;li&gt;場所: New York, NY&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.ad-tech.com/ny/&#34;&gt;http://www.ad-tech.com/ny/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&#34;blackhat:1b735cbd4117890b113da764670ea978&#34;&gt;blackhat&lt;/h3&gt;
 
 &lt;p&gt;セキュリティ系のカンファレンス。世界各国で行われる。2015年はアメリカでは8月開催。&lt;/p&gt;
@@ -343,6 +343,16 @@
 &lt;li&gt;日時: 未定&lt;/li&gt;
 &lt;li&gt;場所: Orlando, FL&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://www.gartner.com/us/symposium&#34;&gt;http://www.gartner.com/us/symposium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;span:1b735cbd4117890b113da764670ea978&#34;&gt;SPAN&lt;/h3&gt;
+
+&lt;p&gt;Google主催のデザイン系のカンファレンス。ロンドンでも行われるらしい。2015年は10月に開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 未定&lt;/li&gt;
+&lt;li&gt;場所: New York, NY&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://design.google.com/span-nyc/&#34;&gt;https://design.google.com/span-nyc/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;scale:1b735cbd4117890b113da764670ea978&#34;&gt;@Scale&lt;/h3&gt;
@@ -375,6 +385,16 @@
 &lt;li&gt;URL: &lt;a href=&#34;http://www.dynatrace.com/en/perform.html&#34;&gt;http://www.dynatrace.com/en/perform.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&#34;ricon:1b735cbd4117890b113da764670ea978&#34;&gt;Ricon&lt;/h3&gt;
+
+&lt;p&gt;Riak作ってるBasho主催のカンファレンス。分散処理システムに関する話題がメイン。2015年は11月に開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 未定&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://ricon.io/&#34;&gt;http://ricon.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&#34;all-things-open:1b735cbd4117890b113da764670ea978&#34;&gt;All Things Open&lt;/h3&gt;
 
 &lt;p&gt;オープン系技術に関するカンファレンス。2015年は10月に開催&lt;/p&gt;
@@ -401,7 +421,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: 未定&lt;/li&gt;
+&lt;li&gt;場所: Mountain View, CA&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;https://developers.google.com/events/devfest/&#34;&gt;https://developers.google.com/events/devfest/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
