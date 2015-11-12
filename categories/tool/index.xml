@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tool on tbd</title>
+    <link>https://daikikohara.github.io/categories/tool/</link>
+    <description>Recent content in Tool on tbd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 11 Nov 2015 22:45:00 -0800</lastBuildDate>
+    <atom:link href="https://daikikohara.github.io/categories/tool/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NomadとOttoのmeetup参加メモ</title>
+      <link>https://daikikohara.github.io/blog/2015/11/11/nomad_otto_features/</link>
+      <pubDate>Wed, 11 Nov 2015 22:45:00 -0800</pubDate>
+      
+      <guid>https://daikikohara.github.io/blog/2015/11/11/nomad_otto_features/</guid>
+      <description>
+
+&lt;p&gt;HashiCorpのCTOである&lt;a href=&#34;https://twitter.com/armon/&#34;&gt;Armon Dadgar氏&lt;/a&gt;によるNomadとOttoに関する&lt;a href=&#34;http://www.meetup.com/Bay-Area-Infracoders/events/226244541/&#34;&gt;meetup&lt;/a&gt;の参加メモ。
+またしてもテキトーですが。。。こっちって技術系でもmeetupでPC開いている人が殆どいなくてメモとりづらいんですよね。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;動画無し。スライドも今のところ上がってない模様。(いくつか写真撮ったけど上げて良いか不明のため割愛)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ステッカーは配ってませんでした&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;hashicorpプロダクト全般の話-br:f9c7a68959a321c64f6fb4b201e4ed3c&#34;&gt;HashiCorpプロダクト全般の話&lt;br&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vagrantがあった状態で会社を作った。最初はDevOpsの会社だと思われていたがDevOpsだけじゃなくてDev寄りのツール等も作ってきた。&lt;/li&gt;
+&lt;li&gt;Vaultはオープンにするつもりで作ったわけではなかった。サポート等をする内に認証情報等を保存することが増えてきて、どうやって管理したら良いんだろうということを考えて作って社内で使っていたものをオープンソースにした。
+実は最初のうちはPostgreSQLに平文で保存していた(マジかｗ)。&lt;/li&gt;
+&lt;li&gt;ちなみにHashiCorpはaにアクセントがある模様。oだと思ってた^^;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;nomadの話:f9c7a68959a321c64f6fb4b201e4ed3c&#34;&gt;Nomadの話&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nomadはクラスタ管理ツール&lt;/li&gt;
+&lt;li&gt;内部的にはConsulとSerfを使っている。&lt;/li&gt;
+&lt;li&gt;コンテナ・VM・スタンドアロンのアプリをサポートしている。
+
+&lt;ul&gt;
+&lt;li&gt;現在はコンテナはDocker、VMはQEMU/KVM、スタンドアロンはJar(Java)と静的バイナリのみ。今後拡大予定。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;amplabやGoogle Researchの研究をかなり参考にした。&lt;/li&gt;
+&lt;li&gt;データセンターやクラウドサービス、リージョンなどを跨いで管理できる&lt;/li&gt;
+&lt;li&gt;EvaluationしてからAllocationするといった感じのアーキテクチャを紹介(図が無いとアレですが。。。)&lt;/li&gt;
+&lt;li&gt;ジョブの分散処理はロックとかではなくOptimisctic Concurrencyによるとのこと。&lt;/li&gt;
+&lt;li&gt;Digital Oceanでテストしたらしい。数百ノード使ったとか言っていた。&lt;/li&gt;
+&lt;li&gt;0.2ではService Discovery、SystemScheduler、RestartPolicies、EnhancedConstraints等を追加予定&lt;/li&gt;
+&lt;li&gt;0.3ではCron、JobQueuing、Latency-Aware Scheduling等を追加予定&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ottoの話:f9c7a68959a321c64f6fb4b201e4ed3c&#34;&gt;Ottoの話&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vagrantでは同じVagrantファイルで全く同じものができる。ただし、昔の脆弱性等をそのままデプロすることになるし、古いOSを使うことになる。
+Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
+&lt;li&gt;vagrant upがotto devになる等の対応の話&lt;/li&gt;
+&lt;li&gt;開発者がコードのデプロイをするにはググッて出てきた情報をコピペするという無駄な作業を今でも行っていたりする。しかも例えばrailsアプリのデプロイであれば毎回同じようなことをするだけなのに。&lt;/li&gt;
+&lt;li&gt;ottoならotto infra, otto build, otto deployの3ステップで完了する。&lt;/li&gt;
+&lt;li&gt;何の設定もしなくてもコマンドを実行するだけで良い。&lt;/li&gt;
+&lt;li&gt;設定が必要な場合はAppfileに書くことができる。&lt;/li&gt;
+&lt;li&gt;Appfileの書き方の例。Appfileは独自フォーマットみたい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上。かなり微妙なメモだ。。。&lt;br&gt;
+とりあえずちゃんと使ってみたらまたQiita辺りにポストしようかな。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
