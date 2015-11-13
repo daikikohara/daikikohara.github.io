@@ -10,7 +10,7 @@
     <atom:link href="https://daikikohara.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Wireshark2.0の紹介動画視聴メモ</title>
+      <title>Wireshark2.0のメモ</title>
       <link>https://daikikohara.github.io/blog/2015/11/13/wireshark-2.0-introduction/</link>
       <pubDate>Fri, 13 Nov 2015 13:33:33 -0800</pubDate>
       
@@ -18,7 +18,7 @@
       <description>
 
 &lt;p&gt;Wiresharkが初のメジャーアップデートということで話題になっていたので&lt;a href=&#34;https://www.youtube.com/watch?v=rLfYuO6pdVA&#34;&gt;この紹介動画&lt;/a&gt;を見たのでメモです。
-ちなみに2015年11月13日現在では2.0のstable版は出ていません。RC版はLinux向けのは無いので試せてないですが出たら追記するかも？そして追記したらタイトルも変えるかも？&lt;/p&gt;
+ちなみに2015年11月13日現在では2.0のstable版は出ていません。RC版はLinux向けのは無いので試せてないですが出たら追記すると思います。&lt;/p&gt;
 
 &lt;h2 id=&#34;視聴メモ:cfa8031cb234e004936926f39e281c0c&#34;&gt;視聴メモ&lt;/h2&gt;
 
