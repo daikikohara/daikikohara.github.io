@@ -6,8 +6,161 @@
     <description>Recent content in Android on tbd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 20 Sep 2015 12:17:31 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2015 12:49:18 -0800</lastBuildDate>
     <atom:link href="https://daikikohara.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Android Dev Summit2015の視聴メモ</title>
+      <link>https://daikikohara.github.io/blog/2015/11/23/android-dev-summit-2015/</link>
+      <pubDate>Mon, 23 Nov 2015 12:49:18 -0800</pubDate>
+      
+      <guid>https://daikikohara.github.io/blog/2015/11/23/android-dev-summit-2015/</guid>
+      <description>
+
+&lt;p&gt;2015年11月23,24日にマウンテンビューで行われている&lt;a href=&#34;https://androiddevsummit.withgoogle.com/&#34;&gt;Android Dev Summit&lt;/a&gt;の視聴メモです。
+参加ではなくライブストリーミングを聞きながらメモった内容です。とりあえず初日の午前のみです。Keynote以外はかなり簡単な紹介なので気になる内容があれば直接動画を見てもらえばと思います。
+午後は用事があって見れませんが、明日分は見れたら追記します。個別のリンク等もあとで追記する予定です。&lt;/p&gt;
+
+&lt;h2 id=&#34;keynote:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;Keynote&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;9:05am - 9:45am&lt;/li&gt;
+&lt;li&gt;スピーカ: Dave Burke &amp;amp; Stephanie Saad Cuthbertson(Andoridのエンジニアチーム)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/AndroidStudio2.0-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;導入的な話-by-dave:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;導入的な話(by Dave)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;以前はPalmOS、WindowsMobile、Symbianとか色々なOSがあって、それぞれのOS用にアプリを提供するのがツラかった。そこからOSSのプラットフォームを作ろうという話になってAndroidが生まれた。&lt;/li&gt;
+&lt;li&gt;Andoridでは&lt;a href=&#34;http://static.googleusercontent.com/media/source.android.com/en//compatibility/android-cdd.pdf&#34;&gt;CompatibilityDefinitionDocument&lt;/a&gt;があって機種間で互換性を保てるようになっている。&lt;/li&gt;
+&lt;li&gt;現在のGoogle検索は50%以上がモバイルから行われている。&lt;/li&gt;
+&lt;li&gt;1.4ビリオンのAndroidアクティブユーザがいる。&lt;/li&gt;
+&lt;li&gt;CupCake, Donut, Eclair, Froyo, Gingerbread, Honeycomb, IceCreamSandwich, JellyBean, KitKat, Lollipop, Marshmallowをそれぞれ振り返りそれぞれで何ができるようになったかの紹介。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;androidstudio2-0リリース-by-stephanie:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;AndroidStudio2.0リリース(by Stephanie)&lt;/h3&gt;
+
+&lt;p&gt;(既にリリースされているので関連記事読んだ方が良いと思われます。まだ日本語の記事はないっぽいけど英語だと&lt;a href=&#34;http://techcrunch.com/2015/11/23/android-studio-2-0-with-improved-android-emulator-and-instant-run/&#34;&gt;TechCrunch&lt;/a&gt;に記事がありました。)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;プレビュー版のダウンロードは&lt;a href=&#34;http://tools.android.com/download/studio/builds/2-0-preview&#34;&gt;ここ&lt;/a&gt;から&lt;/li&gt;
+&lt;li&gt;スピードへのフォーカス
+
+&lt;ul&gt;
+&lt;li&gt;ビルドスピードが2倍以上早くなる。インクリメンタルビルドだと数秒で終わる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;エミュレータが早くない、安定しないという意見があったので改善した。&lt;/li&gt;
+&lt;li&gt;エミュレータはWindowをドラッグしてリサイズできるようになる。&lt;/li&gt;
+&lt;li&gt;カメラやバッテリーステータス等をエミュレートできるようになる。&lt;/li&gt;
+&lt;li&gt;Google Play Serviceが含まれるようになる。&lt;/li&gt;
+&lt;li&gt;GPUプロファイラ(Early Preview)
+
+&lt;ul&gt;
+&lt;li&gt;グラフィックインテンシブなアプリ向け。&lt;/li&gt;
+&lt;li&gt;GPUのデバッグができる。&lt;/li&gt;
+&lt;li&gt;GPUストリームをレコードしてリプレイできる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;出たばかりのIntelliJ 15と統合されている&lt;/li&gt;
+&lt;li&gt;テストサポートの強化
+
+&lt;ul&gt;
+&lt;li&gt;UnitTestとAndroidTestを両方同時に走らせることができる？(あんまり詳しくないのでよく分からず)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;GoogleSearchとのDeepLinkの生成やリアルタイムでちゃんとGoogleにIndexされているか確認できるようになる(若干理解が怪しい)&lt;/li&gt;
+&lt;li&gt;まだEclipseを使ってる人がいるけど早く移行して欲しい。&lt;/li&gt;
+&lt;li&gt;InstantRun(インクリメンタルビルドって言ってたやつ？)の紹介
+
+&lt;ul&gt;
+&lt;li&gt;リソースやソースを変更したらすぐに反映される&lt;/li&gt;
+&lt;li&gt;1,2秒で反映される&lt;/li&gt;
+&lt;li&gt;デモ(あとでもっと詳しいデモがあった)&lt;/li&gt;
+&lt;li&gt;Instant Runは全てのエミュレータ、実デバイス、IceCreamSandwithAPI15までの全OSで動く&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;新バージョン使ったライブコーディング-by-dave:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;新バージョン使ったライブコーディング(by Dave)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ライブコーディングしながら実デバイスにデプロイ&lt;/li&gt;
+&lt;li&gt;ホットスワップ(Instant Run)
+
+&lt;ul&gt;
+&lt;li&gt;リソースとコードが一瞬でデプロイできる例(最初かなりトラブってたｗ)&lt;/li&gt;
+&lt;li&gt;チェスゲームを例に、ビューを3Dにしたり、コマのサイズの変更をライブで行って一瞬で変わっていた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;DevSummitの今後のセッションの説明をして終了&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;android-application-architecture:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;Android application architecture&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;スピーカ: Yigit Boyar &amp;amp; Adam Powell&lt;/li&gt;
+&lt;li&gt;9:45am - 10:30am&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/Architecture-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Google IOでのトークの特別編で元のはYoutubeにあるみたいなことを言っていたが元の動画は見つからず。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;br&gt;
+アーキテクチャをどうするかをテーマにしたベストプラクティスの話がメインで、様々なトピックに分けて話を進めていった。
+ポスト(?)にコメントをできるようなサンプルアプリを例に話をしていた。オフラインでつけたコメントがオンラインになったときにどう反映されるべきか、どう読み込まれるべきか等の内容を、上記画像にあるような図とコードスニペットを交えて説明。バックグランドプロセスの設計の話、UXの話、APIデザインの話、メモリ管理、パフォーマンスの話等、それぞれ概要レベルだけど幅広いトピックをカバー。
+最後にはサンプルアプリ上でのデモも行った。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;respecting-user-attention-notification-best-practices:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;Respecting User Attention: Notification Best Practices&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;11:00am - 11:45am&lt;/li&gt;
+&lt;li&gt;スピーカ: Chris Wren(MediaLabのPhDで現在はAndroid System UIチームの人)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/Notification-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;br&gt;
+Notification(通知)のベストプラクティスをキャプチャのトピックに分けてユーザ体験の観点から紹介していく話。ライブコーディングではないがコードスニペットを使ってコードの紹介もしていった。コードの全体は&lt;a href=&#34;https://android.googlesource.com/platform/packages/experimental/+/master/NotificationShowcase/src/com/android/example/notificationshowcase/NotificationService.java&#34;&gt;こちら&lt;/a&gt;にある。話としては通知をどうするべきかがメインだったので、例えば通知は誰からの電話なら通知する等を細かくできるようにするべきとか、何をロックスクリーンに出すべきか、通知はユーザがアクションを取れるものする、Dismissできない通知の扱いをどうするべきか等だった。個人的にはGlobal Dismiss(ある端末で通知をDismissしたら他の端末でもDismissされる)の話が出てて、全アプリで実装してもらいたいと思った。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;keep-it-secret-keep-it-safe:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;Keep it Secret, Keep it Safe&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;11:45am - 12:30pm&lt;/li&gt;
+&lt;li&gt;スピーカ: Chad Brubaker(AndroidのSecurityチームの人)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/Security-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;br&gt;
+TLSをなぜか使うべきかといった基本的な話から実際にどう使うかといった話、Marshmallowで追加されたStrictMode等の新機能の話、バッドノウハウやセキュリティテストツール(&lt;a href=&#34;https://github.com/google/nogotofail&#34;&gt;nogotofail&lt;/a&gt;)の話等、セキュリティに関連する幅広い話題を扱っていた。
+
+&lt;ul&gt;
+&lt;li&gt;概要的な話だと、カフェなどで簡単に繋がるけど危ないという話、センシティブな情報のやり取りを行わない場合でも安全じゃない通信を使った場合は攻撃(例えばhttpサイトにアクセスしてXSSのようなことをされたりマルウェアに感染する等といった意味合いだと思われる)をされる可能性はあるといった話。&lt;/li&gt;
+&lt;li&gt;HTTPはHTTPSに変更するべしとかJavaSocketならSSLSocketにしようみたいな話をスニペット交えて説明。&lt;/li&gt;
+&lt;li&gt;サーバサイドはサービス使うなら殆ど対応してるよって話。&lt;/li&gt;
+&lt;li&gt;マシュマロでサポートされたStrictMode等の話を注意点を交えて説明。&lt;/li&gt;
+&lt;li&gt;TLSをチェックする際の注意点や設定等での間違えやすいポイント。&lt;/li&gt;
+&lt;li&gt;正しいように見えてダメなコード等を紹介。&lt;/li&gt;
+&lt;li&gt;セキュリティ関連のコードはよく分からずにコピペして使わない&lt;/li&gt;
+&lt;li&gt;nogotofailという設定ミス等をテストするためのツールの紹介&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;初日聞いたのは以上です。
+二日目は聞いたら追記します。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SimpleSwipeFlashcard - Android用単語帳アプリ</title>
