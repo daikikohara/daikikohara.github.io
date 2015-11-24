@@ -17,15 +17,20 @@
       <guid>https://daikikohara.github.io/blog/2015/11/23/android-dev-summit-2015/</guid>
       <description>
 
-&lt;p&gt;2015年11月23,24日にマウンテンビューで行われている&lt;a href=&#34;https://androiddevsummit.withgoogle.com/&#34;&gt;Android Dev Summit&lt;/a&gt;の視聴メモです。
-参加ではなくライブストリーミングを聞きながらメモった内容です。とりあえず初日の午前のみです。Keynote以外はかなり簡単な紹介なので気になる内容があれば直接動画を見てもらえばと思います。
-午後は用事があって見れませんが、明日分は見れたら追記します。個別のリンク等もあとで追記する予定です。&lt;/p&gt;
+&lt;p&gt;2015年11月23,24日にマウンテンビューで行われた&lt;a href=&#34;https://androiddevsummit.withgoogle.com/&#34;&gt;Android Dev Summit&lt;/a&gt;の視聴メモです。
+参加ではなくライブストリーミングを聞きながらメモった内容です。両日とも私用のため午前中のセッションのみです。また、Keynote以外はかなり簡単な紹介なので気になる内容があれば直接動画を見てもらえばと思います(動画ページへのリンクも貼ってます)。
+個別動画へのリンク(2日目分でまだアップされてないもの)やまとめ・レポートサイトへのリンク等はあとで追記予定です。
+レコーディング動画は&lt;a href=&#34;https://www.youtube.com/playlist?list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8&#34;&gt;こちら&lt;/a&gt;に随時アップされますが見直して追記等はしない予定です。
+ちなみに個人的には1日目のKeynoteと2日目の最初のセッション(What&amp;rsquo;s new in Android Studio)と2日目の2番目のセッション(データバインディングの話)は見た方が良いかなと思います。&lt;/p&gt;
+
+&lt;h1 id=&#34;初日:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;初日&lt;/h1&gt;
 
 &lt;h2 id=&#34;keynote:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;Keynote&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;9:05am - 9:45am&lt;/li&gt;
 &lt;li&gt;スピーカ: Dave Burke &amp;amp; Stephanie Saad Cuthbertson(Andoridのエンジニアチーム)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=oBV2U4w89_A&#34;&gt;動画&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/AndroidStudio2.0-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
@@ -44,7 +49,7 @@
 
 &lt;h3 id=&#34;androidstudio2-0リリース-by-stephanie:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;AndroidStudio2.0リリース(by Stephanie)&lt;/h3&gt;
 
-&lt;p&gt;(既にリリースされているので関連記事読んだ方が良いと思われます。まだ日本語の記事はないっぽいけど英語だと&lt;a href=&#34;http://techcrunch.com/2015/11/23/android-studio-2-0-with-improved-android-emulator-and-instant-run/&#34;&gt;TechCrunch&lt;/a&gt;に記事がありました。)&lt;/p&gt;
+&lt;p&gt;※既にリリースされているので関連記事読んだ方が良いと思われます。まだ日本語の記事はないっぽいけど英語だと&lt;a href=&#34;http://techcrunch.com/2015/11/23/android-studio-2-0-with-improved-android-emulator-and-instant-run/&#34;&gt;TechCrunch&lt;/a&gt;に記事がありました。&lt;a href=&#34;http://android-developers.blogspot.com/2015/11/android-studio-20-preview.html&#34;&gt;公式ブログ&lt;/a&gt;でも紹介されています。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;プレビュー版のダウンロードは&lt;a href=&#34;http://tools.android.com/download/studio/builds/2-0-preview&#34;&gt;ここ&lt;/a&gt;から&lt;/li&gt;
@@ -100,6 +105,7 @@
 &lt;ul&gt;
 &lt;li&gt;スピーカ: Yigit Boyar &amp;amp; Adam Powell&lt;/li&gt;
 &lt;li&gt;9:45am - 10:30am&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=BlkJzgjzL0c&#34;&gt;動画&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/Architecture-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
@@ -119,6 +125,7 @@
 &lt;ul&gt;
 &lt;li&gt;11:00am - 11:45am&lt;/li&gt;
 &lt;li&gt;スピーカ: Chris Wren(MediaLabのPhDで現在はAndroid System UIチームの人)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=5bJTSsk4sLU&#34;&gt;動画&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/Notification-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
@@ -135,6 +142,7 @@ Notification(通知)のベストプラクティスをキャプチャのトピッ
 &lt;ul&gt;
 &lt;li&gt;11:45am - 12:30pm&lt;/li&gt;
 &lt;li&gt;スピーカ: Chad Brubaker(AndroidのSecurityチームの人)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=fcWVV0Hafuk&#34;&gt;動画&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/Security-1.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
@@ -157,8 +165,79 @@ TLSをなぜか使うべきかといった基本的な話から実際にどう�
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;初日聞いたのは以上です。
-二日目は聞いたら追記します。&lt;/p&gt;
+&lt;h1 id=&#34;2日目:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;2日目&lt;/h1&gt;
+
+&lt;h2 id=&#34;what-s-new-in-android-studio:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;What&amp;rsquo;s new in Android Studio&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;9:05am - 9:45am&lt;/li&gt;
+&lt;li&gt;スピーカ: Jamal Eason, Tor Norbye &amp;amp; Xavier Ducrohet&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=fs0eira2pRY&#34;&gt;動画&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/whats-new-in-android-studio.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;内容&lt;/strong&gt; &lt;br&gt;
+IDE Enhancement、ビルドシステム、Emulatorの大きく3つのトピックに関する話。IDE EnhancementではGPU Monitor, ネットワークモニター, App Template, テーマエディタ, Vector Asset Studio等、I/O&amp;rsquo;15以降に追加された新機能の紹介があった。ビルドシステムではdxが4パラで動くようになった等のdxの改善の話やProGuardの改善の話、dx/Shrinkerのベンチマークの話、不要な解像度のアセットを入れずにパッケージングする等の話があり、その後Instant Runの内部的な話とデモがあった。デモではHot Swap(リソースやメソッド内の変更等)やCold Swap(メソッド自体の追加等アプリを終了して再実行が必要になるもの)、データバインディング(後のセッション参照)の話などをしながら進めていた。Emulatorの話ではPerformanceとUsabilityに分けて話をしていた。PerformanceはCPU,GPU,IOのパフォーマンスが上がったいう話。Usabilityではキーボード・ショートカットの追加、GoogleMapでGPSが使えたり場所のエミュレーションもできるデモ、ネットワークも2G,3G等やローミング・SIMが無いケース等様々なエミュレーションができるという紹介、バッテリ残量のエミュレーション、指紋認証のエミュレーション、リサイズやローテートのデモ、PCからファイルをドラッグ・アンド・ドロップするデモ、SMSを送信するデモ等、様々な機能を紹介していた。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;data-binding-write-apps-faster:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;Data Binding &amp;ndash; write apps faster&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;9:45am - 10:30am&lt;/li&gt;
+&lt;li&gt;スピーカ: George Mount &amp;amp; Yigit Boyar&lt;/li&gt;
+&lt;li&gt;[動画]()(まだ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/data-binding.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;p&gt;これはKeynoteに次いで大きい発表だった気がするので見た方が良いかも。Viewやリソースの書き方が大分変わるという話。例えばリソースに&lt;code&gt;@+id/productImage&lt;/code&gt;みたいな書き方に変わって、ソースのオブジェクトから&lt;code&gt;@{prod.image}&lt;/code&gt;みたいなことができるようになる。&lt;code&gt;@{条件 ? VISIBLE : GONE}&lt;/code&gt;みたいにロジックを入れることもできる(複雑なロジックは入れるべきではないとのこと。できるできないじゃなくて多分責務とか可読性の観点から)。
+また、上記キャプチャの通りfindViewByIdが不要になるということで、特定のインターフェースを実装したクラスを使ってfindViewById不要な操作ができるようになる(理解怪しいかも)。リソースでonClick使ったメソッド指定も色々なものが追加されて、onLongClickとかonTextChangeといったコールバックが利用できるみたい。この辺を実現するためのアノテーション等含めたソースの書き方やベストプラクティスも紹介していたのでこの動画は見るなり変更を追うなりした方が良さそう。&lt;/p&gt;
+
+&lt;h2 id=&#34;the-android-build-system:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;The Android Build System&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;11:00am - 11:45am&lt;/li&gt;
+&lt;li&gt;スピーカ: Xav Ducrochet, Jerome Dochez &amp;amp; Michal Bendowski&lt;/li&gt;
+&lt;li&gt;[動画]()(まだ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/build-system.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;br&gt;
+デーモンモードを使おう、デーモンにメモリを十分割り当てよう、SSDを使おう等といったビルド時のパフォーマンスのチェックリストを紹介(上記キャプチャ)。
+その他、単体テスト時等環境ごとのビルド設定の話、NDKやGradleプラグインの拡張の話やテストAPIの話等、話題が多岐に渡っていた。
+javacしてからdxまでのフローの話とかGradleの仕組みの話にも触れ意見等がある場合は&lt;a href=&#34;https://github.com/google/android-gradle-dsl&#34;&gt;GitHubのレポジトリ&lt;/a&gt;を見て欲しいみたいな話をしていた。
+InstantRunの内部動作の触りの話もしていた。クラスは一度しかロードされず、新しいクラスローダにより書き換えた箇所のみ反映されるらしい。新たに反映されたものは新しいインスタンスが生成された場合に反映されるので、Singletonを使っている場合等は実行されなかったりするので注意が必要みたい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;android-testing:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;Android Testing&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;11:45am - 12:30pm&lt;/li&gt;
+&lt;li&gt;スピーカ: Stephan Linzner, Jose Alcérreca &amp;amp; Jan-Felix Schmakeit&lt;/li&gt;
+&lt;li&gt;[動画]()(まだ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/android_dev_summit/test.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;br&gt;
+Androidのテストの自動化に関するトピックを上記のキャプチャにあるように単体テストからUIテスト、パフォーマンスのテストといったレイヤに分けて網羅的に扱う話。例はノートを取るアプリだったけど、あんまりアプリを例にした説明は多くなかった。単体テストでは外部要因を排除してテストできるようにするべきとか、例えばMockを使う等、それをどのように実現するかと言った話やTDDの話等をしていた。
+UIテストの話はEspressoの紹介がメインで書き方やデモや注意点等に触れていた。あとは&lt;a href=&#34;https://developers.google.com/cloud-test-lab/&#34;&gt;Cloud Test Lab&lt;/a&gt;等を使って複数デバイスでもテストできるようになっているみたいな話もしていた。
+パフォーマンステストの話では1コミットでパフォーマンスが大幅に低下することもあったりするし、それを毎回手動でテストをするのは大変なので、パフォーマンステストも自動化することの重要性を述べていた。Gradleのプラグインでテスト単位でネットワークやグラフィックのパフォーマンスを取得できるらしく、アノテーションを使ったそれらのテストの書き方の紹介などをしていた。
+最後に&lt;a href=&#34;https://www.code-labs.io/codelabs/android-testing/#0&#34;&gt;Android Testing Codelab&lt;/a&gt;や&lt;a href=&#34;https://www.code-labs.io/codelabs/android-perf-testing/#0&#34;&gt;同パフォーマンステストのCodelab&lt;/a&gt;、&lt;a href=&#34;https://github.com/googlesamples/android-testing&#34;&gt;テストのサンプル&lt;/a&gt;等の各種リソースの紹介を行っていた。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
