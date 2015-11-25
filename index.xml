@@ -21,7 +21,7 @@
 参加ではなくライブストリーミングを聞きながらメモった内容です。両日とも私用のため午前中のセッションのみです。また、Keynote以外はかなり簡単な紹介なので気になる内容があれば直接動画を見てもらえばと思います(動画ページへのリンクも貼ってます)。
 個別動画へのリンク(2日目分でまだアップされてないもの)やまとめ・レポートサイトへのリンク等はあとで追記予定です。
 レコーディング動画は&lt;a href=&#34;https://www.youtube.com/playlist?list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8&#34;&gt;こちら&lt;/a&gt;に随時アップされますが見直して追記等はしない予定です。
-ちなみに個人的には1日目のKeynoteと2日目の最初のセッション(What&amp;rsquo;s new in Android Studio)と2日目の2番目のセッション(データバインディングの話)は見た方が良いかなと思います。&lt;/p&gt;
+ちなみに個人的には1日目のKeynoteと2日目の最初のセッション(What&amp;rsquo;s new in Android Studio)と2日目の2番目のセッション(データバインディングの話。初出はI/Oだったらしいですが)は見た方が良いかなと思います。&lt;/p&gt;
 
 &lt;h1 id=&#34;初日:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;初日&lt;/h1&gt;
 
@@ -196,7 +196,7 @@ IDE Enhancement、ビルドシステム、Emulatorの大きく3つのトピッ�
 
 &lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;https://androiddevsummit.withgoogle.com/stream&#34;&gt;https://androiddevsummit.withgoogle.com/stream&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
 
-&lt;p&gt;これはKeynoteに次いで大きい発表だった気がするので見た方が良いかも。Viewやリソースの書き方が大分変わるという話。例えばリソースに&lt;code&gt;@+id/productImage&lt;/code&gt;みたいな書き方に変わって、ソースのオブジェクトから&lt;code&gt;@{prod.image}&lt;/code&gt;みたいなことができるようになる。&lt;code&gt;@{条件 ? VISIBLE : GONE}&lt;/code&gt;みたいにロジックを入れることもできる(複雑なロジックは入れるべきではないとのこと。できるできないじゃなくて多分責務とか可読性の観点から)。
+&lt;p&gt;これはKeynoteに次いで大きい発表だった気がするので見た方が良いかも((追記)と思ったらI/Oで既に発表された内容だったらしいｗ情弱ですいませんｗ)。Viewやリソースの書き方が大分変わるという話。例えばリソースに&lt;code&gt;@+id/productImage&lt;/code&gt;みたいな書き方に変わって、ソースのオブジェクトから&lt;code&gt;@{prod.image}&lt;/code&gt;みたいなことができるようになる。&lt;code&gt;@{条件 ? VISIBLE : GONE}&lt;/code&gt;みたいにロジックを入れることもできる(複雑なロジックは入れるべきではないとのこと。できるできないじゃなくて多分責務とか可読性の観点から)。
 また、上記キャプチャの通りfindViewByIdが不要になるということで、特定のインターフェースを実装したクラスを使ってfindViewById不要な操作ができるようになる(理解怪しいかも)。リソースでonClick使ったメソッド指定も色々なものが追加されて、onLongClickとかonTextChangeといったコールバックが利用できるみたい。この辺を実現するためのアノテーション等含めたソースの書き方やベストプラクティスも紹介していたのでこの動画は見るなり変更を追うなりした方が良さそう。&lt;/p&gt;
 
 &lt;h2 id=&#34;the-android-build-system:7fbc869a0cbce8433b744831670a7f7b&#34;&gt;The Android Build System&lt;/h2&gt;
