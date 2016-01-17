@@ -315,7 +315,7 @@ UIテストの話はEspressoの紹介がメインで書き方やデモや注意�
 またしてもかなり不完全ですが。。。こっちって技術系でもmeetupでPC開いている人が殆どいなくてメモとりづらいんですよね。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;動画無し。スライドも今のところ上がってない模様。(いくつか写真撮ったけど上げて良いか不明のため割愛)&lt;/li&gt;
+&lt;li&gt;動画は無し。スライドは&lt;a href=&#34;https://speakerdeck.com/armon/introduction-to-nomad-and-otto&#34;&gt;こちら&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ステッカーは配ってませんでした&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -383,48 +383,16 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 
 &lt;h1 id=&#34;us:1b735cbd4117890b113da764670ea978&#34;&gt;US&lt;/h1&gt;
 
-&lt;h2 id=&#34;2015-11:1b735cbd4117890b113da764670ea978&#34;&gt;2015 / 11&lt;/h2&gt;
+&lt;h2 id=&#34;2016-1:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 1&lt;/h2&gt;
 
-&lt;h3 id=&#34;kubecon:1b735cbd4117890b113da764670ea978&#34;&gt;KubeCon&lt;/h3&gt;
+&lt;h3 id=&#34;usenix-enigma:1b735cbd4117890b113da764670ea978&#34;&gt;USENIX Enigma&lt;/h3&gt;
 
-&lt;p&gt;Kubernetesに関するカンファレンス&lt;/p&gt;
+&lt;p&gt;2016年が初開催のセキュリティ系のカンファレス&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;日時: 2015/11/9 - 2015/11/11&lt;/li&gt;
+&lt;li&gt;日時: 2016/1/25 - 2016/1/27&lt;/li&gt;
 &lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://kubecon.io/&#34;&gt;https://kubecon.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;qcon-san-francisco:1b735cbd4117890b113da764670ea978&#34;&gt;QCon(San Francisco)&lt;/h3&gt;
-
-&lt;p&gt;InfoQ主催のカンファレンス。世界各地で開催&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2015/11/16 - 2015/11/20&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://qconsf.com/&#34;&gt;https://qconsf.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ansiblefest:1b735cbd4117890b113da764670ea978&#34;&gt;AnsibleFest&lt;/h3&gt;
-
-&lt;p&gt;Ansibleの公式カンファレンス。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2015/11/19 - 2015/11/19&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.ansible.com/ansiblefest&#34;&gt;http://www.ansible.com/ansiblefest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2015-12:1b735cbd4117890b113da764670ea978&#34;&gt;2015 / 12&lt;/h2&gt;
-
-&lt;h3 id=&#34;techtonic-summit:1b735cbd4117890b113da764670ea978&#34;&gt;Techtonic Summit&lt;/h3&gt;
-
-&lt;p&gt;CoreOS製コンテナ用プラットフォームのTectonicに関するカンファレンス。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2015/12/2 - 2015/12/3&lt;/li&gt;
-&lt;li&gt;場所: New York, NY&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://tectonic.com/summit/&#34;&gt;https://tectonic.com/summit/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://www.usenix.org/conference/enigma2016&#34;&gt;https://www.usenix.org/conference/enigma2016&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;2016-3:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 3&lt;/h2&gt;
@@ -459,6 +427,16 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;日時: 2016/4/4 - 2016/4/7&lt;/li&gt;
 &lt;li&gt;場所: San Jose, CA&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://www.gputechconf.com/&#34;&gt;http://www.gputechconf.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;robouniverse:1b735cbd4117890b113da764670ea978&#34;&gt;RoboUniverse&lt;/h3&gt;
+
+&lt;p&gt;ロボティクスのカンファレス(カンファレスというより展示会の模様)。NY以外でも行われている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/4/11 - 2016/4/12&lt;/li&gt;
+&lt;li&gt;場所: New York City, NY&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.robouniverse.com/&#34;&gt;http://www.robouniverse.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;openstack-summit:1b735cbd4117890b113da764670ea978&#34;&gt;OpenStack Summit&lt;/h3&gt;
@@ -829,6 +807,36 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;日時: 未定&lt;/li&gt;
 &lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://2015.dockercon.com/&#34;&gt;http://2015.dockercon.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;devopsday:1b735cbd4117890b113da764670ea978&#34;&gt;devopsday&lt;/h3&gt;
+
+&lt;p&gt;DevOps系のカンファレンス。2015年は11月に開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 未定&lt;/li&gt;
+&lt;li&gt;場所: Mountain View, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.devopsdays.org/&#34;&gt;http://www.devopsdays.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;node-js-interactive:1b735cbd4117890b113da764670ea978&#34;&gt;node.js Interactive&lt;/h3&gt;
+
+&lt;p&gt;node.jsのカンファレス。2015年は12月開催だった&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 未定&lt;/li&gt;
+&lt;li&gt;場所: Portland, OR&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://events.linuxfoundation.org/events/node-interactive&#34;&gt;http://events.linuxfoundation.org/events/node-interactive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ubiquity:1b735cbd4117890b113da764670ea978&#34;&gt;UBIQUITY&lt;/h3&gt;
+
+&lt;p&gt;IoTとかユビキタスコンピューティングに関するカンファレス。Google主催。2016年は1月に開催。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 未定&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://ubiquity.withgoogle.com/&#34;&gt;https://ubiquity.withgoogle.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -2148,7 +2156,8 @@ For the others, We put both transitive and intransitive meanings in separate lin
       
       <guid>https://daikikohara.github.io/about/</guid>
       <description>&lt;p&gt;This is a personal website by Daiki Kohara.&lt;br&gt;
-Daiki Kohara is a software engineer living in San Jose CA USA, originally from Tokyo Japan.&lt;/p&gt;
+Daiki Kohara is a software engineer living in San Jose CA USA, originally from Tokyo Japan.&lt;br&gt;
+Most of the contents in this site are written in Japanese.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/daikikohara&#34;&gt;Github&lt;/a&gt; &lt;a href=&#34;https://twitter.com/daikikohara&#34;&gt;Twitter&lt;/a&gt; &lt;a href=&#34;https://facebook.com/daiki.kohara.5&#34;&gt;Facebook&lt;/a&gt; &lt;a href=&#34;https://www.linkedin.com/in/daikikohara&#34;&gt;Linkedin&lt;/a&gt; &lt;a href=&#34;https://play.google.com/store/apps/developer?id=daikikohara&#34;&gt;GooglePlay&lt;/a&gt; &lt;a href=&#34;https://independent.academia.edu/DaikiKohara&#34;&gt;Academia&lt;/a&gt; &lt;a href=&#34;http://qiita.com/kiida&#34;&gt;Qiita(Japanese)&lt;/a&gt;&lt;/p&gt;
 </description>

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12月6日 - Smart Cryptography with Superdog and Vault &middot; tbd</title>
+  <meta name="description" content="2015年12月6日のGopherAcademyのAdvent Calendarの日本語訳。鍵管理等のためのSuperdogの紹介">
+  <meta name="format-detection" content="telephone=no">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="daikikohara" />
+  <meta name="twitter:title" content="12月6日 - Smart Cryptography with Superdog and Vault &middot; tbd">
+  <meta name="twitter:description" content="2015年12月6日のGopherAcademyのAdvent Calendarの日本語訳。鍵管理等のためのSuperdogの紹介">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="12月6日 - Smart Cryptography with Superdog and Vault &middot; tbd">
+  <meta property="og:description" content="2015年12月6日のGopherAcademyのAdvent Calendarの日本語訳。鍵管理等のためのSuperdogの紹介">
+
+  <link rel="icon" href="http://localhost:1313/favicon.ico" >
+  <link rel="shortcut icon" href="http://localhost:1313/favicon.ico" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://localhost:1313//css/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="http://localhost:1313//css/grids-responsive-min.css">
+  
+  <link rel="stylesheet" href="http://localhost:1313//css/all.min.css">
+</head>
+<body>
+
+
+<div id="container">
+  <header class="header">
+  <div class="header-content pure-g">
+    <div class="header-content-left pure-u-1 pure-u-md-1-2">
+      <a class="site-title" href="http://localhost:1313/">tbd</a>
+      <span class="site-description"></span>
+    </div>
+    <div class="header-content-right pure-u-1 pure-u-md-1-2">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="http://localhost:1313/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="http://localhost:1313/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="http://localhost:1313/work">Work</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <div class="main">
+    <div class="meta">
+      <time class="time">31 Dec 2015, 15:09</time>
+      <span class="category">
+        
+          categories:
+          
+          <a class="category-name category-name-golang" href="http://localhost:1313//categories/golang">golang</a>
+        
+      </span>
+    </div>
+    <section class="post">
+      <header>
+        <div class="title-single">12月6日 - Smart Cryptography with Superdog and Vault</div>
+        <div class="author">
+          
+          
+            元記事の著者 - <strong class="author-name">Brian Ketelsen</strong>
+          
+        </div>
+      </header>
+      <div class="description">
+        
+
+<div class='note'>※本ポストは<a href="https://blog.gopheracademy.com/">Gopher Academy</a>の<a href="https://blog.gopheracademy.com/series/advent-2015/">Advent 2015</a>の<a href="https://blog.gopheracademy.com/advent-2015/superdog/">12月6日の記事</a>の日本語訳です。</div>
+
+<h2 id="superdog-the-crypto-library-for-vault-from-hashicorp:1fce78842ee22ab0726cd2d4dbda0bd4">Superdog - the Crypto library for Vault from Hashicorp</h2>
+
+<p><a href="http://xor.exchange/">XOR Data Exchange</a>において多くの顧客の機密データに対する取り組みを論じた。我々にはシンプルかつ実用的な方法で鍵のローテーションを行う強度な暗号化をサポートする必要があった。
+そのため<code>superdog</code>というものを書いた。Superdogは開発及びテスト環境での強固な暗号をサポートするライブラリだ。
+<a href="https://github.com/xordataexchange/superdog">Superdog</a>は<a href="https://www.vaultproject.io/">Vault</a>のAPIのラッパーになっており、<code>keyProvider</code>インターフェースを実装するコードを使って暗号鍵の管理を行うことができる。
+<code>keyProvider</code>インターフェースの実装はVault用に提供されているが、他のものもサポートできるだろう。</p>
+
+<p>Vaultを利用することで鍵と暗号文をセキュアかつ強固に分離することができる。
+Vaultのインスタンスが利用可能かに関わらず開発・テスト・ステージング環境での暗号化のルーチンを利用できるようにすることで、Superdogはこの分離をさらに一歩先に進めている。
+この抽象化は<code>keyProvider</code>インターフェースを使って提供される。デフォルトでは<code>DevKeyProvider</code>が使われる。DevKeyProviderは同じ鍵と初期化ベクトル(IV)を使う安全ではないプロバイダである。
+プロダクション環境では絶対に使うべきではない。</p>
+
+<h2 id="機能:1fce78842ee22ab0726cd2d4dbda0bd4">機能</h2>
+
+<ul>
+<li>鍵のバージョン管理- 鍵のバージョンは暗号文の最初の数バイトに保存される</li>
+<li>鍵のローテーション - 古いバージョンの復号が常に可能な安全な鍵のローテーション</li>
+<li>テストやローカルの開発用の実装</li>
+<li>バージョン管理されローテートされたIVおよびSalt - <code>SaltProvider</code>インターフェースは<code>KeyProvider</code>と同様、開発及びテストで鍵用のサーバ(Vault)無しで暗号ライブラリへのアクセスを可能にする</li>
+<li><code>Reencrypt</code>関数は鍵のローテーションをシンプルにし、与えられた鍵での復号と最新の鍵での再暗号化を行う</li>
+</ul>
+
+<h2 id="cypher-suites:1fce78842ee22ab0726cd2d4dbda0bd4">Cypher Suites</h2>
+
+<p><code>superdog</code>はCFB/CTR/GCM/OFBモードのAES暗号をサポートする。</p>
+
+<h2 id="パフォーマンス:1fce78842ee22ab0726cd2d4dbda0bd4">パフォーマンス</h2>
+
+<p>Go version 1.5.2 / Linux x86_64 kernel 4.2.5 on a quad-core i7という環境で以下の通り。</p>
+
+<pre><code>BenchmarkKeyEncryptCFB-8	 1000000	      2024 ns/op
+BenchmarkKeyEncryptCTR-8	  500000	      2748 ns/op
+BenchmarkKeyEncryptGCM-8	 1000000	      2381 ns/op
+BenchmarkKeyEncryptOFB-8	  500000	      2665 ns/op
+BenchmarkKeyDecryptCFB-8	10000000	       215 ns/op
+BenchmarkKeyDecryptCTR-8	 2000000	       898 ns/op
+BenchmarkKeyDecryptGCM-8	 3000000	       520 ns/op
+BenchmarkKeyDecryptOFB-8	 2000000	       817 ns/op
+</code></pre>
+
+<h2 id="usage:1fce78842ee22ab0726cd2d4dbda0bd4">Usage</h2>
+
+<pre><code>go get -u github.com/xordataexchange/superdog/...
+</code></pre>
+
+<h3 id="暗号化:1fce78842ee22ab0726cd2d4dbda0bd4">暗号化</h3>
+
+<pre><code>val := []byte(&quot;encrypt me!&quot;)
+
+// use a key prefix to delineate different crypto keys
+// allowing you to use different keys for different parts of your application
+// or different fields of a database table, for example
+b, err := superdog.Encrypt(&quot;mykeyprefix&quot;, val, val)
+if err != nil {
+	// handle error
+}
+</code></pre>
+
+<h3 id="復号:1fce78842ee22ab0726cd2d4dbda0bd4">復号</h3>
+
+<pre><code>b := []byte[&quot;some crypt cypher text here&quot;]
+decrypted, err := superdog.Decrypt([]byte(&quot;mykeyprefix&quot;, b, b)
+if err != nil {
+	// handle error
+}
+</code></pre>
+
+<h3 id="プロダクション環境での利用:1fce78842ee22ab0726cd2d4dbda0bd4">プロダクション環境での利用</h3>
+
+<p><code>superdog</code>はデフォルトでは静的な鍵とIVによる<code>DevKeyProvider</code>を使う。安全ではないので決してプロダクション環境では使うべきではない。</p>
+
+<p>プロダクション環境ではGoの<a href="https://golang.org/pkg/go/build/">ビルドタグ</a>を使って強固な暗号を有効にすることを推奨する。</p>
+
+<p>init()関数の中で接続処理を行うファイルを作成し、<code>// +build production</code>というビルドタグをファイルの冒頭に記載する。
+以下に例を示す。</p>
+
+<pre><code class="language-go">// +build production
+
+package main
+import (
+	&quot;github.com/xordataexchange/superdog&quot;
+	&quot;github.com/xordataexxchange/superdog/vault/hashi&quot;
+	&quot;github.com/hashicorp/vault/api&quot;
+)
+
+// Assign each application a unique UUID
+// and use Vault's AppID authentication mechanism
+const (
+	appid = &quot;SOME RANDOM UUID&quot;
+)
+
+func init() {
+	user := os.Getenv(&quot;VAULT_USER&quot;)
+	vaultaddr := os.Getenv(&quot;VAULT_ADDRESS&quot;)
+	// TEST these for empty strings &amp; handle appropriately in your code
+
+	cfg:= api.DefaultConfig()
+	cfg.Address = vaultaddr
+
+	vault, err := hashi.NewVault(cfg)
+	if err != nil {
+		// handle appropriately
+	}
+	err = vault.AuthAppID(appid, user)
+	if err != nil {
+		// handle appropriately
+	}
+
+	crypto.DefaultKeyProvider = vault
+	crypto.DefaultSaltProvider = vault
+
+}
+</code></pre>
+
+<p><code>go build -tag production</code>を実行すると、このコードを含むようにプログラムがコンパイルされる。
+<code>KeyProvider</code>はVaultを使うようにセットされる。</p>
+
+<h2 id="コントリビューション歓迎:1fce78842ee22ab0726cd2d4dbda0bd4">コントリビューション歓迎</h2>
+
+<p>Superdogをお楽しみ頂ければ幸いだ。我々はコミュニティからのコントリビューションをいつでも歓迎する。
+Superdogは信頼できる安全策を使って安全かつ確実なデータアクセスを提供するという我々のミッションを支えている。
+Superdogの元々の実装はErik St. Martinによって書かれたものである。</p>
+
+      </div>
+      
+      <div class="share">
+        <h4>Share</h4>
+        
+        <a href="#" data-type="twitter" data-url="http://localhost:1313/gopheracademy-advent-2015-ja/6-superdog-ja/" data-description="2015年12月6日のGopherAcademyのAdvent Calendarの日本語訳。鍵管理等のためのSuperdogの紹介" data-via="daikikohara" class="prettySocial fa fa-twitter"></a>
+        
+        <a href="#" data-type="facebook" data-url="http://localhost:1313/gopheracademy-advent-2015-ja/6-superdog-ja/" data-title="12月6日 - Smart Cryptography with Superdog and Vault" data-description="2015年12月6日のGopherAcademyのAdvent Calendarの日本語訳。鍵管理等のためのSuperdogの紹介" data-media="" class="prettySocial fa fa-facebook"></a>
+        <a href="#" data-type="googleplus" data-url="http://localhost:1313/gopheracademy-advent-2015-ja/6-superdog-ja/" data-description="2015年12月6日のGopherAcademyのAdvent Calendarの日本語訳。鍵管理等のためのSuperdogの紹介" class="prettySocial fa fa-google-plus"></a>
+        <a href="http://b.hatena.ne.jp/entry/http://localhost:1313/gopheracademy-advent-2015-ja/6-superdog-ja/" class="hatena-bookmark-button fa fa-hatena" data-hatena-bookmark-title="12月6日 - Smart Cryptography with Superdog and Vault" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"></a>
+      </div>
+      
+      
+    </section>
+  </div>
+  <footer class="footer-single pure-g">
+  <hr>
+  <div class="pure-u-1 pure-u-md-1-2 footer-single-left">
+    <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="http://localhost:1313/images/cc.png" />
+    </a>
+    Except where otherwise noted, content on this site is licensed under a <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+  </div>
+  <div class="pure-u-1 pure-u-md-1-2 footer-single-right">
+    &#169; 2015 Daiki Kohara<br>
+    Powered by <a href="https://gohugo.io/" target="_blank">hugo</a>
+  </div>
+</footer>
+<script src="http://localhost:1313//js/all.min.js"></script>
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

