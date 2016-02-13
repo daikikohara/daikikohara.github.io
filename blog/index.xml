@@ -6,8 +6,150 @@
     <description>Recent content in Blogs on tbd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 23 Nov 2015 12:49:18 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 Feb 2016 12:49:18 -0800</lastBuildDate>
     <atom:link href="https://daikikohara.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unikernelのmeetupの視聴メモ</title>
+      <link>https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/</link>
+      <pubDate>Fri, 12 Feb 2016 12:49:18 -0800</pubDate>
+      
+      <guid>https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker社&lt;/a&gt;が買収した&lt;a href=&#34;http://unikernel.com/&#34;&gt;Unikernel Systems社&lt;/a&gt;が扱ってるUnikernelについて全然知らなかったので、&lt;a href=&#34;https://www.youtube.com/watch?v=qvVzlxggnFk&#34;&gt;Docker Online MeetupのUnikernelの動画&lt;/a&gt;を見たついでに、分からないところを調べられた範囲で補完しつつまとめてみました。なお、&lt;strong&gt;超基本的な内容です。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;動画だけでなく&lt;a href=&#34;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&#34;&gt;スライド自体&lt;/a&gt;も上がってます。&lt;/p&gt;
+
+&lt;p&gt;先に自分が理解した範囲でまとめを書くと、以下のような流れみたいです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Unikernelは単一のアプリを動かすためのシンプルかつ高速なOSで色々な実装がある。&lt;/li&gt;
+&lt;li&gt;でも従来のOSと違うし、各実装ごとにツールもあるしで、アプリをビルドして動かすのが大変。&lt;/li&gt;
+&lt;li&gt;dockerのエコシステムに取り込んでdockerコマンドでビルド・デプロイできるようになったらいいんじゃないってことで買収した。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;従来のosの問題:37abd8c8067d32e43dab600446560196&#34;&gt;従来のOSの問題&lt;/h2&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/unikernel_meetup/traditional_approach.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; style=&#34;margin:0 auto;&#34;&gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&#34;&gt;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;p&gt;現在使われているLinux等のOSは膨大なコードを持ち、アプリケーションに必要でない部分もシステムに組み込む必要がある。
+そのためアプリケーションがSystemAPIと結びついてしまい、以下のような問題がある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OSのディストリビューションやバージョンの制約を受ける&lt;/li&gt;
+&lt;li&gt;アプリケーションのアドホックな設定が必要になる&lt;/li&gt;
+&lt;li&gt;ファイアウォール等、システム全体の設定が必要になる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これは従来のOSの目的が、複数のユーザが複数のアプリを同時に動かすことだからだ。
+しかしマイクロサービス等、現在のアーキテクチャでは一つのアプリのみを動かすだけという使い方も考えられるため、従来のOSの目的と合わなくなってきている。&lt;/p&gt;
+
+&lt;p&gt;また、ポータブル性の欠如という問題もある。
+従来のシステムでビルドは環境に依存するが、実際は複数のターゲットを扱わないといけない。
+例えば複数のターゲットを持つクラウドサービスやスマートフォンといったもの。またJavaScriptもブラウザにより異なるし、IoTでもデバイス毎に異なる。
+これらは複数のターゲットごとにプログラムせねばならず、コードの再利用は難しい。&lt;/p&gt;
+
+&lt;h2 id=&#34;unikernelとは何か:37abd8c8067d32e43dab600446560196&#34;&gt;Unikernelとは何か&lt;/h2&gt;
+
+&lt;img src=&#34;https://daikikohara.github.io/images/unikernel_meetup/unikernel.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; style=&#34;margin:0 auto;&#34;&gt;
+
+&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&#34;&gt;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
+
+&lt;p&gt;これらの問題を解決するために&lt;a href=&#34;https://en.wikipedia.org/wiki/Unikernel&#34;&gt;Unikernel&lt;/a&gt;が役に立つ。
+Unikernelには以下のような特徴がある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OSのコンポーネントをライブラリの集合として利用できるようにしている。&lt;/li&gt;
+&lt;li&gt;ビルド時にアプリケーションのコードをシステムライブラリとリンクし、アプリケーションが必要とするライブラリだけを使うことが可能。&lt;/li&gt;
+&lt;li&gt;単一のプロセス、単一のアドレススペースのイメージが作成される。&lt;/li&gt;
+&lt;li&gt;アプリケーションは同じコードベースを使い、ビルド時にシステムライブラリを切り替えるだけでターゲットの変更が可能。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;なお、Unikernelのコンセプトは新しいものではなく、1990年代から存在していた。&lt;/p&gt;
+
+&lt;h2 id=&#34;利点:37abd8c8067d32e43dab600446560196&#34;&gt;利点&lt;/h2&gt;
+
+&lt;p&gt;前述の特徴から以下のような利点がある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;必要なライブラリのみをスタティックにリンクできるため、シンプルにできる。&lt;/li&gt;
+&lt;li&gt;TCP接続が確立される間にブートできるくらい高速。&lt;/li&gt;
+&lt;li&gt;レイヤーが少ないので低レイテンシおよび、パフォーマンスの予測が容易。&lt;/li&gt;
+&lt;li&gt;リソースをあまり使わない。例えばUnikernelの実装の一つであるMirageOSのアプリは10MB以下のメモリしか使わない。MirageOSのDNSサーバは200KBしかない。&lt;/li&gt;
+&lt;li&gt;マイクロサービスやImmutable Infrastructure等の新しいデザインパターンの構築が容易になる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;unikernelを使う場合の開発サイクル:37abd8c8067d32e43dab600446560196&#34;&gt;Unikernelを使う場合の開発サイクル&lt;/h2&gt;
+
+&lt;p&gt;以下のような流れで開発していくことができ従来の方法と大きくは変わらない。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アプリのビルドは普通に行うが、OSのコンポーネントに対応するライブラリを使ってリンクすることと、従来のホストOSとの依存性を排除するという点が従来と異なる。&lt;/li&gt;
+&lt;li&gt;テストや測定は通常通りに行うことが可能。&lt;/li&gt;
+&lt;li&gt;Unikernelとしてビルドする&lt;/li&gt;
+&lt;li&gt;デプロイする&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;利用するツールもCIシステム、gdb、プロファイラ、linterやdtraceといった従来のものが利用可能。
+カーネル空間・ユーザ空間というものがなく全てがユーザ空間で動くので、通常のツールが利用できる。&lt;/p&gt;
+
+&lt;h2 id=&#34;unikernelの実装:37abd8c8067d32e43dab600446560196&#34;&gt;Unikernelの実装&lt;/h2&gt;
+
+&lt;p&gt;Unikernelには&lt;a href=&#34;http://unikernel.org/projects/&#34;&gt;多くの実装&lt;/a&gt;がある。
+それぞれトレードオフがある。
+例えばMirageOSとHaLVMはまっさらな状態からライブラリを書き直している。
+一方Rumprunは長年使われてきたNetBSDのコンポーネントを再利用している。&lt;/p&gt;
+
+&lt;p&gt;(ちなみに&lt;a href=&#34;https://github.com/mirage/mirage&#34;&gt;MirageOS&lt;/a&gt;はOCaml、&lt;a href=&#34;https://github.com/GaloisInc/HaLVM&#34;&gt;HaLVM&lt;/a&gt;はHaskell、&lt;a href=&#34;https://github.com/rumpkernel/rumprun&#34;&gt;Rumprun&lt;/a&gt;はCでそれぞれ書かれている)&lt;/p&gt;
+
+&lt;p&gt;このように現在のアーキテクチャに適したUnikernelだが、導入時の障壁として以下のようなものが考えられる。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;デベロッパーはUnikernelを使うために様々なツールを学ぶ必要がある。&lt;/li&gt;
+&lt;li&gt;複数のプロジェクトがあるということは複数のツールチェーンがあるということ&lt;/li&gt;
+&lt;li&gt;デプロイが単純には行かないということでもある&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これらを解決するために、DockerはUnikernelと手を取った。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Unikernelはより良いツールが必要でDockerには様々なツールとエコシステムがある。&lt;/li&gt;
+&lt;li&gt;UnikernelをDockerのエコシステムに組み込むことでこれらを利用可能にする。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;デモ:37abd8c8067d32e43dab600446560196&#34;&gt;デモ&lt;/h2&gt;
+
+&lt;p&gt;デモは&lt;a href=&#34;https://github.com/Unikernel-Systems/DockerConEU2015-demo&#34;&gt;このレポジトリ&lt;/a&gt;のもので、Nginx・PHP・MySQLをUnikernelのアプリとしてdocker buildで立ち上げるというもの。
+以下は話してた内容や画面上を見た範囲でのメモ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Unikernelはdockerのツールチェーンを使って普通のLinuxコンテナと同じように動かすことができる。&lt;/li&gt;
+&lt;li&gt;それぞれのUnikernelがKVMの仮想マシンとして動く。&lt;/li&gt;
+&lt;li&gt;各OSイメージは2-6MB程度で必要な機能のみが入った状態になっている。
+
+&lt;ul&gt;
+&lt;li&gt;実際、nginxのイメージが2.1MBくらいになってた。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;1秒以下で起動する。
+
+&lt;ul&gt;
+&lt;li&gt;実際それくらいだった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;nginxのみ外から繋がり、他はVM間でしかつながらないようになっている。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;以下は実際に動かしてみたら追記予定。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+
+&lt;p&gt;Unikernelの考えは確かに現在のアーキテクチャに適しているように思いました。
+利点がとても大きいように思えるので、dockerツールに組み込まれて透過的に扱えるようになれば大流行するんじゃないでしょうか。
+なお、Unikernel関連の議論は&lt;a href=&#34;https://devel.unikernel.org/&#34;&gt;こちら&lt;/a&gt;で行われているようです。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Android Dev Summit2015の視聴メモ</title>

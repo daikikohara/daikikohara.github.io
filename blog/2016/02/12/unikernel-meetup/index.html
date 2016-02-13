@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unikernelのmeetupの視聴メモ">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="daikikohara" />
+  <meta name="twitter:title" content="Unikernelのmeetupの視聴メモ &middot; tbd">
+  <meta name="twitter:description" content="Unikernelのmeetupの視聴メモ">
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Unikernelのmeetupの視聴メモ &middot; tbd">
+  <meta property="og:description" content="Unikernelのmeetupの視聴メモ">
+
+  <link rel="canonical" href="https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/">
+  <link rel="icon" href="https://daikikohara.github.io/favicon.ico" >
+  <link rel="shortcut icon" href="https://daikikohara.github.io/favicon.ico" >
+  <link rel="apple-touch-icon" href="https://daikikohara.github.io/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://daikikohara.github.io//css/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="https://daikikohara.github.io//css/grids-responsive-min.css">
+  
+  <link rel="stylesheet" href="https://daikikohara.github.io//css/all.min.css">
+
+  <title>Unikernelのmeetupの視聴メモ &middot; tbd</title>
+</head>
+<body>
+
+
+<div id="container">
+  <header class="header">
+  <div class="header-content pure-g">
+    <div class="header-content-left pure-u-1 pure-u-md-1-2">
+      <a class="site-title" href="https://daikikohara.github.io/">tbd</a>
+      <span class="site-description"></span>
+    </div>
+    <div class="header-content-right pure-u-1 pure-u-md-1-2">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="https://daikikohara.github.io/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://daikikohara.github.io/blog">Blog</a>
+        </li>
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <div class="main">
+    <div class="meta">
+      <time class="time">12 Feb 2016, 12:49</time>
+      <span class="category">
+        
+          categories:
+          
+          <a class="category-name category-name-meetup" href="https://daikikohara.github.io//categories/meetup">meetup</a><a class="category-name category-name-unikernel" href="https://daikikohara.github.io//categories/unikernel">unikernel</a><a class="category-name category-name-docker" href="https://daikikohara.github.io//categories/docker">docker</a>
+        
+      </span>
+    </div>
+    <section class="post">
+      <header>
+        <div class="title-single">Unikernelのmeetupの視聴メモ</div>
+        <div class="author">
+          
+          
+        </div>
+      </header>
+      <div class="description">
+        
+
+<p><a href="https://www.docker.com/">Docker社</a>が買収した<a href="http://unikernel.com/">Unikernel Systems社</a>が扱ってるUnikernelについて全然知らなかったので、<a href="https://www.youtube.com/watch?v=qvVzlxggnFk">Docker Online MeetupのUnikernelの動画</a>を見たついでに、分からないところを調べられた範囲で補完しつつまとめてみました。なお、<strong>超基本的な内容です。</strong></p>
+
+<p>動画だけでなく<a href="http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels">スライド自体</a>も上がってます。</p>
+
+<p>先に自分が理解した範囲でまとめを書くと、以下のような流れみたいです。</p>
+
+<ul>
+<li>Unikernelは単一のアプリを動かすためのシンプルかつ高速なOSで色々な実装がある。</li>
+<li>でも従来のOSと違うし、各実装ごとにツールもあるしで、アプリをビルドして動かすのが大変。</li>
+<li>dockerのエコシステムに取り込んでdockerコマンドでビルド・デプロイできるようになったらいいんじゃないってことで買収した。</li>
+</ul>
+
+<h2 id="従来のosの問題:37abd8c8067d32e43dab600446560196">従来のOSの問題</h2>
+
+<img src="https://daikikohara.github.io/images/unikernel_meetup/traditional_approach.png" alt="" class="pure-img" style="margin:0 auto;">
+
+<div class='citation'><cite><a href="http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels">http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels</a>より引用</cite></div>
+
+<p>現在使われているLinux等のOSは膨大なコードを持ち、アプリケーションに必要でない部分もシステムに組み込む必要がある。
+そのためアプリケーションがSystemAPIと結びついてしまい、以下のような問題がある。</p>
+
+<ul>
+<li>OSのディストリビューションやバージョンの制約を受ける</li>
+<li>アプリケーションのアドホックな設定が必要になる</li>
+<li>ファイアウォール等、システム全体の設定が必要になる</li>
+</ul>
+
+<p>これは従来のOSの目的が、複数のユーザが複数のアプリを同時に動かすことだからだ。
+しかしマイクロサービス等、現在のアーキテクチャでは一つのアプリのみを動かすだけという使い方も考えられるため、従来のOSの目的と合わなくなってきている。</p>
+
+<p>また、ポータブル性の欠如という問題もある。
+従来のシステムでビルドは環境に依存するが、実際は複数のターゲットを扱わないといけない。
+例えば複数のターゲットを持つクラウドサービスやスマートフォンといったもの。またJavaScriptもブラウザにより異なるし、IoTでもデバイス毎に異なる。
+これらは複数のターゲットごとにプログラムせねばならず、コードの再利用は難しい。</p>
+
+<h2 id="unikernelとは何か:37abd8c8067d32e43dab600446560196">Unikernelとは何か</h2>
+
+<img src="https://daikikohara.github.io/images/unikernel_meetup/unikernel.png" alt="" class="pure-img" style="margin:0 auto;">
+
+<div class='citation'><cite><a href="http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels">http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels</a>より引用</cite></div>
+
+<p>これらの問題を解決するために<a href="https://en.wikipedia.org/wiki/Unikernel">Unikernel</a>が役に立つ。
+Unikernelには以下のような特徴がある。</p>
+
+<ul>
+<li>OSのコンポーネントをライブラリの集合として利用できるようにしている。</li>
+<li>ビルド時にアプリケーションのコードをシステムライブラリとリンクし、アプリケーションが必要とするライブラリだけを使うことが可能。</li>
+<li>単一のプロセス、単一のアドレススペースのイメージが作成される。</li>
+<li>アプリケーションは同じコードベースを使い、ビルド時にシステムライブラリを切り替えるだけでターゲットの変更が可能。</li>
+</ul>
+
+<p>なお、Unikernelのコンセプトは新しいものではなく、1990年代から存在していた。</p>
+
+<h2 id="利点:37abd8c8067d32e43dab600446560196">利点</h2>
+
+<p>前述の特徴から以下のような利点がある。</p>
+
+<ul>
+<li>必要なライブラリのみをスタティックにリンクできるため、シンプルにできる。</li>
+<li>TCP接続が確立される間にブートできるくらい高速。</li>
+<li>レイヤーが少ないので低レイテンシおよび、パフォーマンスの予測が容易。</li>
+<li>リソースをあまり使わない。例えばUnikernelの実装の一つであるMirageOSのアプリは10MB以下のメモリしか使わない。MirageOSのDNSサーバは200KBしかない。</li>
+<li>マイクロサービスやImmutable Infrastructure等の新しいデザインパターンの構築が容易になる。</li>
+</ul>
+
+<h2 id="unikernelを使う場合の開発サイクル:37abd8c8067d32e43dab600446560196">Unikernelを使う場合の開発サイクル</h2>
+
+<p>以下のような流れで開発していくことができ従来の方法と大きくは変わらない。</p>
+
+<ul>
+<li>アプリのビルドは普通に行うが、OSのコンポーネントに対応するライブラリを使ってリンクすることと、従来のホストOSとの依存性を排除するという点が従来と異なる。</li>
+<li>テストや測定は通常通りに行うことが可能。</li>
+<li>Unikernelとしてビルドする</li>
+<li>デプロイする</li>
+</ul>
+
+<p>利用するツールもCIシステム、gdb、プロファイラ、linterやdtraceといった従来のものが利用可能。
+カーネル空間・ユーザ空間というものがなく全てがユーザ空間で動くので、通常のツールが利用できる。</p>
+
+<h2 id="unikernelの実装:37abd8c8067d32e43dab600446560196">Unikernelの実装</h2>
+
+<p>Unikernelには<a href="http://unikernel.org/projects/">多くの実装</a>がある。
+それぞれトレードオフがある。
+例えばMirageOSとHaLVMはまっさらな状態からライブラリを書き直している。
+一方Rumprunは長年使われてきたNetBSDのコンポーネントを再利用している。</p>
+
+<p>(ちなみに<a href="https://github.com/mirage/mirage">MirageOS</a>はOCaml、<a href="https://github.com/GaloisInc/HaLVM">HaLVM</a>はHaskell、<a href="https://github.com/rumpkernel/rumprun">Rumprun</a>はCでそれぞれ書かれている)</p>
+
+<p>このように現在のアーキテクチャに適したUnikernelだが、導入時の障壁として以下のようなものが考えられる。</p>
+
+<ul>
+<li>デベロッパーはUnikernelを使うために様々なツールを学ぶ必要がある。</li>
+<li>複数のプロジェクトがあるということは複数のツールチェーンがあるということ</li>
+<li>デプロイが単純には行かないということでもある</li>
+</ul>
+
+<p>これらを解決するために、DockerはUnikernelと手を取った。</p>
+
+<ul>
+<li>Unikernelはより良いツールが必要でDockerには様々なツールとエコシステムがある。</li>
+<li>UnikernelをDockerのエコシステムに組み込むことでこれらを利用可能にする。</li>
+</ul>
+
+<h2 id="デモ:37abd8c8067d32e43dab600446560196">デモ</h2>
+
+<p>デモは<a href="https://github.com/Unikernel-Systems/DockerConEU2015-demo">このレポジトリ</a>のもので、Nginx・PHP・MySQLをUnikernelのアプリとしてdocker buildで立ち上げるというもの。
+以下は話してた内容や画面上を見た範囲でのメモ。</p>
+
+<ul>
+<li>Unikernelはdockerのツールチェーンを使って普通のLinuxコンテナと同じように動かすことができる。</li>
+<li>それぞれのUnikernelがKVMの仮想マシンとして動く。</li>
+<li>各OSイメージは2-6MB程度で必要な機能のみが入った状態になっている。
+
+<ul>
+<li>実際、nginxのイメージが2.1MBくらいになってた。</li>
+</ul></li>
+<li>1秒以下で起動する。
+
+<ul>
+<li>実際それくらいだった。</li>
+</ul></li>
+<li>nginxのみ外から繋がり、他はVM間でしかつながらないようになっている。</li>
+</ul>
+
+<p><strong>以下は実際に動かしてみたら追記予定。</strong></p>
+
+<p>以上。</p>
+
+<p>Unikernelの考えは確かに現在のアーキテクチャに適しているように思いました。
+利点がとても大きいように思えるので、dockerツールに組み込まれて透過的に扱えるようになれば大流行するんじゃないでしょうか。
+なお、Unikernel関連の議論は<a href="https://devel.unikernel.org/">こちら</a>で行われているようです。</p>
+
+      </div>
+      
+      <div class="share">
+        <h4>Share</h4>
+        
+        <a href="#" data-type="twitter" data-url="https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/" data-description="Unikernelのmeetupの視聴メモ" data-via="daikikohara" class="prettySocial fa fa-twitter"></a>
+        
+        <a href="#" data-type="facebook" data-url="https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/" data-title="Unikernelのmeetupの視聴メモ" data-description="Unikernelのmeetupの視聴メモ" data-media="" class="prettySocial fa fa-facebook"></a>
+        <a href="#" data-type="googleplus" data-url="https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/" data-description="Unikernelのmeetupの視聴メモ" class="prettySocial fa fa-google-plus"></a>
+        <a href="http://b.hatena.ne.jp/entry/https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/" class="hatena-bookmark-button fa fa-hatena" data-hatena-bookmark-title="Unikernelのmeetupの視聴メモ" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"></a>
+      </div>
+      
+      
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3132958318911764"
+     data-ad-slot="8472491132"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      
+    </section>
+  </div>
+  <footer class="footer-single pure-g">
+  <hr>
+  <div class="pure-u-1 pure-u-md-1-2 footer-single-left">
+    <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="https://daikikohara.github.io/images/cc.png" />
+    </a>
+    Except where otherwise noted, content on this site is licensed under a <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+  </div>
+  <div class="pure-u-1 pure-u-md-1-2 footer-single-right">
+    &#169; 2015 Daiki Kohara<br>
+    Powered by <a href="https://gohugo.io/" target="_blank">hugo</a>
+  </div>
+</footer>
+<script src="https://daikikohara.github.io//js/all.min.js"></script>
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-53162899-3', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
