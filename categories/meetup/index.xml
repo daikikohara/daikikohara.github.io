@@ -123,7 +123,7 @@ Unikernelには以下のような特徴がある。&lt;/p&gt;
 &lt;h2 id=&#34;デモ:37abd8c8067d32e43dab600446560196&#34;&gt;デモ&lt;/h2&gt;
 
 &lt;p&gt;デモは&lt;a href=&#34;https://github.com/Unikernel-Systems/DockerConEU2015-demo&#34;&gt;このレポジトリ&lt;/a&gt;のもので、Nginx・PHP・MySQLをUnikernelのアプリとしてdocker buildで立ち上げるというもの。
-以下は話してた内容や画面上を見た範囲でのメモ。&lt;/p&gt;
+以下は話してた内容や画面上を見た範囲でのメモ。実際に動かしたらQiitaにでも投稿します。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Unikernelはdockerのツールチェーンを使って普通のLinuxコンテナと同じように動かすことができる。&lt;/li&gt;
@@ -140,8 +140,6 @@ Unikernelには以下のような特徴がある。&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;nginxのみ外から繋がり、他はVM間でしかつながらないようになっている。&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;以下は実際に動かしてみたら追記予定。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;以上。&lt;/p&gt;
 
