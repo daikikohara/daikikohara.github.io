@@ -515,173 +515,11 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 
 &lt;p&gt;個人的に興味があるものかつ米国内メインの技術系カンファレンスのまとめです。
 未来分(更新日から見て)のみです。
-本ページは自動生成していてjsonも&lt;a href=&#34;https://daikikohara.github.io/data/conference.json&#34;&gt;ここ&lt;/a&gt;にあります。&lt;/p&gt;
+本ページは自動生成しています。&lt;a href=&#34;https://daikikohara.github.io/data/conference.json&#34;&gt;ここ&lt;/a&gt;にjsonもあります。&lt;/p&gt;
 
-&lt;p&gt;一覧が欲しくなって勢いで作りました。
-登録と一覧のビューもあるので後で追記するかも。
-随時更新予定ですが、こーゆーのって冷めるときは一瞬なので放置プレイになる可能性もあり得ます。&lt;/p&gt;
+&lt;p&gt;随時更新予定ですが、冷めるときは一瞬だと思うのでその内放置になると思いますm(_ _)m&lt;/p&gt;
 
 &lt;h1 id=&#34;us:1b735cbd4117890b113da764670ea978&#34;&gt;US&lt;/h1&gt;
-
-&lt;h2 id=&#34;2016-1:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 1&lt;/h2&gt;
-
-&lt;h3 id=&#34;usenix-enigma:1b735cbd4117890b113da764670ea978&#34;&gt;USENIX Enigma&lt;/h3&gt;
-
-&lt;p&gt;2016年が初開催のセキュリティ系のカンファレス&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/1/25 - 2016/1/27&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://www.usenix.org/conference/enigma2016&#34;&gt;https://www.usenix.org/conference/enigma2016&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2016-3:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 3&lt;/h2&gt;
-
-&lt;h3 id=&#34;geek-girl-tech-conference:1b735cbd4117890b113da764670ea978&#34;&gt;Geek Girl Tech Conference&lt;/h3&gt;
-
-&lt;p&gt;女性技術者中心のカンファレンス。発表者が女性なだけであって男性も参加できるようだけど多分浮くと思われる。Bay Areaの他にも何箇所かで開催されている。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/3/5 - 2016/3/5&lt;/li&gt;
-&lt;li&gt;場所: Bay Area, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://geekgirltechcon.com/&#34;&gt;http://geekgirltechcon.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;droidcon:1b735cbd4117890b113da764670ea978&#34;&gt;Droidcon&lt;/h3&gt;
-
-&lt;p&gt;Android関連のカンファレンス。他の国・地域でも開催&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/3/17 - 2016/3/18&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://sf.droidcon.com/&#34;&gt;http://sf.droidcon.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2016-4:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 4&lt;/h2&gt;
-
-&lt;h3 id=&#34;gpu-technology-conference:1b735cbd4117890b113da764670ea978&#34;&gt;GPU Technology Conference&lt;/h3&gt;
-
-&lt;p&gt;GPU関連技術のカンファレンス。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/4/4 - 2016/4/7&lt;/li&gt;
-&lt;li&gt;場所: San Jose, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.gputechconf.com/&#34;&gt;http://www.gputechconf.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;robouniverse:1b735cbd4117890b113da764670ea978&#34;&gt;RoboUniverse&lt;/h3&gt;
-
-&lt;p&gt;ロボティクスのカンファレス(カンファレスというより展示会の模様)。NY以外でも行われている。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/4/11 - 2016/4/12&lt;/li&gt;
-&lt;li&gt;場所: New York City, NY&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.robouniverse.com/&#34;&gt;http://www.robouniverse.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;openstack-summit:1b735cbd4117890b113da764670ea978&#34;&gt;OpenStack Summit&lt;/h3&gt;
-
-&lt;p&gt;OpenStackのカンファレンス。東京とか他の国でも行われる。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/4/25 - 2016/4/29&lt;/li&gt;
-&lt;li&gt;場所: Austin, TX&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://www.openstack.org/summit/&#34;&gt;https://www.openstack.org/summit/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2016-5:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 5&lt;/h2&gt;
-
-&lt;h3 id=&#34;interop:1b735cbd4117890b113da764670ea978&#34;&gt;Interop&lt;/h3&gt;
-
-&lt;p&gt;ネットワーク系がメインのカンファレンス。東京でも行われている。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/5/2 - 2016/5/6&lt;/li&gt;
-&lt;li&gt;場所: Las Vegas, NV&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.interop.com/&#34;&gt;http://www.interop.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ad-tech-los-angeles:1b735cbd4117890b113da764670ea978&#34;&gt;ad:tech(Los Angeles)&lt;/h3&gt;
-
-&lt;p&gt;アドテク系のカンファレンス。世界各国で行われる。アメリカだとLAとNY。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/5/11 - 2016/5/12&lt;/li&gt;
-&lt;li&gt;場所: Los Angeles, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.ad-tech.com/la/&#34;&gt;http://www.ad-tech.com/la/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;oscon:1b735cbd4117890b113da764670ea978&#34;&gt;OSCON&lt;/h3&gt;
-
-&lt;p&gt;O&amp;rsquo;Reilly主催の技術系全般を扱うカンファレンス。ヨーロッパでも開催される。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/5/16 - 2016/5/19&lt;/li&gt;
-&lt;li&gt;場所: Austin, TX&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://conferences.oreilly.com/oscon/open-source&#34;&gt;http://conferences.oreilly.com/oscon/open-source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;glue-conference:1b735cbd4117890b113da764670ea978&#34;&gt;Glue Conference&lt;/h3&gt;
-
-&lt;p&gt;Cloud, DevOps, Mobile API, BigData等の最新のトレンドに関するカンファレンス&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/5/25 - 2016/5/26&lt;/li&gt;
-&lt;li&gt;場所: Broom Field, CO&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://gluecon.com/&#34;&gt;http://gluecon.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2016-6:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 6&lt;/h2&gt;
-
-&lt;h3 id=&#34;spark-summit:1b735cbd4117890b113da764670ea978&#34;&gt;Spark Summit&lt;/h3&gt;
-
-&lt;p&gt;Apach Sparkに関するカンファレンス。他の国でも開催される。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/6/6 - 2016/6/8&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://spark-summit.org/&#34;&gt;https://spark-summit.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;qcon-new-york:1b735cbd4117890b113da764670ea978&#34;&gt;QCon(New York)&lt;/h3&gt;
-
-&lt;p&gt;InfoQ主催のカンファレンス。世界各地で開催&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/6/13 - 2016/6/17&lt;/li&gt;
-&lt;li&gt;場所: New York, NY&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://qconnewyork.com/&#34;&gt;https://qconnewyork.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;velocity-santa-clara:1b735cbd4117890b113da764670ea978&#34;&gt;Velocity(Santa Clara)&lt;/h3&gt;
-
-&lt;p&gt;O&amp;rsquo;Reilly主催のカンファレンス。Webのオペレーションやパフォーマンス、最適化がメインテーマ。DevOps的な内容も扱う。世界各地で開催。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/6/21 - 2016/6/23&lt;/li&gt;
-&lt;li&gt;場所: Santa Clara, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://velocityconf.com/&#34;&gt;http://velocityconf.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;sigmod:1b735cbd4117890b113da764670ea978&#34;&gt;SIGMOD&lt;/h3&gt;
-
-&lt;p&gt;データ管理およびデータベースを扱う学会のカンファレンス。年1回世界のどこかで行われるが2016年はSFで開催。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/6/26 - 2016/7/1&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://sigmod2016.org/&#34;&gt;http://sigmod2016.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;hadoop-summit:1b735cbd4117890b113da764670ea978&#34;&gt;Hadoop Summit&lt;/h3&gt;
-
-&lt;p&gt;Hadoopの公式カンファレンス。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2016/6/28 - 2016/6/30&lt;/li&gt;
-&lt;li&gt;場所: San Jose, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://2016.hadoopsummit.org/&#34;&gt;http://2016.hadoopsummit.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;h2 id=&#34;2016-8:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 8&lt;/h2&gt;
 
@@ -695,7 +533,57 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;https://www.vmworld.com/en/us/index.html&#34;&gt;https://www.vmworld.com/en/us/index.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&#34;scale:1b735cbd4117890b113da764670ea978&#34;&gt;@Scale&lt;/h3&gt;
+
+&lt;p&gt;スケールするシステムを開発するための技術に関するカンファレンス。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/8/31 - 2016/8/31&lt;/li&gt;
+&lt;li&gt;場所: San Jose, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.atscaleconference.com/&#34;&gt;http://www.atscaleconference.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;2016-9:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 9&lt;/h2&gt;
+
+&lt;h3 id=&#34;gdg-devfest:1b735cbd4117890b113da764670ea978&#34;&gt;GDG DevFest&lt;/h3&gt;
+
+&lt;p&gt;Google Deveoper Groupのコミュニティイベント。世界各地でいろんな日に開催される。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/9/1 - 2016/11/30&lt;/li&gt;
+&lt;li&gt;場所: Mountain View, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://developers.google.com/events/devfest/&#34;&gt;https://developers.google.com/events/devfest/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;hashiconf:1b735cbd4117890b113da764670ea978&#34;&gt;HashiConf&lt;/h3&gt;
+
+&lt;p&gt;HashiCorp製品のカンファレンス。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/9/6 - 2016/9/8&lt;/li&gt;
+&lt;li&gt;場所: Portland, OR&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://hashiconf.com/&#34;&gt;https://hashiconf.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;strange-loop:1b735cbd4117890b113da764670ea978&#34;&gt;Strange Loop&lt;/h3&gt;
+
+&lt;p&gt;新しい技術全般に関するカンファレンス。言語やアーキテクチャ、DB、セキュリティ等内容は多岐にわたる。2015年は9月に開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/9/15 - 2016/9/17&lt;/li&gt;
+&lt;li&gt;場所: St. Louis, MO&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;http://www.thestrangeloop.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;java-one-oracle-open-world:1b735cbd4117890b113da764670ea978&#34;&gt;Java One / Oracle Open World&lt;/h3&gt;
+
+&lt;p&gt;Oracleの公式カンファレンス。いつも同日開催なのでまとめてます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/9/18 - 2016/9/22&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://www.oracle.com/openworld/index.html&#34;&gt;https://www.oracle.com/openworld/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;velocity-new-york:1b735cbd4117890b113da764670ea978&#34;&gt;Velocity(New York)&lt;/h3&gt;
 
@@ -707,6 +595,46 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://velocityconf.com/&#34;&gt;http://velocityconf.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&#34;gartner-itxpo:1b735cbd4117890b113da764670ea978&#34;&gt;Gartner ITXpo&lt;/h3&gt;
+
+&lt;p&gt;Gartner主催のカンファレンス。世界各国で行われる。エンタープライズとかビジネス寄り。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/10/16 - 2016/10/20&lt;/li&gt;
+&lt;li&gt;場所: Orlando, FL&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.gartner.com/us/symposium&#34;&gt;http://www.gartner.com/us/symposium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;all-things-open:1b735cbd4117890b113da764670ea978&#34;&gt;All Things Open&lt;/h3&gt;
+
+&lt;p&gt;オープン系技術に関するカンファレンス。2015年は10月に開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/10/26 - 2016/10/27&lt;/li&gt;
+&lt;li&gt;場所: RALEIGH, NC&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://allthingsopen.org/&#34;&gt;http://allthingsopen.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;devops-enterprise-summit:1b735cbd4117890b113da764670ea978&#34;&gt;DevOps Enterprise Summit&lt;/h3&gt;
+
+&lt;p&gt;DevOps系のカンファレンス。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/11/7 - 2016/11/9&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://devopsenterprise.io/&#34;&gt;http://devopsenterprise.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;kubecon:1b735cbd4117890b113da764670ea978&#34;&gt;KubeCon&lt;/h3&gt;
+
+&lt;p&gt;Kubernetesに関するカンファレンス&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/11/8 - 2016/11/9&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://kubecon.io/&#34;&gt;https://kubecon.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&#34;aws-re-invent:1b735cbd4117890b113da764670ea978&#34;&gt;AWS re:Invent&lt;/h3&gt;
 
 &lt;p&gt;AWSの公式カンファレンス。&lt;/p&gt;
@@ -715,6 +643,28 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;日時: 2016/11/28 - 2016/12/2&lt;/li&gt;
 &lt;li&gt;場所: Las Vegas, NV&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;https://reinvent.awsevents.com/&#34;&gt;https://reinvent.awsevents.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;node-js-interactive:1b735cbd4117890b113da764670ea978&#34;&gt;node.js Interactive&lt;/h3&gt;
+
+&lt;p&gt;node.jsのカンファレス。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/11/29 - 2016/12/2&lt;/li&gt;
+&lt;li&gt;場所: Austin, TX&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://events.linuxfoundation.org/events/node-interactive&#34;&gt;http://events.linuxfoundation.org/events/node-interactive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2017-2:1b735cbd4117890b113da764670ea978&#34;&gt;2017 / 2&lt;/h2&gt;
+
+&lt;h3 id=&#34;perform:1b735cbd4117890b113da764670ea978&#34;&gt;Perform&lt;/h3&gt;
+
+&lt;p&gt;パフォーマンス管理ツールを作っているdynatrace主催のカンファレンス。webとかパフォーマンスの話がメイン。ビジネス系の話も多い印象。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2017/2/7 - 2017/2/9&lt;/li&gt;
+&lt;li&gt;場所: Las Vegas, NV&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.dynatrace.com/en/perform.html&#34;&gt;http://www.dynatrace.com/en/perform.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;未定:1b735cbd4117890b113da764670ea978&#34;&gt;未定&lt;/h2&gt;
@@ -731,7 +681,7 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 
 &lt;h3 id=&#34;google-io:1b735cbd4117890b113da764670ea978&#34;&gt;Google IO&lt;/h3&gt;
 
-&lt;p&gt;Googleの公式カンファレンス。2015年は5月に開催。毎年AndroidやGCP等の様々な最新情報が発表される。日本人の参加者も多数。&lt;/p&gt;
+&lt;p&gt;Googleの公式カンファレンス。例年5月に開催。毎年AndroidやGCP等の様々な最新情報が発表される。日本人の参加者も多数。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;日時: 未定&lt;/li&gt;
@@ -769,16 +719,6 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: 未定&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;java-one-oracle-open-world:1b735cbd4117890b113da764670ea978&#34;&gt;Java One / Oracle Open World&lt;/h3&gt;
-
-&lt;p&gt;Oracleの公式カンファレンス。いつも同日開催なのでまとめてます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://www.oracle.com/openworld/index.html&#34;&gt;https://www.oracle.com/openworld/index.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;ad-tech-new-york:1b735cbd4117890b113da764670ea978&#34;&gt;ad:tech(New York)&lt;/h3&gt;
 
 &lt;p&gt;アドテク系のカンファレンス。世界各国で行われる。アメリカだとLAとNY。2015年は11月に開催&lt;/p&gt;
@@ -809,16 +749,6 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://gotocon.com/&#34;&gt;http://gotocon.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;gartner-itxpo:1b735cbd4117890b113da764670ea978&#34;&gt;Gartner ITXpo&lt;/h3&gt;
-
-&lt;p&gt;Gartner主催のカンファレンス。世界各国で行われる。エンタープライズとかビジネス寄り。アメリカでは2015年は5月に行われた。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: Orlando, FL&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.gartner.com/us/symposium&#34;&gt;http://www.gartner.com/us/symposium&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;span:1b735cbd4117890b113da764670ea978&#34;&gt;SPAN&lt;/h3&gt;
 
 &lt;p&gt;Google主催のデザイン系のカンファレンス。ロンドンでも行われるらしい。2015年は10月に開催&lt;/p&gt;
@@ -829,36 +759,6 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;https://design.google.com/span-nyc/&#34;&gt;https://design.google.com/span-nyc/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;scale:1b735cbd4117890b113da764670ea978&#34;&gt;@Scale&lt;/h3&gt;
-
-&lt;p&gt;スケールするシステムを開発するための技術に関するカンファレンス。2015年は9月開催だった。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: San Jose, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.atscaleconference.com/&#34;&gt;http://www.atscaleconference.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;strange-loop:1b735cbd4117890b113da764670ea978&#34;&gt;Strange Loop&lt;/h3&gt;
-
-&lt;p&gt;新しい技術全般に関するカンファレンス。言語やアーキテクチャ、DB、セキュリティ等内容は多岐にわたる。2015年は9月に開催&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: St. Louis, MO&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.thestrangeloop.com/&#34;&gt;http://www.thestrangeloop.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;perform:1b735cbd4117890b113da764670ea978&#34;&gt;Perform&lt;/h3&gt;
-
-&lt;p&gt;パフォーマンス管理ツールを作っているdynatrace主催のカンファレンス。webとかパフォーマンスの話がメイン。ビジネス系の話も多い印象。2015年は10月に開催。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: Orlando, FL&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://www.dynatrace.com/en/perform.html&#34;&gt;http://www.dynatrace.com/en/perform.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;ricon:1b735cbd4117890b113da764670ea978&#34;&gt;Ricon&lt;/h3&gt;
 
 &lt;p&gt;Riak作ってるBasho主催のカンファレンス。分散処理システムに関する話題がメイン。2015年は11月に開催&lt;/p&gt;
@@ -867,36 +767,6 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;日時: 未定&lt;/li&gt;
 &lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://ricon.io/&#34;&gt;http://ricon.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;all-things-open:1b735cbd4117890b113da764670ea978&#34;&gt;All Things Open&lt;/h3&gt;
-
-&lt;p&gt;オープン系技術に関するカンファレンス。2015年は10月に開催&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: RALEIGH, NC&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://allthingsopen.org/&#34;&gt;http://allthingsopen.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;devops-enterprise-summit:1b735cbd4117890b113da764670ea978&#34;&gt;DevOps Enterprise Summit&lt;/h3&gt;
-
-&lt;p&gt;DevOps系のカンファレンス。2015年は10月に開催&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: RALEIGH, NC&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://devopsenterprise.io/&#34;&gt;http://devopsenterprise.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;gdg-devfest:1b735cbd4117890b113da764670ea978&#34;&gt;GDG DevFest&lt;/h3&gt;
-
-&lt;p&gt;Google Deveoper Groupのコミュニティイベント。世界各地でいろんな日に開催される。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: Mountain View, CA&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://developers.google.com/events/devfest/&#34;&gt;https://developers.google.com/events/devfest/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;graph-connect:1b735cbd4117890b113da764670ea978&#34;&gt;Graph Connect&lt;/h3&gt;
@@ -919,19 +789,9 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://codeconf.com/&#34;&gt;http://codeconf.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;hashiconf:1b735cbd4117890b113da764670ea978&#34;&gt;HashiConf&lt;/h3&gt;
-
-&lt;p&gt;HashiCorp製品のカンファレンス。2015年は9月に開催された。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: Portland, OR&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;https://hashiconf.com/&#34;&gt;https://hashiconf.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;gophercon:1b735cbd4117890b113da764670ea978&#34;&gt;Gophercon&lt;/h3&gt;
 
-&lt;p&gt;Golangのカンファレンス。2015年は7月に開催された。&lt;/p&gt;
+&lt;p&gt;Golangのカンファレンス。例年7月開催。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;日時: 未定&lt;/li&gt;
@@ -959,16 +819,6 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://www.devopsdays.org/&#34;&gt;http://www.devopsdays.org/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;node-js-interactive:1b735cbd4117890b113da764670ea978&#34;&gt;node.js Interactive&lt;/h3&gt;
-
-&lt;p&gt;node.jsのカンファレス。2015年は12月開催だった&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 未定&lt;/li&gt;
-&lt;li&gt;場所: Portland, OR&lt;/li&gt;
-&lt;li&gt;URL: &lt;a href=&#34;http://events.linuxfoundation.org/events/node-interactive&#34;&gt;http://events.linuxfoundation.org/events/node-interactive&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h3 id=&#34;ubiquity:1b735cbd4117890b113da764670ea978&#34;&gt;UBIQUITY&lt;/h3&gt;
 
 &lt;p&gt;IoTとかユビキタスコンピューティングに関するカンファレス。Google主催。2016年は1月に開催。&lt;/p&gt;
@@ -977,6 +827,16 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;日時: 未定&lt;/li&gt;
 &lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;https://ubiquity.withgoogle.com/&#34;&gt;https://ubiquity.withgoogle.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;serverlessconf:1b735cbd4117890b113da764670ea978&#34;&gt;Serverlessconf&lt;/h3&gt;
+
+&lt;p&gt;名前の通りServerless専門のカンファレンス。2016年は5月開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 未定&lt;/li&gt;
+&lt;li&gt;場所: Brooklyn, NY&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://serverlessconf.io/&#34;&gt;http://serverlessconf.io/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
