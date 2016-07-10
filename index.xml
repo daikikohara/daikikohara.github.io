@@ -521,6 +521,18 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 
 &lt;h1 id=&#34;us:1b735cbd4117890b113da764670ea978&#34;&gt;US&lt;/h1&gt;
 
+&lt;h2 id=&#34;2016-7:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 7&lt;/h2&gt;
+
+&lt;h3 id=&#34;ansiblefest:1b735cbd4117890b113da764670ea978&#34;&gt;AnsibleFest&lt;/h3&gt;
+
+&lt;p&gt;Ansibleの公式カンファレンス。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/7/28 - 2016/7/28&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.ansible.com/ansiblefest&#34;&gt;http://www.ansible.com/ansiblefest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;2016-8:1b735cbd4117890b113da764670ea978&#34;&gt;2016 / 8&lt;/h2&gt;
 
 &lt;h3 id=&#34;vmworld:1b735cbd4117890b113da764670ea978&#34;&gt;VMworld&lt;/h3&gt;
@@ -615,6 +627,26 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://allthingsopen.org/&#34;&gt;http://allthingsopen.org/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&#34;ad-tech-los-angeles:1b735cbd4117890b113da764670ea978&#34;&gt;ad:tech(Los Angeles)&lt;/h3&gt;
+
+&lt;p&gt;アドテク系のカンファレンス。世界各国で行われる。アメリカだとLAとNY。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/11/2 - 2016/11/3&lt;/li&gt;
+&lt;li&gt;場所: Los Angeles, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://ny.ad-tech.com/&#34;&gt;http://ny.ad-tech.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;qcon-san-francisco:1b735cbd4117890b113da764670ea978&#34;&gt;QCon(San Francisco)&lt;/h3&gt;
+
+&lt;p&gt;InfoQ主催のカンファレンス。世界各地で開催&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2016/11/7 - 2016/11/11&lt;/li&gt;
+&lt;li&gt;場所: San Francisco, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;https://qconsf.com/&#34;&gt;https://qconsf.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&#34;devops-enterprise-summit:1b735cbd4117890b113da764670ea978&#34;&gt;DevOps Enterprise Summit&lt;/h3&gt;
 
 &lt;p&gt;DevOps系のカンファレンス。&lt;/p&gt;
@@ -667,6 +699,40 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 &lt;li&gt;URL: &lt;a href=&#34;http://www.dynatrace.com/en/perform.html&#34;&gt;http://www.dynatrace.com/en/perform.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;2017-5:1b735cbd4117890b113da764670ea978&#34;&gt;2017 / 5&lt;/h2&gt;
+
+&lt;h3 id=&#34;gpu-technology-conference:1b735cbd4117890b113da764670ea978&#34;&gt;GPU Technology Conference&lt;/h3&gt;
+
+&lt;p&gt;GPU関連技術のカンファレンス。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2017/5/8 - 2017/5/11&lt;/li&gt;
+&lt;li&gt;場所: San Jose, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.gputechconf.com/&#34;&gt;http://www.gputechconf.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;interop:1b735cbd4117890b113da764670ea978&#34;&gt;Interop&lt;/h3&gt;
+
+&lt;p&gt;ネットワーク系がメインのカンファレンス。東京でも行われている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2017/5/22 - 2017/5/26&lt;/li&gt;
+&lt;li&gt;場所: Las Vegas, NV&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://www.interop.com/&#34;&gt;http://www.interop.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2017-6:1b735cbd4117890b113da764670ea978&#34;&gt;2017 / 6&lt;/h2&gt;
+
+&lt;h3 id=&#34;velocity-santa-clara:1b735cbd4117890b113da764670ea978&#34;&gt;Velocity(Santa Clara)&lt;/h3&gt;
+
+&lt;p&gt;O&amp;rsquo;Reilly主催のカンファレンス。Webのオペレーションやパフォーマンス、最適化がメインテーマ。DevOps的な内容も扱う。世界各地で開催。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日時: 2017/6/19 - 2017/6/22&lt;/li&gt;
+&lt;li&gt;場所: Santa Clara, CA&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&#34;http://velocityconf.com/&#34;&gt;http://velocityconf.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;未定:1b735cbd4117890b113da764670ea978&#34;&gt;未定&lt;/h2&gt;
 
 &lt;h3 id=&#34;coreos-fest:1b735cbd4117890b113da764670ea978&#34;&gt;CoreOS Fest&lt;/h3&gt;
@@ -691,7 +757,7 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
 
 &lt;h3 id=&#34;devnation:1b735cbd4117890b113da764670ea978&#34;&gt;DevNation&lt;/h3&gt;
 
-&lt;p&gt;OSSに関するカンファレンス。2015年は6月に開催。&lt;/p&gt;
+&lt;p&gt;OSSに関するカンファレンス。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;日時: 未定&lt;/li&gt;
