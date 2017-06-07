@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webinar on tbd</title>
+    <link>https://daikikohara.github.io/categories/webinar/</link>
+    <description>Recent content in Webinar on tbd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 07 Jun 2017 14:49:18 -0800</lastBuildDate>
+    <atom:link href="https://daikikohara.github.io/categories/webinar/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Amazon DynamoDB Accelerator(DAX) Webinar視聴メモ</title>
+      <link>https://daikikohara.github.io/blog/2017/06/07/dax-webinar/</link>
+      <pubDate>Wed, 07 Jun 2017 14:49:18 -0800</pubDate>
+      
+      <guid>https://daikikohara.github.io/blog/2017/06/07/dax-webinar/</guid>
+      <description>
+
+&lt;p&gt;なぜか久しぶりにブログを更新したくなったのでライトな内容ですが、先日聞いた&lt;a href=&#34;https://aws.amazon.com/dynamodb/dax/&#34;&gt;Amazon DynamoDB Accelerator(DAX)&lt;/a&gt;のWebinarの視聴メモを上げてみます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/wBCDe5964-0&#34;&gt;動画&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/AmazonWebServices/dynamodb-architectural-patterns-and-best-practices-for-infinitely-scalable-applications&#34;&gt;スライド&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;視聴メモ:476f3239bc3e3c7504153596e9053d65&#34;&gt;視聴メモ&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DynamoDB専用のキャッシュで10x程度の高速化が見込めるとともにProvisioned Capacityを下げることでコストの低減も見込める。&lt;/li&gt;
+&lt;li&gt;APIはDynamoDBと互換性があるので、クライアントを入れ替えるだけで透過的に使える。
+
+&lt;ul&gt;
+&lt;li&gt;CreateTableとかDeleteTableとかのAPIは使えない&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;デモだとレイテンシは通常のDynamoDBアクセスと比べて1/10〜1/20になってた。
+
+&lt;ul&gt;
+&lt;li&gt;GetItemが0.25msくらい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;インスタンスタイプを選んでクラスタを立ち上げる。クラスタはVPC内で立ち上がる。
+
+&lt;ul&gt;
+&lt;li&gt;スケールアップは244GBまで可能&lt;/li&gt;
+&lt;li&gt;スケールアウトは10レプリカまで可能&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;PutItemとかGetItemで使われるItemキャッシュとqueryとかscanで使われるQueryキャッシュが分かれている。&lt;/li&gt;
+&lt;li&gt;書き込み時だけじゃなくてキャッシュミス時にも自動でキャッシュがpopulateされる。
+
+&lt;ul&gt;
+&lt;li&gt;WriteBack(新しい値を書き込む時にDAXに書き込んだら結果を返し、DAXが後で非同期でDynamoDBに書き込む)はまだ利用できない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;アプリとクラスタの関係は1:1、1:多、多:１、多:多の何でもオッケー&lt;/li&gt;
+&lt;li&gt;キャッシュEvictionは以下の3パターン
+
+&lt;ul&gt;
+&lt;li&gt;TTL: デフォルト5分&lt;/li&gt;
+&lt;li&gt;LRU：デフォルトでオンでオフにはできない&lt;/li&gt;
+&lt;li&gt;WriteThrough: 新しい値を書き込んだ時に行われる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;マニュアルでフラッシュするAPIは無い。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;感想とか気になった点:476f3239bc3e3c7504153596e9053d65&#34;&gt;感想とか気になった点&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;インスタンスの料金以外に追加で料金がかかるのかが気になる。&lt;/li&gt;
+&lt;li&gt;アプリとDynamoDBの間に1レイヤ入るので、クラスタが落ちてたときとかの挙動が気になる。&lt;/li&gt;
+&lt;li&gt;サンプルプログラムでクライアントにコンフィグファイルを渡してたが、どんな内容のコンフィグファイルなのかが気になる。&lt;/li&gt;
+&lt;li&gt;かなり簡単で良さそうだけど、DBから取り出すデータとキャッシュが1:1じゃない関係でキャッシュしたい場合もあるからRedisとかでキャッシュするのがなくなるわけでは無さそう。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
