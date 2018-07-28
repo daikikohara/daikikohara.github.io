@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 20 Sep 2015 12:17:31 -0700</lastBuildDate>
-    <atom:link href="https://daikikohara.github.io/categories/ja/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://daikikohara.github.io/categories/ja/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SimpleSwipeFlashcard - Android用単語帳アプリ</title>
@@ -15,243 +17,19 @@
       <pubDate>Sun, 20 Sep 2015 12:17:31 -0700</pubDate>
       
       <guid>https://daikikohara.github.io/work/simpleswipeflashcard_ja/</guid>
-      <description>
-
-&lt;p&gt;&lt;u&gt;&lt;a href=&#34;https://daikikohara.github.io/work/simpleswipeflashcard_en/&#34;&gt;Click here to see English Description&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;
-
-&lt;p&gt;メニュー&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#About:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;アプリについて&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#Announcement:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;お知らせ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#Update:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;更新履歴&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#How:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;使い方&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#FAQ:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;About:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;アプリについて&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=daikikohara.flashcard&#34;&gt;SimpleSwipeFlashcard&lt;/a&gt;はAndroid上で単語帳の作成・編集および、作成した単語帳のテストを行う機能を提供するアプリです。&lt;br&gt;
-詳細は上記のリンクをクリックしてGooglePlay上のアプリの説明ページをご覧ください。&lt;/p&gt;
-
-&lt;h1 id=&#34;Announcement:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;お知らせ&lt;/h1&gt;
-
-&lt;p&gt;現在お知らせは特にありません。&lt;br&gt;
-現在確認されている不具合は&lt;a href=&#34;#BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/a&gt;をご確認ください。&lt;/p&gt;
-
-&lt;h1 id=&#34;Update:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;更新履歴&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2015/09/21 - Version1.0.0リリース&lt;/li&gt;
-&lt;li&gt;2015/09/21 - Version1.0.1リリース&lt;br&gt;
-一部の機種で&amp;rdquo;裏面へ&amp;rdquo;ボタンタップ時にアプリがクラッシュする問題を修正しました。&lt;/li&gt;
-&lt;li&gt;2015/09/23 - Version1.0.2リリース&lt;br&gt;
-シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう等の不具合を修正しました。&lt;/li&gt;
-&lt;li&gt;2015/09/25 - Version1.1.0リリース&lt;br&gt;
-テスト中に単語を暗記済みにすることができるようになりました。&lt;/li&gt;
-&lt;li&gt;2015/09/26 - Version1.1.1リリース&lt;br&gt;
-以下の不具合を修正しました。
-
-&lt;ul&gt;
-&lt;li&gt;裏面で暗記済みにした際にカウントがずれてしまう&lt;/li&gt;
-&lt;li&gt;端末の言語設定変更時にアプリの設定がおかしくってしまう&lt;/li&gt;
-&lt;li&gt;まれに戻るボタンが連打されてしまう&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;2015/09/29 - Version1.1.2リリース&lt;br&gt;
-端末のフォントサイズ設定によって画面の表示が崩れる問題を修正しました。&lt;/li&gt;
-&lt;li&gt;2015/10/09 - Version1.1.3リリース&lt;br&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Android 6.0(Marshmallow)に対応しました。&lt;/li&gt;
-&lt;li&gt;単語を1行でなく複数行で登録できるように変更しました。&lt;/li&gt;
-&lt;li&gt;単語の最大文字数を100文字から1000文字に変更しました。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;How:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;使い方&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-単語帳一覧画面:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;1. 単語帳一覧画面&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/main.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;右下の赤い「+」ボタンをタップすると手動で単語帳が追加できます。&lt;/li&gt;
-&lt;li&gt;右上のメニューアイコンをタップすると下記のメニューが開きます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/main_menu.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;ダウンロード&amp;rdquo;をタップするとダウンロード用のダイアログが開きます。ダウンロード可能な単語帳は全て無料でご利用頂けます。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;インポート&amp;rdquo;をタップすると、以前GoogleDriveにエクスポートした単語帳(後述)をインポートすることができます。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;全単語帳をエクスポート&amp;rdquo;をタップすると端末上の全ての単語帳をGoogleDriveにエクスポートすることができます。
-エクスポートの詳細は後述します。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;シェアする&amp;rdquo;をタップするとメール等で本アプリのことを友達等にシェアすることが可能です。今後の開発やダウンロード用の単語帳追加へのモチベーション向上にも繋がるので良かったらぜひシェアお願いします。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;ヘルプ&amp;rdquo;をタップするとヘルプが開きます。利用前に一度ご確認ください。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;設定&amp;rdquo;をタップすると設定画面が開きます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/main_tap.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;リストから単語帳(この例ではExampleしかありませんが)をタップすると上記のテスト開始用のダイアログが開きます。
-テストの条件を指定することが可能です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/main_longpress.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;リストから単語帳を長押しすると上記の単語帳用のメニューが開きます。
-単語帳の編集や削除、GoogleDriveへのエクスポートが可能です。
-エクスポートした単語帳はSimpleSwipeFlashcardフォルダ内にスプレッドシートファイル形式で保存されます。
-そのため、PC等で単語帳を編集し、再び本アプリにインポートすることができます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/main_swipe.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;単語帳をスワイプすることでも操作が可能です(左右)。スワイプ時のアクションは設定画面で変更可能です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2-単語帳編集画面-単語一覧画面:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;2. 単語帳編集画面(単語一覧画面)&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/edit.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;右下の赤い「+」ボタンをタップすると単語/意味の追加ができます。&lt;/li&gt;
-&lt;li&gt;右上のメニューアイコンをタップすると下記のメニューが開きます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/edit_menu.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;タイトルを編集&amp;rdquo;をタップすると単語帳名を変更することが可能です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/edit_tap.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;リストから単語をタップすると上記のメニューが開きます。
-ここでは単語/意味の編集と削除、暗記済み/未暗記の入れ替えが可能です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/edit_swipe.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;単語一覧でもスワイプすることでの操作が可能です。スワイプ時のアクションは設定画面で変更可能です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;3-テスト画面:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;3. テスト画面&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/test.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;読み上げ&amp;rdquo;ボタンをタップするとAndroidの組み込み機能により合成音声で単語を読み上げます。発音の確認にご利用ください。対応している端末のみで利用可能です。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;暗記済み&amp;rdquo;ボタンをタップすると単語を暗記済み(詳細は後述)とします。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;裏面へ&amp;rdquo;ボタンをタップするとカードを裏面(単語の意味)にひっくり返します。&amp;rdquo;裏面へ&amp;rdquo;ボタンをタップした単語は&amp;rdquo;忘れてた&amp;rdquo;単語としてカウントされます。&lt;/li&gt;
-&lt;li&gt;次の単語へ進むときはカードを左にスワイプします。&amp;rdquo;裏面へ&amp;rdquo;ボタンをタップせずに次のカードに進んだ単語は&amp;rdquo;覚えてた&amp;rdquo;単語としてカウントされます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;4-テスト結果画面:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;4. テスト結果画面&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/result.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;終了&amp;rdquo;ボタンをタップすると単語帳一覧画面に戻ります。&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;リトライ&amp;rdquo;ボタンをタップすると&amp;rdquo;忘れてた単語&amp;rdquo;のみリトライすることができます。&lt;/li&gt;
-&lt;li&gt;この画面は設定で非表示にすることが可能です。その場合、自動で&amp;rdquo;忘れてた単語&amp;rdquo;のみリトライする/しないも設定可能です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/result_fail.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;忘れてた単語&amp;rdquo;の一覧画面です。ボタンタップ時の動作は前述の画面と同じです。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/result_remember.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;暗記済みとされる単語の一覧画面です。単語は以下の場合に暗記済みとなります。
-
-&lt;ul&gt;
-&lt;li&gt;一定回数(回数は設定画面で変更可能)&amp;ldquo;覚えてた&amp;rdquo;単語としてテストを終了した場合&lt;/li&gt;
-&lt;li&gt;テスト中に該当の単語で&amp;rdquo;暗記済み&amp;rdquo;ボタンをタップした場合&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;暗記済みとなった単語は次回以降のテストでは出てきません。(暗記済み単語のテストを選択した場合は除く)&lt;/li&gt;
-&lt;li&gt;チェックを外すと暗記済みにしないようにできます。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;5-設定画面:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;5. 設定画面&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/jp/settings.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;p&gt;この画面は見ての通りだと思うので説明は省略します。
-様々な項目の設定が可能になっていますので、自分に合った設定で使ってみてください。&lt;/p&gt;
-
-&lt;h1 id=&#34;FAQ:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;FAQ&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. 読み上げ機能が使えない&lt;/b&gt;&lt;br&gt;
-A. 読み上げはAndroidに組み込まれているText to Speech(テキスト読み上げ)という機能を使っています。
-ご利用の端末がText to Speechに対応しているかご確認ください。
-また、ご利用の端末によっては音声データ事前に音声データのダウンロードが必要となる場合があります。アプリ内で言語選択時にダウンロードされるはずですので、インターネット接続等をご確認の上再度実行してみてください。インターネット接続していてもアプリ内からダウンロードできない場合は、端末の設定画面から直接ダウンロードをしてみてください。
-併せて、端末の音量設定もご確認ください。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. 単語帳のダウンロードができない&lt;/b&gt;&lt;br&gt;
-A. 端末がオンラインであるかご確認ください。また、設定画面で&amp;rdquo;フィードバックを送信&amp;rdquo;がオンになっていることを確認してください。(フィードバック送信の詳細はヘルプをご確認ください。)
-ネットワーク・サーバ側の不具合で一時的に利用できない場合もあります。恐れいりますが、その場合はしばらくしてからお試しください。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. インポート/エクスポート/ダウンロードでエラーが出てしまう&lt;/b&gt;&lt;br&gt;
-A. ネットワーク・サーバ側の問題で一時的に利用できない可能性があります。表示されるメッセージの通りになりますが、しばらくしてからやり直してください。インポート/エクスポートの場合は可能であればデータサイズ(単語帳の数や単語帳内の単語数)を減らして試してみて貰えればと思います。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. エクスポートしたGoogleDrive上のフォルダをPCブラウザ等から見ると同じ名前のファイルが並んでいる&lt;/b&gt;&lt;br&gt;
-A. キャッシュの問題で発生してしまうようです。ページをリロードすることで解消されます。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. 自分が作った単語帳を友達にシェアしたい&lt;/b&gt;&lt;br&gt;
-A. 申し訳ありませんが現在のところアプリ内で行うことはできません。お手数ですがGoogleDriveを経由してのファイル共有をお願いします。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. 機種変更時に単語帳が消えてしまった&lt;/b&gt;&lt;br&gt;
-A. 現在は容量等の関係で端末変更時には設定のみ引き継げるようになっています。
-お手数ですが、単語帳を引き継ぐ場合は古い端末でGoogleDriveにエクスポートし、それを新しい端末でインポートしてください。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. 単語帳の意味に同じようなものが並んでいる&lt;/b&gt;&lt;br&gt;
-A. 中学英語・高校英語の単語帳はパブリックドメインの辞書とのマッチングを機械的に行ったあとに余り整形せずに多くの意味を載せています。
-その他の単語帳では自動詞・他動詞は別の行に分けています。例えば、「と連絡する」と「連絡する」という2行があった場合、その単語は自動詞にも他動詞にもなれるものです。
-なお、同じ行に「と連絡する  接触する」等と並んでいた場合は2つ目以降の単語は他動詞ですが「と、を」等の助詞を省略しています。(2つ目以降にも付いているケースもあり、統一されていませんがご了承ください。)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;BUG:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;既知の不具合&lt;/h1&gt;
-
-&lt;h2 id=&#34;未解決:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;未解決&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;カードを裏返すアニメーションがAndroid6.0(Marshmallow)だとおかしくなる不具合が報告されています。現在確認中です。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;解決済み:e5366aa6e519a0bdbdf020453b8df8a1&#34;&gt;解決済み&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Version1.0.1で解消&lt;br&gt;
-一部の機種で&amp;rdquo;裏面へ&amp;rdquo;ボタンをタップするとアプリがクラッシュしてしまう現象が確認されています。詳細が確認出来次第修正を行います。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Version1.0.2で解消&lt;br&gt;
-シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう、またその分いくつかの単語が表示されないという不具合が確認されています。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Version1.1.1で解消&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;テスト中に裏面で&amp;rdquo;暗記済み&amp;rdquo;ボタンをタップした際に&amp;rdquo;覚えてた&amp;rdquo;単語と&amp;rdquo;忘れてた&amp;rdquo;単語のカウントがずれる不具合が確認されています。&lt;/li&gt;
-&lt;li&gt;戻るボタンが連発されてしまう不具合が確認されています。
-詳細を確認次第、修正したいと思います。暫定的な回避策としてはアプリの再起動をお願いします。&lt;/li&gt;
-&lt;li&gt;端末の言語設定を変更するとアプリの設定・挙動が一部おかしくなる不具合が確認されています。
-暫定的な回避策としては設定をし直すことで元に戻ります。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Version1.1.2で解消&lt;br&gt;
-端末のフォントサイズ設定によって画面の表示が崩れる不具合が確認されています。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Click here to see English Description
+メニュー
+ アプリについて お知らせ 更新履歴 使い方 FAQ 既知の不具合  アプリについて SimpleSwipeFlashcardはAndroid上で単語帳の作成・編集および、作成した単語帳のテストを行う機能を提供するアプリです。
+詳細は上記のリンクをクリックしてGooglePlay上のアプリの説明ページをご覧ください。
+お知らせ 現在お知らせは特にありません。
+現在確認されている不具合は既知の不具合をご確認ください。
+更新履歴  2015/09/21 - Version1.0.0リリース 2015/09/21 - Version1.0.1リリース
+一部の機種で&amp;rdquo;裏面へ&amp;rdquo;ボタンタップ時にアプリがクラッシュする問題を修正しました。 2015/09/23 - Version1.0.2リリース
+シャッフルテスト時に画面の回転等により再度順番がシャッフルされ、同じ単語が複数回表示されてしまう等の不具合を修正しました。 2015/09/25 - Version1.1.0リリース
+テスト中に単語を暗記済みにすることができるようになりました。 2015/09/26 - Version1.1.1リリース
+以下の不具合を修正しました。  裏面で暗記済みにした際にカウントがずれてしまう 端末の言語設定変更時にアプリの設定がおかしくってしまう まれに戻るボタンが連打されてしまう  2015/09/29 - Version1.1.2リリース
+端末のフォントサイズ設定によって画面の表示が崩れる問題を修正しました。 2015/10/09 - Version1.1.3リリース
+ Android 6.0(Marshmallow)に対応しました。 単語を1行でなく複数行で登録できるように変更しました。 単語の最大文字数を100文字から1000文字に変更しました。   使い方 1. 単語帳一覧画面  右下の赤い「+」ボタンをタップすると手動で単語帳が追加できます。 右上のメニューアイコンをタップすると下記のメニューが開きます。   &amp;ldquo;ダウンロード&amp;rdquo;をタップするとダウンロード用のダイアログが開きます。ダウンロード可能な単語帳は全て無料でご利用頂けます。 &amp;ldquo;インポート&amp;rdquo;をタップすると、以前GoogleDriveにエクスポートした単語帳(後述)をインポートすることができます。 &amp;ldquo;全単語帳をエクスポート&amp;rdquo;をタップすると端末上の全ての単語帳をGoogleDriveにエクスポートすることができます。 エクスポートの詳細は後述します。 &amp;ldquo;シェアする&amp;rdquo;をタップするとメール等で本アプリのことを友達等にシェアすることが可能です。今後の開発やダウンロード用の単語帳追加へのモチベーション向上にも繋がるので良かったらぜひシェアお願いします。 &amp;ldquo;ヘルプ&amp;rdquo;をタップするとヘルプが開きます。利用前に一度ご確認ください。 &amp;ldquo;設定&amp;rdquo;をタップすると設定画面が開きます。   リストから単語帳(この例ではExampleしかありませんが)をタップすると上記のテスト開始用のダイアログが開きます。 テストの条件を指定することが可能です。   リストから単語帳を長押しすると上記の単語帳用のメニューが開きます。 単語帳の編集や削除、GoogleDriveへのエクスポートが可能です。 エクスポートした単語帳はSimpleSwipeFlashcardフォルダ内にスプレッドシートファイル形式で保存されます。 そのため、PC等で単語帳を編集し、再び本アプリにインポートすることができます。   単語帳をスワイプすることでも操作が可能です(左右)。スワイプ時のアクションは設定画面で変更可能です。  2.</description>
     </item>
     
   </channel>

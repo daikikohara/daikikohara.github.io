@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://daikikohara.github.io/</loc>
-    <lastmod>2017-06-07T14:49:18-08:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://daikikohara.github.io/blog/2017/06/07/dax-webinar/</loc>
@@ -30,11 +25,6 @@
   <url>
     <loc>https://daikikohara.github.io/blog/2015/11/11/nomad_otto_features/</loc>
     <lastmod>2015-11-11T22:45:00-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://daikikohara.github.io/us-conference/</loc>
-    <lastmod>2015-10-29T15:11:12-07:00</lastmod>
   </url>
   
   <url>
@@ -70,6 +60,132 @@
   <url>
     <loc>https://daikikohara.github.io/about/</loc>
     <lastmod>2015-09-19T20:40:46-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/android/</loc>
+    <lastmod>2015-11-23T12:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/aws/</loc>
+    <lastmod>2017-06-07T14:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/blog/</loc>
+    <lastmod>2017-06-07T14:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/</loc>
+    <lastmod>2015-11-23T12:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/conference/</loc>
+    <lastmod>2015-11-23T12:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/docker/</loc>
+    <lastmod>2016-02-12T12:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/dynamodb/</loc>
+    <lastmod>2017-06-07T14:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/en/</loc>
+    <lastmod>2015-09-20T12:17:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/english/</loc>
+    <lastmod>2015-09-20T11:37:37-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/git/</loc>
+    <lastmod>2015-10-02T18:27:02-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/golang/</loc>
+    <lastmod>2015-10-07T14:53:26-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/iot/</loc>
+    <lastmod>2015-10-07T14:53:26-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/ja/</loc>
+    <lastmod>2015-09-20T12:17:31-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/meetup/</loc>
+    <lastmod>2016-02-12T12:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/network/</loc>
+    <lastmod>2015-11-13T13:33:33-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/tool/</loc>
+    <lastmod>2015-11-13T13:33:33-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/twitter/</loc>
+    <lastmod>2015-10-22T00:27:02-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/unikernel/</loc>
+    <lastmod>2016-02-12T12:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/categories/webinar/</loc>
+    <lastmod>2017-06-07T14:49:18-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/work/</loc>
+    <lastmod>2015-09-20T12:17:31-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://daikikohara.github.io/</loc>
+    <lastmod>2017-06-07T14:49:18-08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

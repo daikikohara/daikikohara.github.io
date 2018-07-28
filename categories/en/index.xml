@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 20 Sep 2015 12:17:30 -0700</lastBuildDate>
-    <atom:link href="https://daikikohara.github.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://daikikohara.github.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SimpleSwipeFlashcard - Flashcard app for Android</title>
@@ -15,213 +17,13 @@
       <pubDate>Sun, 20 Sep 2015 12:17:30 -0700</pubDate>
       
       <guid>https://daikikohara.github.io/work/simpleswipeflashcard_en/</guid>
-      <description>
-
-&lt;p&gt;&lt;u&gt;&lt;a href=&#34;https://daikikohara.github.io/work/simpleswipeflashcard_ja/&#34;&gt;日本語の説明はこちら&lt;/a&gt;&lt;/u&gt;&lt;/p&gt;
-
-&lt;p&gt;Menu&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#About:7af77ca426a371e668acd4bc69b47f95&#34;&gt;About&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#Announcement:7af77ca426a371e668acd4bc69b47f95&#34;&gt;Announcement&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#Update:7af77ca426a371e668acd4bc69b47f95&#34;&gt;What&amp;rsquo;s New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#FAQ:7af77ca426a371e668acd4bc69b47f95&#34;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#BUG:7af77ca426a371e668acd4bc69b47f95&#34;&gt;Known Issues&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;About:7af77ca426a371e668acd4bc69b47f95&#34;&gt;About&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=daikikohara.flashcard&#34;&gt;SimpleSwipeFlashcard&lt;/a&gt; is a flashcard app for Android.&lt;br&gt;
-Click the link above to open GooglePlay for more detail.&lt;/p&gt;
-
-&lt;h1 id=&#34;Announcement:7af77ca426a371e668acd4bc69b47f95&#34;&gt;Announcement&lt;/h1&gt;
-
-&lt;p&gt;Currently no announcement.&lt;/p&gt;
-
-&lt;h1 id=&#34;Update:7af77ca426a371e668acd4bc69b47f95&#34;&gt;What&amp;rsquo;s New&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sep 21 2015 - Version1.0.0 released.&lt;/li&gt;
-&lt;li&gt;Sep 21 2015 - Version1.0.1 released.&lt;br&gt;
-Fixed problem with some devices which crashes the app when the flip button is being tapped.&lt;/li&gt;
-&lt;li&gt;Sep 23 2015 - Version1.0.2 released.&lt;br&gt;
-Fixed issue with the order of flashcard getting reshuffled when the device gets rotated at the shuffle test.&lt;/li&gt;
-&lt;li&gt;Sep 25 2015 - Version1.1.0 released.&lt;br&gt;
-You can now mark words as remembered during the test.&lt;/li&gt;
-&lt;li&gt;Sep 26 2015 - Version1.1.1 released.&lt;br&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Fixed issue with Failed/Passed count getting wrong when marking as remembered on the back side of the card.&lt;/li&gt;
-&lt;li&gt;Fixed issue with back button getting pressed repeatedly in a certain situation.&lt;/li&gt;
-&lt;li&gt;Fixed issue with the app settings getting wrong when the device language setting gets changed.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Sep 29 2015 - Version1.1.2 released.&lt;br&gt;
-Fixed issue with some layouts getting broken depending on the font size of the device.&lt;/li&gt;
-&lt;li&gt;Sep 9 2015 - Version1.1.3 released.&lt;br&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Added support for Android 6.0(Marshmallow).&lt;/li&gt;
-&lt;li&gt;Word can be registered with multi-line text.&lt;/li&gt;
-&lt;li&gt;Expanded Max length for each word to 1000.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;How:7af77ca426a371e668acd4bc69b47f95&#34;&gt;How to use&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-flashcard-list:7af77ca426a371e668acd4bc69b47f95&#34;&gt;1. Flashcard list&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/main.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap the red &amp;ldquo;+&amp;rdquo; button at the bottom right corner to add a flashcard.&lt;/li&gt;
-&lt;li&gt;Tap the menu icon at the top right corner to open menu.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/main_menu.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap &amp;ldquo;Download Flashcard&amp;rdquo; to download flashcards we provide.(currently most of them are English to Japanese flashcards)&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;Import from Google Drive&amp;rdquo; to import flashcards you exported before.&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;Export all flashcards&amp;rdquo; to export all flashcards to Google Drive.&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;Share&amp;rdquo; to share this app with your friends. Thank you!&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;About &amp;amp; Help&amp;rdquo; to open Help.&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;Settings&amp;rdquo; to open settings.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/main_tap.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap a flashcard to open the dialog to start test shown above.
-You can configure the condition of the test.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/main_longpress.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Long press a flashcard to open the dialog for menu shown above.
-You can select the menu to edit, delete or export the flashcard (to GoogleDrive).
-If you export the flashcard, it will be stored as a spreadsheet file in &amp;ldquo;SimpleSwipeFlashcard&amp;rdquo; folder on GoogleDrive.
-Since it will be stored as Spreadsheet file, you can modify the file on your other computers, and then import back to the app.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/main_swipe.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Swipe to run a specific action. The action can be configured in the settings.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2-edit-flashcard:7af77ca426a371e668acd4bc69b47f95&#34;&gt;2. Edit flashcard&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/edit.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap the red &amp;ldquo;+&amp;rdquo; button at the bottom right corner to add a word/meaning pair.&lt;/li&gt;
-&lt;li&gt;Tap the menu icon at the top right corner to open menu.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/edit_menu.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap &amp;ldquo;Edit Title&amp;rdquo; to edit the title of the flashcard.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/edit_tap.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap a word to open the menu shown above.
-You can edit, delete or mark as remembered the word.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/edit_swipe.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Swipe to run a specific action. The action can be configured in the settings.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;3-test:7af77ca426a371e668acd4bc69b47f95&#34;&gt;3. Test&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/test.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap &amp;ldquo;READ OUT&amp;rdquo; to make your device read out the word.&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;MARK&amp;rdquo; to mark the word as remembered.&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;Flip&amp;rdquo; to see the back side(answer).
-If you see the back side, the word will be marked as failed.&lt;/li&gt;
-&lt;li&gt;Swipe left to go to the next card.
-If you go to the next card without flipping to the back side, the word will be marked as passed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;4-test-result:7af77ca426a371e668acd4bc69b47f95&#34;&gt;4. Test Result&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/result.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tap &amp;ldquo;Exit&amp;rdquo; to go back to flashcard list.&lt;/li&gt;
-&lt;li&gt;Tap &amp;ldquo;Retry failed words&amp;rdquo; to test only with failed words.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/result_fail.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;The list of the failed words are shown in this page&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/result_remember.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;ul&gt;
-&lt;li&gt;The list of the marked-as-remembered words are shown in this page.
-A word will be marked as remembered when
-
-&lt;ul&gt;
-&lt;li&gt;you pass a certain times of test.&lt;/li&gt;
-&lt;li&gt;you tap the &amp;ldquo;MARK&amp;rdquo; button on the card during the test.(You can set the number of the times in the settings.)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The remembered words will not be shown in the test afterwards.&lt;/li&gt;
-&lt;li&gt;Uncheck to not mark the word as remembered.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;5-settings:7af77ca426a371e668acd4bc69b47f95&#34;&gt;5. Settings&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/simpleswipeflashcard/en/settings.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;p&gt;This page would be self explanatory enough.&lt;/p&gt;
-
-&lt;h1 id=&#34;FAQ:7af77ca426a371e668acd4bc69b47f95&#34;&gt;FAQ&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. &amp;lsquo;READ OUT&amp;rsquo; button does not work&lt;/b&gt;&lt;br&gt;
-A. &amp;lsquo;READ OUT&amp;rsquo; uses Android&amp;rsquo;s built-in &amp;lsquo;Text-to-Speech&amp;rsquo; feature. Please make sure your device has this feature.
-If it&amp;rsquo;s available and the button still doesn&amp;rsquo;t work, make sure the language you select is available on your device. You may need to download it on Android&amp;rsquo;s setting screen although the app tries to download the language if it&amp;rsquo;s not available.
-Also check your device&amp;rsquo;s volume setting.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. I can not download flashcards&lt;/b&gt;&lt;br&gt;
-A. Please make sure your device is online and the setting for &amp;lsquo;Send Feedback&amp;rsquo; is on in the app settings.(See help for more details about &amp;lsquo;Send Feedback&amp;rsquo;.)
-The other possibility is it may be caused by network and/or server issue. In this case, please try again later.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. I can not import/export flashcards&lt;/b&gt;&lt;br&gt;
-A. This may be also caused by network/server issue. In that case, please try again later. In addition, if you are trying to export/import huge size of flashcards, please reduce the size of the flashcards.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. I see more than 2 same name flashcard when I export the flashcard on Google Drive and see it in my browser.&lt;/b&gt;&lt;br&gt;
-A. This is probably a cache issue. Reloading the page should solve the issue.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. I want to share my flashcards with my friends&lt;/b&gt;&lt;br&gt;
-A. This is currently not possible in our app. However you can share the file from Google Drive.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. All flashcards are gone when I change my device.&lt;/b&gt;&lt;br&gt;
-A. Currently only the settings in the app will be transferred. For flashcards, please export them in your old device and export them in the new one.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Q. I see similar meanings for a word in Japanese flashcards I downloaded&lt;/b&gt;&lt;br&gt;
-A. For some flashcards, we just use a public domain dictionary to create the word/meaning pairs, so they look like word/meaning pairs in a dictionary.
-For the others, We put both transitive and intransitive meanings in separate lines.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;BUG:7af77ca426a371e668acd4bc69b47f95&#34;&gt;Known Issues&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Flip animation is weird in Android 6.0(Marshmallow). We are working on it.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>日本語の説明はこちら
+Menu
+ About Announcement What&amp;rsquo;s New How to use FAQ Known Issues  About SimpleSwipeFlashcard is a flashcard app for Android.
+Click the link above to open GooglePlay for more detail.
+Announcement Currently no announcement.
+What&amp;rsquo;s New  Sep 21 2015 - Version1.0.0 released. Sep 21 2015 - Version1.0.1 released.
+Fixed problem with some devices which crashes the app when the flip button is being tapped. Sep 23 2015 - Version1.</description>
     </item>
     
   </channel>

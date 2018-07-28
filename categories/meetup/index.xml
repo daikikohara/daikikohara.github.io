@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 12 Feb 2016 12:49:18 -0800</lastBuildDate>
-    <atom:link href="https://daikikohara.github.io/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://daikikohara.github.io/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Unikernelのmeetupの視聴メモ</title>
@@ -15,138 +17,21 @@
       <pubDate>Fri, 12 Feb 2016 12:49:18 -0800</pubDate>
       
       <guid>https://daikikohara.github.io/blog/2016/02/12/unikernel-meetup/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker社&lt;/a&gt;が買収した&lt;a href=&#34;http://unikernel.com/&#34;&gt;Unikernel Systems社&lt;/a&gt;が扱ってるUnikernelについて全然知らなかったので、&lt;a href=&#34;https://www.youtube.com/watch?v=qvVzlxggnFk&#34;&gt;Docker Online MeetupのUnikernelの動画&lt;/a&gt;を見たついでに、分からないところを調べられた範囲で補完しつつまとめてみました。なお、&lt;strong&gt;超基本的な内容です。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;動画だけでなく&lt;a href=&#34;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&#34;&gt;スライド自体&lt;/a&gt;も上がってます。&lt;/p&gt;
-
-&lt;p&gt;先に自分が理解した範囲でまとめを書くと、以下のような流れみたいです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Unikernelは単一のアプリを動かすためのシンプルかつ高速なOSで色々な実装がある。&lt;/li&gt;
-&lt;li&gt;でも従来のOSと違うし、各実装ごとにツールもあるしで、アプリをビルドして動かすのが大変。&lt;/li&gt;
-&lt;li&gt;dockerのエコシステムに取り込んでdockerコマンドでビルド・デプロイできるようになったらいいんじゃないってことで買収した。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;従来のosの問題:37abd8c8067d32e43dab600446560196&#34;&gt;従来のOSの問題&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/unikernel_meetup/traditional_approach.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; style=&#34;margin:0 auto;&#34;&gt;
-
-&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&#34;&gt;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
-
-&lt;p&gt;現在使われているLinux等のOSは膨大なコードを持ち、アプリケーションに必要でない部分もシステムに組み込む必要がある。
-そのためアプリケーションがSystemAPIと結びついてしまい、以下のような問題がある。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;OSのディストリビューションやバージョンの制約を受ける&lt;/li&gt;
-&lt;li&gt;アプリケーションのアドホックな設定が必要になる&lt;/li&gt;
-&lt;li&gt;ファイアウォール等、システム全体の設定が必要になる&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;これは従来のOSの目的が、複数のユーザが複数のアプリを同時に動かすことだからだ。
-しかしマイクロサービス等、現在のアーキテクチャでは一つのアプリのみを動かすだけという使い方も考えられるため、従来のOSの目的と合わなくなってきている。&lt;/p&gt;
-
-&lt;p&gt;また、ポータブル性の欠如という問題もある。
-従来のシステムでビルドは環境に依存するが、実際は複数のターゲットを扱わないといけない。
-例えば複数のターゲットを持つクラウドサービスやスマートフォンといったもの。またJavaScriptもブラウザにより異なるし、IoTでもデバイス毎に異なる。
-これらは複数のターゲットごとにプログラムせねばならず、コードの再利用は難しい。&lt;/p&gt;
-
-&lt;h2 id=&#34;unikernelとは何か:37abd8c8067d32e43dab600446560196&#34;&gt;Unikernelとは何か&lt;/h2&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/unikernel_meetup/unikernel.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; style=&#34;margin:0 auto;&#34;&gt;
-
-&lt;div class=&#39;citation&#39;&gt;&lt;cite&gt;&lt;a href=&#34;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&#34;&gt;http://www.slideshare.net/Docker/docker-online-meetup-31-unikernels&lt;/a&gt;より引用&lt;/cite&gt;&lt;/div&gt;
-
-&lt;p&gt;これらの問題を解決するために&lt;a href=&#34;https://en.wikipedia.org/wiki/Unikernel&#34;&gt;Unikernel&lt;/a&gt;が役に立つ。
-Unikernelには以下のような特徴がある。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;OSのコンポーネントをライブラリの集合として利用できるようにしている。&lt;/li&gt;
-&lt;li&gt;ビルド時にアプリケーションのコードをシステムライブラリとリンクし、アプリケーションが必要とするライブラリだけを使うことが可能。&lt;/li&gt;
-&lt;li&gt;単一のプロセス、単一のアドレススペースのイメージが作成される。&lt;/li&gt;
-&lt;li&gt;アプリケーションは同じコードベースを使い、ビルド時にシステムライブラリを切り替えるだけでターゲットの変更が可能。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;なお、Unikernelのコンセプトは新しいものではなく、1990年代から存在していた。&lt;/p&gt;
-
-&lt;h2 id=&#34;利点:37abd8c8067d32e43dab600446560196&#34;&gt;利点&lt;/h2&gt;
-
-&lt;p&gt;前述の特徴から以下のような利点がある。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;必要なライブラリのみをスタティックにリンクできるため、シンプルにできる。&lt;/li&gt;
-&lt;li&gt;TCP接続が確立される間にブートできるくらい高速。&lt;/li&gt;
-&lt;li&gt;レイヤーが少ないので低レイテンシおよび、パフォーマンスの予測が容易。&lt;/li&gt;
-&lt;li&gt;リソースをあまり使わない。例えばUnikernelの実装の一つであるMirageOSのアプリは10MB以下のメモリしか使わない。MirageOSのDNSサーバは200KBしかない。&lt;/li&gt;
-&lt;li&gt;マイクロサービスやImmutable Infrastructure等の新しいデザインパターンの構築が容易になる。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;unikernelを使う場合の開発サイクル:37abd8c8067d32e43dab600446560196&#34;&gt;Unikernelを使う場合の開発サイクル&lt;/h2&gt;
-
-&lt;p&gt;以下のような流れで開発していくことができ従来の方法と大きくは変わらない。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アプリのビルドは普通に行うが、OSのコンポーネントに対応するライブラリを使ってリンクすることと、従来のホストOSとの依存性を排除するという点が従来と異なる。&lt;/li&gt;
-&lt;li&gt;テストや測定は通常通りに行うことが可能。&lt;/li&gt;
-&lt;li&gt;Unikernelとしてビルドする&lt;/li&gt;
-&lt;li&gt;デプロイする&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;利用するツールもCIシステム、gdb、プロファイラ、linterやdtraceといった従来のものが利用可能。
-カーネル空間・ユーザ空間というものがなく全てがユーザ空間で動くので、通常のツールが利用できる。&lt;/p&gt;
-
-&lt;h2 id=&#34;unikernelの実装:37abd8c8067d32e43dab600446560196&#34;&gt;Unikernelの実装&lt;/h2&gt;
-
-&lt;p&gt;Unikernelには&lt;a href=&#34;http://unikernel.org/projects/&#34;&gt;多くの実装&lt;/a&gt;がある。
-それぞれトレードオフがある。
-例えばMirageOSとHaLVMはまっさらな状態からライブラリを書き直している。
-一方Rumprunは長年使われてきたNetBSDのコンポーネントを再利用している。&lt;/p&gt;
-
-&lt;p&gt;(ちなみに&lt;a href=&#34;https://github.com/mirage/mirage&#34;&gt;MirageOS&lt;/a&gt;はOCaml、&lt;a href=&#34;https://github.com/GaloisInc/HaLVM&#34;&gt;HaLVM&lt;/a&gt;はHaskell、&lt;a href=&#34;https://github.com/rumpkernel/rumprun&#34;&gt;Rumprun&lt;/a&gt;はCでそれぞれ書かれている)&lt;/p&gt;
-
-&lt;p&gt;このように現在のアーキテクチャに適したUnikernelだが、導入時の障壁として以下のようなものが考えられる。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;デベロッパーはUnikernelを使うために様々なツールを学ぶ必要がある。&lt;/li&gt;
-&lt;li&gt;複数のプロジェクトがあるということは複数のツールチェーンがあるということ&lt;/li&gt;
-&lt;li&gt;デプロイが単純には行かないということでもある&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;これらを解決するために、DockerはUnikernelと手を取った。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Unikernelはより良いツールが必要でDockerには様々なツールとエコシステムがある。&lt;/li&gt;
-&lt;li&gt;UnikernelをDockerのエコシステムに組み込むことでこれらを利用可能にする。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;デモ:37abd8c8067d32e43dab600446560196&#34;&gt;デモ&lt;/h2&gt;
-
-&lt;p&gt;デモは&lt;a href=&#34;https://github.com/Unikernel-Systems/DockerConEU2015-demo&#34;&gt;このレポジトリ&lt;/a&gt;のもので、Nginx・PHP・MySQLをUnikernelのアプリとしてdocker buildで立ち上げるというもの。
-以下は話してた内容や画面上を見た範囲でのメモ。実際に動かしたらQiitaにでも投稿します(追記:動かして&lt;a href=&#34;http://qiita.com/kiida/items/1120aa1c4161da4e55e0&#34;&gt;投稿しました&lt;/a&gt;)。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Unikernelはdockerのツールチェーンを使って普通のLinuxコンテナと同じように動かすことができる。&lt;/li&gt;
-&lt;li&gt;それぞれのUnikernelがKVMの仮想マシンとして動く。&lt;/li&gt;
-&lt;li&gt;各OSイメージは2-6MB程度で必要な機能のみが入った状態になっている。
-
-&lt;ul&gt;
-&lt;li&gt;実際、nginxのイメージが2.1MBくらいになってた。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;1秒以下で起動する。
-
-&lt;ul&gt;
-&lt;li&gt;実際それくらいだった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;nginxのみ外から繋がり、他はVM間でしかつながらないようになっている。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上。&lt;/p&gt;
-
-&lt;p&gt;Unikernelの考えは確かに現在のアーキテクチャに適しているように思いました。
-利点がとても大きいように思えるので、dockerツールに組み込まれて透過的に扱えるようになれば大流行するんじゃないでしょうか。
-なお、Unikernel関連の議論は&lt;a href=&#34;https://devel.unikernel.org/&#34;&gt;こちら&lt;/a&gt;で行われているようです。&lt;/p&gt;
-</description>
+      <description>Docker社が買収したUnikernel Systems社が扱ってるUnikernelについて全然知らなかったので、Docker Online MeetupのUnikernelの動画を見たついでに、分からないところを調べられた範囲で補完しつつまとめてみました。なお、超基本的な内容です。
+動画だけでなくスライド自体も上がってます。
+先に自分が理解した範囲でまとめを書くと、以下のような流れみたいです。
+ Unikernelは単一のアプリを動かすためのシンプルかつ高速なOSで色々な実装がある。 でも従来のOSと違うし、各実装ごとにツールもあるしで、アプリをビルドして動かすのが大変。 dockerのエコシステムに取り込んでdockerコマンドでビルド・デプロイできるようになったらいいんじゃないってことで買収した。  従来のOSの問題 http://www.slideshare.net/Docker/docker-online-meetup-31-unikernelsより引用現在使われているLinux等のOSは膨大なコードを持ち、アプリケーションに必要でない部分もシステムに組み込む必要がある。 そのためアプリケーションがSystemAPIと結びついてしまい、以下のような問題がある。
+ OSのディストリビューションやバージョンの制約を受ける アプリケーションのアドホックな設定が必要になる ファイアウォール等、システム全体の設定が必要になる  これは従来のOSの目的が、複数のユーザが複数のアプリを同時に動かすことだからだ。 しかしマイクロサービス等、現在のアーキテクチャでは一つのアプリのみを動かすだけという使い方も考えられるため、従来のOSの目的と合わなくなってきている。
+また、ポータブル性の欠如という問題もある。 従来のシステムでビルドは環境に依存するが、実際は複数のターゲットを扱わないといけない。 例えば複数のターゲットを持つクラウドサービスやスマートフォンといったもの。またJavaScriptもブラウザにより異なるし、IoTでもデバイス毎に異なる。 これらは複数のターゲットごとにプログラムせねばならず、コードの再利用は難しい。
+Unikernelとは何か http://www.slideshare.net/Docker/docker-online-meetup-31-unikernelsより引用これらの問題を解決するためにUnikernelが役に立つ。 Unikernelには以下のような特徴がある。
+ OSのコンポーネントをライブラリの集合として利用できるようにしている。 ビルド時にアプリケーションのコードをシステムライブラリとリンクし、アプリケーションが必要とするライブラリだけを使うことが可能。 単一のプロセス、単一のアドレススペースのイメージが作成される。 アプリケーションは同じコードベースを使い、ビルド時にシステムライブラリを切り替えるだけでターゲットの変更が可能。  なお、Unikernelのコンセプトは新しいものではなく、1990年代から存在していた。
+利点 前述の特徴から以下のような利点がある。
+ 必要なライブラリのみをスタティックにリンクできるため、シンプルにできる。 TCP接続が確立される間にブートできるくらい高速。 レイヤーが少ないので低レイテンシおよび、パフォーマンスの予測が容易。 リソースをあまり使わない。例えばUnikernelの実装の一つであるMirageOSのアプリは10MB以下のメモリしか使わない。MirageOSのDNSサーバは200KBしかない。 マイクロサービスやImmutable Infrastructure等の新しいデザインパターンの構築が容易になる。  Unikernelを使う場合の開発サイクル 以下のような流れで開発していくことができ従来の方法と大きくは変わらない。
+ アプリのビルドは普通に行うが、OSのコンポーネントに対応するライブラリを使ってリンクすることと、従来のホストOSとの依存性を排除するという点が従来と異なる。 テストや測定は通常通りに行うことが可能。 Unikernelとしてビルドする デプロイする  利用するツールもCIシステム、gdb、プロファイラ、linterやdtraceといった従来のものが利用可能。 カーネル空間・ユーザ空間というものがなく全てがユーザ空間で動くので、通常のツールが利用できる。
+Unikernelの実装 Unikernelには多くの実装がある。 それぞれトレードオフがある。 例えばMirageOSとHaLVMはまっさらな状態からライブラリを書き直している。 一方Rumprunは長年使われてきたNetBSDのコンポーネントを再利用している。
+(ちなみにMirageOSはOCaml、HaLVMはHaskell、RumprunはCでそれぞれ書かれている)
+このように現在のアーキテクチャに適したUnikernelだが、導入時の障壁として以下のようなものが考えられる。
+ デベロッパーはUnikernelを使うために様々なツールを学ぶ必要がある。 複数のプロジェクトがあるということは複数のツールチェーンがあるということ デプロイが単純には行かないということでもある  これらを解決するために、DockerはUnikernelと手を取った。</description>
     </item>
     
     <item>
@@ -155,60 +40,10 @@ Unikernelには以下のような特徴がある。&lt;/p&gt;
       <pubDate>Wed, 11 Nov 2015 22:45:00 -0800</pubDate>
       
       <guid>https://daikikohara.github.io/blog/2015/11/11/nomad_otto_features/</guid>
-      <description>
-
-&lt;p&gt;HashiCorpのCTOである&lt;a href=&#34;https://twitter.com/armon/&#34;&gt;Armon Dadgar氏&lt;/a&gt;によるNomadとOttoに関する&lt;a href=&#34;http://www.meetup.com/Bay-Area-Infracoders/events/226244541/&#34;&gt;meetup&lt;/a&gt;の参加メモ。
-またしてもかなり不完全ですが。。。こっちって技術系でもmeetupでPC開いている人が殆どいなくてメモとりづらいんですよね。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;動画は無し。スライドは&lt;a href=&#34;https://speakerdeck.com/armon/introduction-to-nomad-and-otto&#34;&gt;こちら&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ステッカーは配ってませんでした&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;hashicorpプロダクト全般の話-br:f9c7a68959a321c64f6fb4b201e4ed3c&#34;&gt;HashiCorpプロダクト全般の話&lt;br&gt;&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Vagrantがあった状態で会社を作った。最初はDevOpsの会社だと思われていたがDevOpsだけじゃなくてDev寄りのツール等も作ってきた。&lt;/li&gt;
-&lt;li&gt;Vaultはオープンにするつもりで作ったわけではなかった。サポート等をする内に認証情報等を保存することが増えてきて、どうやって管理したら良いんだろうということを考えて作って社内で使っていたものをオープンソースにした。
-実は最初のうちはPostgreSQLに平文で保存していた(しようとしていたかも？)。&lt;/li&gt;
-&lt;li&gt;ちなみにHashiCorpはaにアクセントがある模様。oだと思ってた^^;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;nomadの話:f9c7a68959a321c64f6fb4b201e4ed3c&#34;&gt;Nomadの話&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Nomadはクラスタ管理ツール&lt;/li&gt;
-&lt;li&gt;内部的にはConsulとSerfを使っている。&lt;/li&gt;
-&lt;li&gt;コンテナ・VM・スタンドアロンのアプリをサポートしている。
-
-&lt;ul&gt;
-&lt;li&gt;現在はコンテナはDocker、VMはQEMU/KVM、スタンドアロンはJar(Java)と静的バイナリのみ。今後拡大予定。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;amplabやGoogle Researchの研究をかなり参考にした。&lt;/li&gt;
-&lt;li&gt;データセンターやクラウドサービス、リージョンなどを跨いで管理できる&lt;/li&gt;
-&lt;li&gt;EvaluationしてからAllocationするといった感じのアーキテクチャを紹介(図が無いとアレですが。。。)&lt;/li&gt;
-&lt;li&gt;ジョブの分散処理はロックとかではなくOptimisctic Concurrencyによるとのこと。&lt;/li&gt;
-&lt;li&gt;Digital Oceanでテストしたらしい。数百ノード使ったとか言っていた。&lt;/li&gt;
-&lt;li&gt;0.2ではService Discovery、SystemScheduler、RestartPolicies、EnhancedConstraints等を追加予定&lt;/li&gt;
-&lt;li&gt;0.3ではCron、JobQueuing、Latency-Aware Scheduling等を追加予定&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ottoの話:f9c7a68959a321c64f6fb4b201e4ed3c&#34;&gt;Ottoの話&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Vagrantでは同じVagrantファイルで全く同じものができる。ただし、昔の脆弱性等をそのままデプロすることになるし、古いOSを使うことになる。
-Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
-&lt;li&gt;vagrant upがotto devになる等の対応の話&lt;/li&gt;
-&lt;li&gt;開発者がコードのデプロイをするにはググッて出てきた情報をコピペするという無駄な作業を今でも行っていたりする。しかも例えばrailsアプリのデプロイであれば毎回同じようなことをするだけなのに。&lt;/li&gt;
-&lt;li&gt;ottoならotto infra, otto build, otto deployの3ステップで完了する。&lt;/li&gt;
-&lt;li&gt;何の設定もしなくてもコマンドを実行するだけで良い。&lt;/li&gt;
-&lt;li&gt;設定が必要な場合はAppfileに書くことができる。&lt;/li&gt;
-&lt;li&gt;Appfileの書き方の例。Appfileは独自フォーマットみたい。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上。&lt;br&gt;
-とりあえずちゃんと使ってみたらまたQiita辺りにポストしようかと思います。&lt;/p&gt;
-</description>
+      <description>HashiCorpのCTOであるArmon Dadgar氏によるNomadとOttoに関するmeetupの参加メモ。 またしてもかなり不完全ですが。。。こっちって技術系でもmeetupでPC開いている人が殆どいなくてメモとりづらいんですよね。
+ 動画は無し。スライドはこちら ステッカーは配ってませんでした  HashiCorpプロダクト全般の話
+  Vagrantがあった状態で会社を作った。最初はDevOpsの会社だと思われていたがDevOpsだけじゃなくてDev寄りのツール等も作ってきた。 Vaultはオープンにするつもりで作ったわけではなかった。サポート等をする内に認証情報等を保存することが増えてきて、どうやって管理したら良いんだろうということを考えて作って社内で使っていたものをオープンソースにした。 実は最初のうちはPostgreSQLに平文で保存していた(しようとしていたかも？)。 ちなみにHashiCorpはaにアクセントがある模様。oだと思ってた^^;  Nomadの話  Nomadはクラスタ管理ツール 内部的にはConsulとSerfを使っている。 コンテナ・VM・スタンドアロンのアプリをサポートしている。  現在はコンテナはDocker、VMはQEMU/KVM、スタンドアロンはJar(Java)と静的バイナリのみ。今後拡大予定。  amplabやGoogle Researchの研究をかなり参考にした。 データセンターやクラウドサービス、リージョンなどを跨いで管理できる EvaluationしてからAllocationするといった感じのアーキテクチャを紹介(図が無いとアレですが。。。) ジョブの分散処理はロックとかではなくOptimisctic Concurrencyによるとのこと。 Digital Oceanでテストしたらしい。数百ノード使ったとか言っていた。 0.2ではService Discovery、SystemScheduler、RestartPolicies、EnhancedConstraints等を追加予定 0.3ではCron、JobQueuing、Latency-Aware Scheduling等を追加予定  Ottoの話  Vagrantでは同じVagrantファイルで全く同じものができる。ただし、昔の脆弱性等をそのままデプロすることになるし、古いOSを使うことになる。 Ottoではこの辺りは自動で解決してくれる。 vagrant upがotto devになる等の対応の話 開発者がコードのデプロイをするにはググッて出てきた情報をコピペするという無駄な作業を今でも行っていたりする。しかも例えばrailsアプリのデプロイであれば毎回同じようなことをするだけなのに。 ottoならotto infra, otto build, otto deployの3ステップで完了する。 何の設定もしなくてもコマンドを実行するだけで良い。 設定が必要な場合はAppfileに書くことができる。 Appfileの書き方の例。Appfileは独自フォーマットみたい。  以上。
+とりあえずちゃんと使ってみたらまたQiita辺りにポストしようかと思います。</description>
     </item>
     
     <item>
@@ -217,127 +52,16 @@ Ottoではこの辺りは自動で解決してくれる。&lt;/li&gt;
       <pubDate>Wed, 07 Oct 2015 14:53:26 -0700</pubDate>
       
       <guid>https://daikikohara.github.io/blog/2015/10/07/iot_using_go_meetup/</guid>
-      <description>
-
-&lt;p&gt;マウンテンビューのGoogle本社で行われたGoでIoTデバイスを操作するGobotのイベントの参加メモです。
-資料はまだ上がってないので上がった段階で追記します。&lt;/p&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/iot_using_go_meetup/sticker.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;h1 id=&#34;概要:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;概要&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;日時: 2015年10月7日 19:00 - 20:30&lt;/li&gt;
-&lt;li&gt;場所: Google Building CL2&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.meetup.com/gdg-silicon-valley/events/225643683/&#34;&gt;イベントページ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;内容:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;内容&lt;/h1&gt;
-
-&lt;h2 id=&#34;lt-by-kevin:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;LT by Kevin&lt;/h2&gt;
-
-&lt;p&gt;イベントページの発表者のlast nameは間違っているらしい(ググったけど映画監督しか出てこなったのはそのせいかｗ)。
-正しい苗字はメモれなかった。&lt;/p&gt;
-
-&lt;p&gt;内容はイベントの紹介程度。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GDG DevFest - まもなくポストするとのこと&lt;/li&gt;
-&lt;li&gt;なぜか&lt;a href=&#34;https://blogs.oracle.com/javaone/entry/geek_bike_ride_before_javaone1&#34;&gt;Geek Bike Ride&lt;/a&gt;とかいうチャリンカー向けイベントの紹介&lt;/li&gt;
-&lt;li&gt;子供向けイベントの紹介。
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.devoxx4kids.org/&#34;&gt;devoxx4kids&lt;/a&gt;という&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gitbook.com/book/kevinnilson/webcomponents4kids/details&#34;&gt;webcomponents4kids&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;子供向けのイベントの紹介では発表者のお子さんの口から、こんなことをした、みたいな紹介が入った。&lt;/p&gt;
-
-&lt;h2 id=&#34;メインセッション:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;メインセッション&lt;/h2&gt;
-
-&lt;h3 id=&#34;発表者:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;発表者&lt;/h3&gt;
-
-&lt;p&gt;Ron Evans(&lt;a href=&#34;https://twitter.com/deadprogram&#34;&gt;twitterアカウント&lt;/a&gt;)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hybridgroup.com/&#34;&gt;hybridgroup&lt;/a&gt;の人。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gobot.io/&#34;&gt;Gobot&lt;/a&gt;に限らず、&lt;a href=&#34;http://cylonjs.com/&#34;&gt;Cylon.js&lt;/a&gt;,&lt;a href=&#34;http://artoo.io/&#34;&gt;Artoo&lt;/a&gt;といったIoT系のフレームワークを作っている。&lt;/li&gt;
-&lt;li&gt;子供向けのRubyのプロジェクトである&lt;a href=&#34;http://kidsruby.com/&#34;&gt;kidsruby&lt;/a&gt;も作っている。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;gobotとは-サイトに書いてあるレベルのまとめ:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;Gobotとは(サイトに書いてあるレベルのまとめ)&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://gobot.io/&#34;&gt;Gobot&lt;/a&gt;はGolangで様々なIoTプラットフォーム向けのプログラムが書くためのもの。&lt;/p&gt;
-
-&lt;p&gt;公式ページのトップにはArduinoでLチカするコードが載っているが、Arduinoに限らず15のプラットフォームに対応している(発表後の質疑応答で18と言っていたのでサイトの情報は若干古い模様。またcylon.jsの方が対応プラットフォームが多いとのこと)。
-この中にはArduinoのほか、ARDroneやラズパイ、EdisonといったデバイスだけでなくMQTTやOpenCVといったものまで含まれる。
-また、GPIOドライバにより7つ、I2Cドライバにより6つの機器をサポートしている。&lt;/p&gt;
-
-&lt;p&gt;APIも用意されており、デバイスの状態を確認することなどが可能。
-&lt;a href=&#34;https://github.com/hybridgroup/robeaux&#34;&gt;robeaux&lt;/a&gt;というReact.jsベースのダッシュボードで確認することもできる。&lt;/p&gt;
-
-&lt;p&gt;CLIの場合は&lt;a href=&#34;http://gort.io/&#34;&gt;Gort&lt;/a&gt;を使って操作するようデザインされてるけど&lt;a href=&#34;http://gobot.io/documentation/guides/cli/&#34;&gt;gobot独自のCLI&lt;/a&gt;もある。&lt;/p&gt;
-
-&lt;h3 id=&#34;発表内容:4e1483c06d6ee255fc83e7ed52ca7805&#34;&gt;発表内容&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アーキテクチャの図(スライド参照)&lt;/li&gt;
-&lt;li&gt;ArduinoでLチカ(ちなみに英語ではblinking LED)をするデモ
-
-&lt;ul&gt;
-&lt;li&gt;コードはGobotのサイトトップに書いてあるものと全く同じだった。&lt;/li&gt;
-&lt;li&gt;Arduino上ではGoは動かないけどコンパイルしたコマンドを送ることができる&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Edisonで同じくLチカをするデモ
-
-&lt;ul&gt;
-&lt;li&gt;Arduino版とのコードの差分はimort文1行とAdaptor生成部分のみ(&lt;code&gt;firmata.NewFirmataAdaptor(&amp;quot;arduino&amp;quot;, &amp;quot;/dev/ttyACM0&amp;quot;)&lt;/code&gt;が&lt;code&gt;edison.NewEdisonAdaptor(&amp;quot;edison&amp;quot;)&lt;/code&gt;になるだけ)&lt;/li&gt;
-&lt;li&gt;edisonの場合は中身がLinuxなのでsshで接続してGoのプログラムを普通に走らせることができる&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;続いてEdisonでボタンを押してる間だけ光るデモ&lt;/li&gt;
-&lt;li&gt;GobotでAPIを立ち上げるプログラムを動かして、そこにcurlを送るデモ
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;host:port/api/robots&lt;/code&gt;が起点になる模様。&lt;/li&gt;
-&lt;li&gt;デモでは操作じゃなくて参照しかしなかった。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gort.io&#34;&gt;Gort&lt;/a&gt;のデモ
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;gort scan bluetooth&lt;/code&gt;でbluetooth接続されている機器を一覧表示してそこから&lt;code&gt;rfcomm connect&lt;/code&gt;で接続(rfcommは普通のLinuxコマンドらしい。知らんかった。)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.sphero.com/&#34;&gt;Sphero&lt;/a&gt;のデモ
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hybridgroup/robeaux&#34;&gt;robeaux&lt;/a&gt;を使ったデモ&lt;/li&gt;
-&lt;li&gt;WebのUIからコマンド実行してSpheroを動かすデモ。あんまり思った通りの方向に進んでなかったｗ&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Twitterで指定のハッシュタグで呟いてSpheroまたはEdisonを抽選で1名にプレゼント！
-
-&lt;ul&gt;
-&lt;li&gt;めっちゃ欲しかったけど当たりませんでした。。。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://commander.io/&#34;&gt;commander.io&lt;/a&gt;の紹介
-
-&lt;ul&gt;
-&lt;li&gt;phonegapとかionic使って作ってるとのこと。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.parrot.com/products/bebop-drone/&#34;&gt;parrot bebop&lt;/a&gt;という新しいDroneのデモ
-
-&lt;ul&gt;
-&lt;li&gt;DroneをPS3のコントローラのジョイスティックで操作して、Droneで撮影している映像をリアルタイムに画面に表示するというデモ&lt;/li&gt;
-&lt;li&gt;ジョイスティックは色々な種類があるので、jsonの設定ファイルを指定できるようになっているらしい&lt;/li&gt;
-&lt;li&gt;コードは今までのものと比べると長いが、Goルーチンのおかげで、ビデオに撮って表示する部分とコントロールする部分が一つのコードの中でキレイに分離できるとのこと(この方、めっちゃGo推しでしたｗ)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;分かりにくいけど写真貼っておきます。むしろどこにDroneいるか分かるかな、ってクイズにできるレベルですねｗ&lt;/p&gt;
-
-&lt;img src=&#34;https://daikikohara.github.io/images/iot_using_go_meetup/drone.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
-
-&lt;p&gt;簡単ですが以上です。&lt;/p&gt;
-</description>
+      <description>マウンテンビューのGoogle本社で行われたGoでIoTデバイスを操作するGobotのイベントの参加メモです。 資料はまだ上がってないので上がった段階で追記します。
+概要  日時: 2015年10月7日 19:00 - 20:30 場所: Google Building CL2 イベントページ  内容 LT by Kevin イベントページの発表者のlast nameは間違っているらしい(ググったけど映画監督しか出てこなったのはそのせいかｗ)。 正しい苗字はメモれなかった。
+内容はイベントの紹介程度。
+ GDG DevFest - まもなくポストするとのこと なぜかGeek Bike Rideとかいうチャリンカー向けイベントの紹介 子供向けイベントの紹介。  devoxx4kidsという webcomponents4kids   子供向けのイベントの紹介では発表者のお子さんの口から、こんなことをした、みたいな紹介が入った。
+メインセッション 発表者 Ron Evans(twitterアカウント)
+ hybridgroupの人。 Gobotに限らず、Cylon.js,ArtooといったIoT系のフレームワークを作っている。 子供向けのRubyのプロジェクトであるkidsrubyも作っている。  Gobotとは(サイトに書いてあるレベルのまとめ) GobotはGolangで様々なIoTプラットフォーム向けのプログラムが書くためのもの。
+公式ページのトップにはArduinoでLチカするコードが載っているが、Arduinoに限らず15のプラットフォームに対応している(発表後の質疑応答で18と言っていたのでサイトの情報は若干古い模様。またcylon.jsの方が対応プラットフォームが多いとのこと)。 この中にはArduinoのほか、ARDroneやラズパイ、EdisonといったデバイスだけでなくMQTTやOpenCVといったものまで含まれる。 また、GPIOドライバにより7つ、I2Cドライバにより6つの機器をサポートしている。
+APIも用意されており、デバイスの状態を確認することなどが可能。 robeauxというReact.jsベースのダッシュボードで確認することもできる。
+CLIの場合はGortを使って操作するようデザインされてるけどgobot独自のCLIもある。
+発表内容  アーキテクチャの図(スライド参照) ArduinoでLチカ(ちなみに英語ではblinking LED)をするデモ  コードはGobotのサイトトップに書いてあるものと全く同じだった。 Arduino上ではGoは動かないけどコンパイルしたコマンドを送ることができる  Edisonで同じくLチカをするデモ  Arduino版とのコードの差分はimort文1行とAdaptor生成部分のみ(firmata.NewFirmataAdaptor(&amp;quot;arduino&amp;quot;, &amp;quot;/dev/ttyACM0&amp;quot;)がedison.NewEdisonAdaptor(&amp;quot;edison&amp;quot;)になるだけ) edisonの場合は中身がLinuxなのでsshで接続してGoのプログラムを普通に走らせることができる  続いてEdisonでボタンを押してる間だけ光るデモ GobotでAPIを立ち上げるプログラムを動かして、そこにcurlを送るデモ  host:port/api/robotsが起点になる模様。 デモでは操作じゃなくて参照しかしなかった。  Gortのデモ  gort scan bluetoothでbluetooth接続されている機器を一覧表示してそこからrfcomm connectで接続(rfcommは普通のLinuxコマンドらしい。知らんかった。)  Spheroのデモ  robeauxを使ったデモ WebのUIからコマンド実行してSpheroを動かすデモ。あんまり思った通りの方向に進んでなかったｗ  Twitterで指定のハッシュタグで呟いてSpheroまたはEdisonを抽選で1名にプレゼント！  めっちゃ欲しかったけど当たりませんでした。。。  commander.</description>
     </item>
     
   </channel>

@@ -93,7 +93,7 @@
 <li>dockerのエコシステムに取り込んでdockerコマンドでビルド・デプロイできるようになったらいいんじゃないってことで買収した。</li>
 </ul>
 
-<h2 id="従来のosの問題:37abd8c8067d32e43dab600446560196">従来のOSの問題</h2>
+<h2 id="従来のosの問題">従来のOSの問題</h2>
 
 <img src="https://daikikohara.github.io/images/unikernel_meetup/traditional_approach.png" alt="" class="pure-img" style="margin:0 auto;">
 
@@ -116,7 +116,7 @@
 例えば複数のターゲットを持つクラウドサービスやスマートフォンといったもの。またJavaScriptもブラウザにより異なるし、IoTでもデバイス毎に異なる。
 これらは複数のターゲットごとにプログラムせねばならず、コードの再利用は難しい。</p>
 
-<h2 id="unikernelとは何か:37abd8c8067d32e43dab600446560196">Unikernelとは何か</h2>
+<h2 id="unikernelとは何か">Unikernelとは何か</h2>
 
 <img src="https://daikikohara.github.io/images/unikernel_meetup/unikernel.png" alt="" class="pure-img" style="margin:0 auto;">
 
@@ -134,7 +134,7 @@ Unikernelには以下のような特徴がある。</p>
 
 <p>なお、Unikernelのコンセプトは新しいものではなく、1990年代から存在していた。</p>
 
-<h2 id="利点:37abd8c8067d32e43dab600446560196">利点</h2>
+<h2 id="利点">利点</h2>
 
 <p>前述の特徴から以下のような利点がある。</p>
 
@@ -146,7 +146,7 @@ Unikernelには以下のような特徴がある。</p>
 <li>マイクロサービスやImmutable Infrastructure等の新しいデザインパターンの構築が容易になる。</li>
 </ul>
 
-<h2 id="unikernelを使う場合の開発サイクル:37abd8c8067d32e43dab600446560196">Unikernelを使う場合の開発サイクル</h2>
+<h2 id="unikernelを使う場合の開発サイクル">Unikernelを使う場合の開発サイクル</h2>
 
 <p>以下のような流れで開発していくことができ従来の方法と大きくは変わらない。</p>
 
@@ -160,7 +160,7 @@ Unikernelには以下のような特徴がある。</p>
 <p>利用するツールもCIシステム、gdb、プロファイラ、linterやdtraceといった従来のものが利用可能。
 カーネル空間・ユーザ空間というものがなく全てがユーザ空間で動くので、通常のツールが利用できる。</p>
 
-<h2 id="unikernelの実装:37abd8c8067d32e43dab600446560196">Unikernelの実装</h2>
+<h2 id="unikernelの実装">Unikernelの実装</h2>
 
 <p>Unikernelには<a href="http://unikernel.org/projects/">多くの実装</a>がある。
 それぞれトレードオフがある。
@@ -184,7 +184,7 @@ Unikernelには以下のような特徴がある。</p>
 <li>UnikernelをDockerのエコシステムに組み込むことでこれらを利用可能にする。</li>
 </ul>
 
-<h2 id="デモ:37abd8c8067d32e43dab600446560196">デモ</h2>
+<h2 id="デモ">デモ</h2>
 
 <p>デモは<a href="https://github.com/Unikernel-Systems/DockerConEU2015-demo">このレポジトリ</a>のもので、Nginx・PHP・MySQLをUnikernelのアプリとしてdocker buildで立ち上げるというもの。
 以下は話してた内容や画面上を見た範囲でのメモ。実際に動かしたらQiitaにでも投稿します(追記:動かして<a href="http://qiita.com/kiida/items/1120aa1c4161da4e55e0">投稿しました</a>)。</p>

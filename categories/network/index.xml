@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 13 Nov 2015 13:33:33 -0800</lastBuildDate>
-    <atom:link href="https://daikikohara.github.io/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://daikikohara.github.io/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Wireshark2.0のメモ</title>
@@ -15,60 +17,9 @@
       <pubDate>Fri, 13 Nov 2015 13:33:33 -0800</pubDate>
       
       <guid>https://daikikohara.github.io/blog/2015/11/13/wireshark-2.0-introduction/</guid>
-      <description>
-
-&lt;p&gt;Wiresharkが初のメジャーアップデートということで話題になっていたので&lt;a href=&#34;https://www.youtube.com/watch?v=rLfYuO6pdVA&#34;&gt;この紹介動画&lt;/a&gt;を見たのでメモです。
-ちなみに2015年11月13日現在では2.0のstable版は出ていません。RC版はLinux向けのは無いので試せてないですが出たら追記すると思います。&lt;/p&gt;
-
-&lt;p&gt;=&amp;gt;(11/23追記)11/18にstable版が出ましたが、Mac/Windowsのみです。自分はLinux(Fedora)ユーザのため試すのはもう少し先になりそうです。&lt;/p&gt;
-
-&lt;h2 id=&#34;視聴メモ:cfa8031cb234e004936926f39e281c0c&#34;&gt;視聴メモ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Qtインターフェース採用
-
-&lt;ul&gt;
-&lt;li&gt;UIは大分変わっていた&lt;/li&gt;
-&lt;li&gt;AndroidやiOSでも動くようになる、、、かもとのこと&lt;/li&gt;
-&lt;li&gt;Legacyを選ぶと従来のGTKインターフェースで動く&lt;/li&gt;
-&lt;li&gt;デモは全てQt版でのデモ&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;USBPcap
-
-&lt;ul&gt;
-&lt;li&gt;USBポート経由のキャプチャができる&lt;/li&gt;
-&lt;li&gt;newって紹介されてたけど、多分新しいものではないはず。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;UIの変更点(で便利だと思ったもの)
-
-&lt;ul&gt;
-&lt;li&gt;メイン画面でパケットを選択すると、左端のカラムに対応するパケットが示される&lt;/li&gt;
-&lt;li&gt;カラールールがスクロールバーにも表示される&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;グラフ
-
-&lt;ul&gt;
-&lt;li&gt;IOグラフ - 元からあるけど右クリックメニューで何か便利になってたっぽい&lt;/li&gt;
-&lt;li&gt;TCPストリームグラフ - シーケンスとかスループットとか最初に選んで変えれなかったけど、グラフ開いてからで変更ができるようになったみたい。また、AからB向きの方向を逆にするのもグラフ上でできる。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;多言語対応
-
-&lt;ul&gt;
-&lt;li&gt;デフォルトはシステム設定&lt;/li&gt;
-&lt;li&gt;日本語はあった&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;その他
-
-&lt;ul&gt;
-&lt;li&gt;デモ用のTraceファイルは公式サイトに置いてある&lt;/li&gt;
-&lt;li&gt;2.2とか偶数がstable版らしい&lt;/li&gt;
-&lt;li&gt;現時点の最新版はRC3&lt;/li&gt;
-&lt;li&gt;2.0の公式版は18日リリースしたい。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;動画を見た正直な印象はUIが多少変わっただけで対して変わってないんじゃ？って思っちゃいましたが、使ってみないと何とも言えませんね。&lt;/p&gt;
-</description>
+      <description>Wiresharkが初のメジャーアップデートということで話題になっていたのでこの紹介動画を見たのでメモです。 ちなみに2015年11月13日現在では2.0のstable版は出ていません。RC版はLinux向けのは無いので試せてないですが出たら追記すると思います。
+=&amp;gt;(11/23追記)11/18にstable版が出ましたが、Mac/Windowsのみです。自分はLinux(Fedora)ユーザのため試すのはもう少し先になりそうです。
+視聴メモ  Qtインターフェース採用  UIは大分変わっていた AndroidやiOSでも動くようになる、、、かもとのこと Legacyを選ぶと従来のGTKインターフェースで動く デモは全てQt版でのデモ  USBPcap  USBポート経由のキャプチャができる newって紹介されてたけど、多分新しいものではないはず。  UIの変更点(で便利だと思ったもの)  メイン画面でパケットを選択すると、左端のカラムに対応するパケットが示される カラールールがスクロールバーにも表示される  グラフ  IOグラフ - 元からあるけど右クリックメニューで何か便利になってたっぽい TCPストリームグラフ - シーケンスとかスループットとか最初に選んで変えれなかったけど、グラフ開いてからで変更ができるようになったみたい。また、AからB向きの方向を逆にするのもグラフ上でできる。  多言語対応  デフォルトはシステム設定 日本語はあった  その他  デモ用のTraceファイルは公式サイトに置いてある 2.2とか偶数がstable版らしい 現時点の最新版はRC3 2.0の公式版は18日リリースしたい。   動画を見た正直な印象はUIが多少変わっただけで対して変わってないんじゃ？って思っちゃいましたが、使ってみないと何とも言えませんね。</description>
     </item>
     
   </channel>
